@@ -434,9 +434,22 @@
 
 <script>
   document.getElementById('mc-form').addEventListener('submit', function(e) {
-    // Let Mailchimp handle the POST (target="_blank"), but also show inline thank-you
     document.getElementById('thankyou').style.display = 'block';
     this.style.display = 'none';
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('mc-form');
+    if (form) {
+      form.addEventListener('submit', function() {
+        gtag('event', 'generate_lead', {
+          'event_category': 'email_signup',
+          'event_label': 'waitlist_form'
+        });
+      });
+    }
   });
 </script>
 
