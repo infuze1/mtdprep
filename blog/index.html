@@ -11,8 +11,8 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTDPrep — Making Tax Digital Software for Self-Employed &amp; Landlords | No accounting software needed</title>
-  <meta name="description" content="Since April 2026, Making Tax Digital applies to sole traders and landlords earning over £50k. MTDPrep gets you MTD-ready from your HSBC bank statement — no accounting software required. Join the waitlist.">
+  <title>Blog — MTDPrep | Making Tax Digital guidance for sole traders &amp; landlords</title>
+  <meta name="description" content="Plain-English guides on Making Tax Digital for sole traders and landlords — what it means, who's affected, and how to get ready without expensive accounting software.">
   <meta name="robots" content="index, follow">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -106,55 +106,32 @@
       font-size: 1.05rem;
     }
 
-    /* ── HERO ── */
-    .hero {
+    /* ── PAGE HEADER ── */
+    .page-header {
       background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
-      padding: 72px 24px 80px;
+      padding: 56px 24px 64px;
       text-align: center;
     }
-    .hero-inner { max-width: var(--max-w); margin: 0 auto; }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 2.9rem);
+    .page-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .page-header h1 {
+      font-size: clamp(1.8rem, 4.5vw, 2.5rem);
       font-weight: 800;
       line-height: 1.2;
       color: var(--slate);
       letter-spacing: -0.5px;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
-    .hero h1 em {
-      font-style: normal;
-      color: var(--blue);
-    }
-
-    .hero p {
-      font-size: 1.15rem;
+    .page-header p {
+      font-size: 1.1rem;
       color: var(--slate-mid);
-      max-width: 560px;
-      margin: 0 auto 32px;
-    }
-
-    .hero-checklist {
-      list-style: none;
-      margin: 0 auto 28px;
-      display: inline-flex;
-      flex-direction: column;
-      gap: 8px;
-      text-align: left;
-      font-size: 0.97rem;
-      color: var(--green-dark);
-      font-weight: 600;
-    }
-
-    .hero-meta {
-      margin-top: 18px;
-      font-size: 0.875rem;
-      color: var(--slate-light);
+      max-width: 540px;
+      margin: 0 auto;
     }
 
     /* ── SECTION WRAPPER ── */
     section { padding: 64px 24px; }
     .section-inner { max-width: var(--max-w); margin: 0 auto; }
+    .section-inner-wide { max-width: 960px; margin: 0 auto; }
 
     .section-label {
       text-transform: uppercase;
@@ -174,69 +151,50 @@
       margin-bottom: 20px;
     }
 
-    /* ── PROBLEM ── */
-    .problem { background: var(--white); }
-
-    .problem p {
-      color: var(--slate-mid);
-      margin-bottom: 16px;
-    }
-
-    .callout {
-      background: var(--blue-light);
-      border-left: 4px solid var(--blue);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 18px 22px;
-      margin: 28px 0;
-      color: var(--slate);
-      font-size: 1.02rem;
-    }
-
-    /* ── HOW IT WORKS ── */
-    .how { background: var(--bg); }
-
-    .steps {
+    /* ── BLOG CARDS ── */
+    .posts { background: var(--white); }
+    .post-grid {
       display: flex;
       flex-direction: column;
-      gap: 28px;
-      margin-top: 36px;
+      gap: 24px;
+      margin-top: 8px;
     }
-
-    .step {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
+    .post-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      background: var(--bg);
+      transition: border-color 0.15s, transform 0.1s;
     }
-
-    .step-num {
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--blue);
-      color: var(--white);
+    .post-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+    }
+    .post-date {
+      font-size: 0.82rem;
       font-weight: 700;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--green);
+      margin-bottom: 8px;
     }
-
-    .step-body h3 {
-      font-size: 1.05rem;
+    .post-title {
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--slate);
-      margin-bottom: 4px;
+      line-height: 1.3;
+      margin-bottom: 10px;
     }
-
-    .step-body p {
+    .post-title a { color: inherit; }
+    .post-title a:hover { color: var(--blue); text-decoration: none; }
+    .post-excerpt {
       color: var(--slate-mid);
-      font-size: 0.97rem;
+      font-size: 0.98rem;
+      margin-bottom: 16px;
     }
-
-    .step-icon {
-      font-size: 1.5rem;
-      margin-bottom: 2px;
+    .read-more {
+      font-weight: 700;
+      font-size: 0.92rem;
     }
 
     /* ── EMAIL CAPTURE ── */
@@ -317,11 +275,12 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 540px) {
-      .hero { padding: 52px 20px 60px; }
+      .page-header { padding: 44px 20px 52px; }
       section { padding: 48px 20px; }
       .form-wrap { padding: 24px 18px; }
       .form-row { flex-direction: column; }
       .form-row input[type="email"] { flex: 1 1 auto; }
+      .post-card { padding: 22px; }
     }
   </style>
 </head>
@@ -330,74 +289,33 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="logo">MTD<span>Prep</span></div>
+    <a href="/" class="logo">MTD<span>Prep</span></a>
     <div class="nav-links">
       <a href="/blog/" class="nav-link">Blog</a>
-      <a href="#waitlist" class="btn btn-primary">Get early access</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-inner">
-    <p class="section-label">Making Tax Digital · Sole Traders &amp; Landlords</p>
-    <h1>MTD-ready in minutes.<br><em>Without expensive accounting software.</em></h1>
-    <p>If you earn over £50,000 from self-employment or property, Making Tax Digital already applies to you. MTDPrep gets you compliant — without the cost or complexity of full accounting software.</p>
-    <ul class="hero-checklist">
-      <li>✓ No accounting software needed</li>
-      <li>✓ HMRC expense categories sorted automatically</li>
-      <li>✓ Ready for 123 Sheets, Absolute Excel, and VT / VitalTax</li>
-    </ul>
-    <a href="#waitlist" class="btn btn-primary btn-large">Join the waitlist — founders get 3 months free</a>
-    <p class="hero-meta">No card required. No spam. Just an early heads-up when we launch.</p>
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-inner">
+    <p class="section-label">The MTDPrep Blog</p>
+    <h1>Making Tax Digital, explained in plain English</h1>
+    <p>Practical guides for sole traders and landlords getting ready for Making Tax Digital — no jargon, no software sales pitch.</p>
   </div>
 </header>
 
-<!-- PROBLEM -->
-<section class="problem">
+<!-- POSTS -->
+<section class="posts">
   <div class="section-inner">
-    <p class="section-label">The problem</p>
-    <h2>Making Tax Digital is here. Most software is overkill.</h2>
-    <p>Since April 2026, sole traders and landlords with income over £50,000 have been required to keep digital records and submit quarterly updates to HMRC. The threshold drops to £30,000 in April 2027, and £20,000 by April 2028 — meaning around 2.25 million self-employed people and landlords will be affected in the next two years.</p>
-    <p>The big accounting packages will happily sell you a subscription to handle this. But if you've been managing perfectly well with a spreadsheet, paying £30+ a month for software you'll spend weeks learning can feel like a sledgehammer for a small nail.</p>
-    <div class="callout">
-      MTDPrep does one specific job: it takes your bank statement and turns it into tidy, HMRC-categorised records you can hand straight to your MTD bridging software (the tool that submits your quarterly updates to HMRC). That's it. Quick to use, no learning curve, no complicated setup.
-    </div>
-    <p>It's built for people who know their business, just not accounting software — and who don't see why they should have to learn it.</p>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how">
-  <div class="section-inner">
-    <p class="section-label">How it works</p>
-    <h2>Three steps from bank statement to MTD-ready</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <div class="step-icon">📄</div>
-          <h3>Upload your bank statement</h3>
-          <p>Download your HSBC bank statement as a PDF — no reformatting or conversion needed. MTDPrep reads it directly. Support for Lloyds, Barclays, and NatWest is coming soon.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <div class="step-icon">🗂️</div>
-          <h3>Every transaction gets categorised</h3>
-          <p>MTDPrep reads each line and maps it to the correct HMRC expense category — office costs, travel, professional fees, and so on. You can review and adjust anything before downloading.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <div class="step-icon">✅</div>
-          <h3>Download, ready for your bridging software</h3>
-          <p>You get a clean spreadsheet formatted for 123 Sheets, Absolute Excel, VT / VitalTax, or whichever MTD bridging tool you already use. In fact, 123 Sheets — one of the most popular MTD bridging tools — recommends users find a way to convert their bank statements first. MTDPrep is built exactly for that. No copy-pasting, no reformatting.</p>
-        </div>
-      </div>
+    <div class="post-grid">
+      <article class="post-card">
+        <p class="post-date">29 June 2026</p>
+        <h2 class="post-title"><a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Income Tax: What Sole Traders Need to Know in 2026</a></h2>
+        <p class="post-excerpt">Making Tax Digital for Income Tax is here for anyone earning over £50,000 from self-employment or property. Here's what it actually means, who it affects, and what you need to do about it.</p>
+        <a href="/blog/making-tax-digital-sole-traders-2026.html" class="read-more">Read more →</a>
+      </article>
     </div>
   </div>
 </section>
@@ -441,8 +359,8 @@
 <footer>
   <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
   <div class="footer-links">
-    <a href="#">Privacy policy</a>
-    <a href="#waitlist">Get early access</a>
+    <a href="/#">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
   </div>
   <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
 </footer>
