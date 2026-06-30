@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTDPrep — Making Tax Digital for Sole Traders &amp; Landlords | No expensive software needed</title>
+  <meta name="description" content="MTDPrep helps UK sole traders and landlords get MTD-ready without accounting software. Upload your bank statement, get HMRC-compliant records. Coming soon.">
+  <meta name="robots" content="index, follow">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 72px 24px 80px;
+      text-align: center;
+    }
+    .hero-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.9rem);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--slate);
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--blue);
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--slate-mid);
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+
+    .hero-meta {
+      margin-top: 18px;
+      font-size: 0.875rem;
+      color: var(--slate-light);
+    }
+
+    /* ── SECTION WRAPPER ── */
+    section { padding: 64px 24px; }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.3px;
+      margin-bottom: 20px;
+    }
+
+    /* ── PROBLEM ── */
+    .problem { background: var(--white); }
+
+    .problem p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+    }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how { background: var(--bg); }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 36px;
+    }
+
+    .step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin-bottom: 4px;
+    }
+
+    .step-body p {
+      color: var(--slate-mid);
+      font-size: 0.97rem;
+    }
+
+    .step-icon {
+      font-size: 1.5rem;
+      margin-bottom: 2px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+    }
+
+    .capture h2 { color: var(--white); }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .hero { padding: 52px 20px 60px; }
+      section { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">MTD<span>Prep</span></div>
+    <a href="#waitlist" class="btn btn-primary">Get early access</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <p class="section-label">Making Tax Digital · Sole Traders &amp; Landlords</p>
+    <h1>MTD-ready in minutes.<br><em>Without expensive software.</em></h1>
+    <p>If you do your own books in a spreadsheet and HMRC's Making Tax Digital deadline is looming, MTDPrep gets you compliant — without the cost or the complexity of full accounting software.</p>
+    <a href="#waitlist" class="btn btn-primary btn-large">Join the waitlist — founders get 3 months free</a>
+    <p class="hero-meta">No card required. No spam. Just an early heads-up when we launch.</p>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="section-inner">
+    <p class="section-label">The problem</p>
+    <h2>Making Tax Digital is coming. Most software is overkill.</h2>
+    <p>From April 2026, HMRC is requiring sole traders and landlords with income over £50,000 to keep digital records and submit quarterly updates. The threshold drops to £30,000 in 2027, and £20,000 by 2028.</p>
+    <p>The big accounting packages will happily sell you a subscription to handle this. But if you've been managing perfectly well with a spreadsheet, paying £30+ a month for Xero — and spending weeks learning it — can feel like a sledgehammer for a small nail.</p>
+    <div class="callout">
+      MTDPrep does one specific job: it takes your bank statement and turns it into tidy, HMRC-categorised records you can hand straight to your bridging software. That's it. Quick to use, no learning curve, no ongoing subscription until you need it.
+    </div>
+    <p>It's built for people who know their business, just not accounting software — and who don't see why they should have to learn it.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="section-inner">
+    <p class="section-label">How it works</p>
+    <h2>Three steps from bank statement to MTD-ready</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-icon">📄</div>
+          <h3>Upload your bank statement</h3>
+          <p>Export your statement as a PDF from your bank — HSBC, Barclays, NatWest, Lloyds, and others are supported. No need to reformat anything.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-icon">🗂️</div>
+          <h3>Every transaction gets categorised</h3>
+          <p>MTDPrep reads each line and maps it to the correct HMRC expense category — office costs, travel, professional fees, and so on. You can review and adjust anything before downloading.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-icon">✅</div>
+          <h3>Download, ready for your bridging software</h3>
+          <p>You get a clean spreadsheet formatted for 123 Sheets, Absolute Excel, VT / VitalTax, or whichever MTD bridging tool you already use. No copy-pasting, no reformatting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Coming soon</p>
+    <h2>Be first in line — founders get 3 months free</h2>
+    <p class="capture-sub">MTDPrep is in development now. Register your interest and we'll give you three months free when we launch — plus first access before the public waitlist opens.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        action="https://mtdprep.us17.list-manage.com/subscribe/post?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0"
+        method="post"
+        target="_blank"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with your founders discount code before we launch.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders and landlords.</div>
+  <div class="footer-links">
+    <a href="#">Privacy policy</a>
+    <a href="#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+</footer>
+
+<script>
+  document.getElementById('mc-form').addEventListener('submit', function(e) {
+    // Let Mailchimp handle the POST (target="_blank"), but also show inline thank-you
+    document.getElementById('thankyou').style.display = 'block';
+    this.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
