@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTDPrep demo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #faf9f5;
+    padding: 14px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e9ec;
+    overflow: hidden;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-bottom: 1px solid #eef1f3;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #1a6fa8;
+  }
+  .brand .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #2a8a6e;
+    display: inline-block;
+  }
+  .stage {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #2a8a6e;
+    background: #e6f5f0;
+    padding: 3px 9px;
+    border-radius: 999px;
+  }
+  .status-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-bottom: 1px solid #eef1f3;
+    font-size: 0.78rem;
+    color: #4a5568;
+  }
+  .spinner {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #cfe3da;
+    border-top-color: #2a8a6e;
+    animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .txn-list { padding: 6px 10px; }
+  .txn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 4px;
+    border-bottom: 1px solid #f0f2f4;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: reveal 0.4s ease forwards;
+  }
+  .txn:last-child { border-bottom: none; }
+  .txn-left { min-width: 0; }
+  .txn-date {
+    font-size: 0.68rem;
+    color: #94a3b8;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .txn-desc {
+    font-size: 0.82rem;
+    color: #2c3e50;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .txn-right {
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .txn-amount {
+    font-size: 0.86rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .txn-amount.positive { color: #1f6e57; }
+  .txn-amount.negative { color: #2c3e50; }
+  .pill {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .pill-income { background: #e6f5f0; color: #1f6e57; }
+  .pill-motor { background: #fff3d9; color: #92650c; }
+  .pill-office { background: #e8f4fd; color: #145a8a; }
+  .pill-repairs { background: #f1f0ee; color: #57534e; }
+
+  .footer-row {
+    padding: 10px 14px;
+    border-top: 1px solid #eef1f3;
+    font-size: 0.72rem;
+    color: #718096;
+    text-align: center;
+  }
+
+  @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <div class="brand"><span class="dot"></span> MTDPrep</div>
+    <div class="stage" id="stage">Categorising…</div>
+  </div>
+  <div class="status-row">
+    <span>Reviewing 147 transactions</span>
+    <span class="spinner"></span>
+  </div>
+  <div class="txn-list">
+    <div class="txn" style="animation-delay:0.05s">
+      <div class="txn-left">
+        <div class="txn-date">15 Jan 2025</div>
+        <div class="txn-desc">CLIENT PMT REF4421</div>
+      </div>
+      <div class="txn-right">
+        <div class="txn-amount positive">+£3,200.00</div>
+        <span class="pill pill-income">Income</span>
+      </div>
+    </div>
+    <div class="txn" style="animation-delay:0.15s">
+      <div class="txn-left">
+        <div class="txn-date">18 Jan 2025</div>
+        <div class="txn-desc">SHELL OIL LONDON</div>
+      </div>
+      <div class="txn-right">
+        <div class="txn-amount negative">-£45.20</div>
+        <span class="pill pill-motor">Motor expenses</span>
+      </div>
+    </div>
+    <div class="txn" style="animation-delay:0.25s">
+      <div class="txn-left">
+        <div class="txn-date">22 Jan 2025</div>
+        <div class="txn-desc">BT BUSINESS DEBIT</div>
+      </div>
+      <div class="txn-right">
+        <div class="txn-amount negative">-£49.00</div>
+        <span class="pill pill-office">Office costs</span>
+      </div>
+    </div>
+    <div class="txn" style="animation-delay:0.35s">
+      <div class="txn-left">
+        <div class="txn-date">28 Jan 2025</div>
+        <div class="txn-desc">AMAZON EU SARL</div>
+      </div>
+      <div class="txn-right">
+        <div class="txn-amount negative">-£23.99</div>
+        <span class="pill pill-office">Office costs</span>
+      </div>
+    </div>
+    <div class="txn" style="animation-delay:0.45s">
+      <div class="txn-left">
+        <div class="txn-date">03 Feb 2025</div>
+        <div class="txn-desc">PIMLICO PLUMBING</div>
+      </div>
+      <div class="txn-right">
+        <div class="txn-amount negative">-£320.00</div>
+        <span class="pill pill-repairs">Repairs</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-row">Categorised 5 of 7 transactions</div>
+</div>
+
+</body>
+</html>

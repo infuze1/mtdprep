@@ -319,9 +319,10 @@
     .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
     .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
 
+    .demo-wrapper .demo-mobile { display: none; }
     @media (max-width: 600px) {
-      .demo-wrapper iframe { display: none !important; }
-      .demo-wrapper p { display: block !important; }
+      .demo-wrapper .demo-desktop { display: none !important; }
+      .demo-wrapper .demo-mobile { display: block !important; }
     }
 
     /* ── RESPONSIVE ── */
@@ -361,6 +362,7 @@
 
     <div class="demo-wrapper" style="margin: 2rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 24px rgba(44,62,80,0.10);">
       <iframe
+        class="demo-desktop"
         src="/demo.html"
         width="100%"
         height="660"
@@ -369,9 +371,16 @@
         title="See how MTDPrep turns your bank statement into MTD-ready records"
         style="display: block; border-radius: 12px;">
       </iframe>
-      <p style="display:none; font-size:13px; color:#4A5568; text-align:center; padding: 1rem;">
-        <em>Interactive demo — best viewed on desktop</em>
-      </p>
+      <iframe
+        class="demo-mobile"
+        src="/demo-mobile.html"
+        width="100%"
+        height="430"
+        frameborder="0"
+        scrolling="no"
+        title="See how MTDPrep turns your bank statement into MTD-ready records"
+        style="border-radius: 12px;">
+      </iframe>
     </div>
 
     <a href="#waitlist" class="btn btn-primary btn-large">Join the waitlist — founders get 3 months free</a>
