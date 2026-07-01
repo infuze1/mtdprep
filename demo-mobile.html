@@ -23,14 +23,16 @@
     justify-content: space-between;
     padding: 12px 14px;
     border-bottom: 1px solid #eef1f3;
+    gap: 8px;
   }
   .brand {
     display: flex;
     align-items: center;
     gap: 6px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: #1a6fa8;
+    flex-shrink: 0;
   }
   .brand .dot {
     width: 7px;
@@ -39,22 +41,86 @@
     background: #2a8a6e;
     display: inline-block;
   }
-  .stage {
-    font-size: 0.72rem;
+  .tabs {
+    display: flex;
+    gap: 4px;
+  }
+  .tab {
+    font-size: 0.66rem;
     font-weight: 700;
-    color: #2a8a6e;
-    background: #e6f5f0;
+    padding: 4px 8px;
+    border-radius: 999px;
+    color: #94a3b8;
+    background: #f1f4f6;
+    transition: background 0.25s, color 0.25s;
+    white-space: nowrap;
+  }
+  .tab.active {
+    background: #2a8a6e;
+    color: #fff;
+  }
+
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ---- Upload panel ---- */
+  .upload-panel { padding: 16px; }
+  .upload-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #145a8a;
+    background: #e8f4fd;
     padding: 3px 9px;
     border-radius: 999px;
+    margin-bottom: 14px;
   }
+  .dropzone {
+    border: 1.5px dashed #d1dce6;
+    border-radius: 10px;
+    padding: 28px 16px;
+    text-align: center;
+  }
+  .file-icon svg { width: 34px; height: 34px; }
+  .file-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 10px;
+  }
+  .file-size {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    margin-top: 2px;
+    margin-bottom: 14px;
+  }
+  .progress-track {
+    height: 6px;
+    border-radius: 999px;
+    background: #eef1f3;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #2a8a6e;
+    border-radius: 999px;
+    transition: width 0.4s ease;
+  }
+  .upload-status {
+    font-size: 0.74rem;
+    color: #718096;
+    margin-top: 10px;
+  }
+
+  /* ---- Categorise panel ---- */
+  .categorise-panel { padding: 12px 14px; }
   .status-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 14px;
-    background: #f8fafc;
-    border-bottom: 1px solid #eef1f3;
-    font-size: 0.78rem;
+    padding: 8px 0 10px;
+    font-size: 0.76rem;
     color: #4a5568;
   }
   .spinner {
@@ -64,70 +130,173 @@
     border: 2px solid #cfe3da;
     border-top-color: #2a8a6e;
     animation: spin 0.9s linear infinite;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
+  .status-label { color: #2a8a6e; font-weight: 700; }
 
-  .txn-list { padding: 6px 10px; }
   .txn {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
-    padding: 10px 4px;
+    padding: 9px 2px;
     border-bottom: 1px solid #f0f2f4;
     opacity: 0;
     transform: translateY(6px);
-    animation: reveal 0.4s ease forwards;
+    transition: opacity 0.35s ease, transform 0.35s ease;
   }
+  .txn.in { opacity: 1; transform: translateY(0); }
   .txn:last-child { border-bottom: none; }
   .txn-left { min-width: 0; }
   .txn-date {
-    font-size: 0.68rem;
+    font-size: 0.66rem;
     color: #94a3b8;
     font-weight: 600;
     margin-bottom: 2px;
   }
   .txn-desc {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     color: #2c3e50;
     font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 46vw;
   }
-  .txn-right {
-    text-align: right;
-    flex-shrink: 0;
-  }
+  .txn-right { text-align: right; flex-shrink: 0; }
   .txn-amount {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
     font-weight: 700;
     margin-bottom: 4px;
   }
   .txn-amount.positive { color: #1f6e57; }
   .txn-amount.negative { color: #2c3e50; }
+  .txn-conf {
+    font-size: 0.62rem;
+    color: #94a3b8;
+    margin-top: 2px;
+  }
+
   .pill {
     display: inline-block;
-    font-size: 0.66rem;
+    font-size: 0.64rem;
     font-weight: 700;
     padding: 2px 8px;
     border-radius: 999px;
     white-space: nowrap;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.25s ease, transform 0.25s ease;
   }
+  .pill.in { opacity: 1; transform: scale(1); }
+  .pill-placeholder {
+    display: inline-block;
+    width: 58px;
+    height: 15px;
+    border-radius: 999px;
+    background: #eef1f3;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  .pill-placeholder.out { opacity: 0; }
+
   .pill-income { background: #e6f5f0; color: #1f6e57; }
   .pill-motor { background: #fff3d9; color: #92650c; }
   .pill-office { background: #e8f4fd; color: #145a8a; }
   .pill-repairs { background: #f1f0ee; color: #57534e; }
+  .pill-fees { background: #f3e8fd; color: #6b21a8; }
+  .pill-personal { background: #f1f4f6; color: #718096; }
 
   .footer-row {
-    padding: 10px 14px;
+    padding: 10px 2px 2px;
     border-top: 1px solid #eef1f3;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     color: #718096;
     text-align: center;
+    margin-top: 4px;
   }
 
-  @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+  /* ---- Export panel ---- */
+  .export-panel { padding: 14px; }
+  .export-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: #e6f5f0;
+    border: 1px solid #bfe3d4;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+  }
+  .export-banner svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; }
+  .export-banner-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #1f6e57;
+  }
+  .export-banner-meta {
+    font-size: 0.68rem;
+    color: #4a7c68;
+    margin-top: 2px;
+  }
+
+  .breakdown-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #94a3b8;
+    margin-bottom: 6px;
+  }
+  .breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: #2c3e50;
+    padding: 6px 0;
+    border-bottom: 1px solid #f4f6f7;
+  }
+  .breakdown-row.total { font-weight: 700; border-bottom: none; padding-top: 8px; }
+  .breakdown-row.profit { color: #1f6e57; font-weight: 700; }
+  .breakdown-cat { color: #718096; }
+
+  .export-options { margin-top: 16px; }
+  .export-option {
+    border: 1px solid #e5e9ec;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+  }
+  .export-option-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  .export-option-desc {
+    font-size: 0.66rem;
+    color: #94a3b8;
+    margin: 2px 0 8px;
+  }
+  .export-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #2a8a6e;
+    color: #fff;
+    font-size: 0.74rem;
+    font-weight: 700;
+    padding: 7px 0;
+    border-radius: 7px;
+  }
+  .export-note {
+    font-size: 0.66rem;
+    color: #94a3b8;
+    text-align: center;
+    margin-top: 12px;
+  }
 </style>
 </head>
 <body>
@@ -135,66 +304,195 @@
 <div class="card">
   <div class="card-header">
     <div class="brand"><span class="dot"></span> MTDPrep</div>
-    <div class="stage" id="stage">Categorising…</div>
-  </div>
-  <div class="status-row">
-    <span>Reviewing 147 transactions</span>
-    <span class="spinner"></span>
-  </div>
-  <div class="txn-list">
-    <div class="txn" style="animation-delay:0.05s">
-      <div class="txn-left">
-        <div class="txn-date">15 Jan 2025</div>
-        <div class="txn-desc">CLIENT PMT REF4421</div>
-      </div>
-      <div class="txn-right">
-        <div class="txn-amount positive">+£3,200.00</div>
-        <span class="pill pill-income">Income</span>
-      </div>
-    </div>
-    <div class="txn" style="animation-delay:0.15s">
-      <div class="txn-left">
-        <div class="txn-date">18 Jan 2025</div>
-        <div class="txn-desc">SHELL OIL LONDON</div>
-      </div>
-      <div class="txn-right">
-        <div class="txn-amount negative">-£45.20</div>
-        <span class="pill pill-motor">Motor expenses</span>
-      </div>
-    </div>
-    <div class="txn" style="animation-delay:0.25s">
-      <div class="txn-left">
-        <div class="txn-date">22 Jan 2025</div>
-        <div class="txn-desc">BT BUSINESS DEBIT</div>
-      </div>
-      <div class="txn-right">
-        <div class="txn-amount negative">-£49.00</div>
-        <span class="pill pill-office">Office costs</span>
-      </div>
-    </div>
-    <div class="txn" style="animation-delay:0.35s">
-      <div class="txn-left">
-        <div class="txn-date">28 Jan 2025</div>
-        <div class="txn-desc">AMAZON EU SARL</div>
-      </div>
-      <div class="txn-right">
-        <div class="txn-amount negative">-£23.99</div>
-        <span class="pill pill-office">Office costs</span>
-      </div>
-    </div>
-    <div class="txn" style="animation-delay:0.45s">
-      <div class="txn-left">
-        <div class="txn-date">03 Feb 2025</div>
-        <div class="txn-desc">PIMLICO PLUMBING</div>
-      </div>
-      <div class="txn-right">
-        <div class="txn-amount negative">-£320.00</div>
-        <span class="pill pill-repairs">Repairs</span>
-      </div>
+    <div class="tabs">
+      <span class="tab" data-tab="upload">Upload</span>
+      <span class="tab" data-tab="categorise">Categorise</span>
+      <span class="tab" data-tab="export">Export</span>
     </div>
   </div>
-  <div class="footer-row">Categorised 5 of 7 transactions</div>
+
+  <!-- UPLOAD -->
+  <div class="panel upload-panel" data-panel="upload">
+    <span class="upload-badge">HSBC Kinetic</span>
+    <div class="dropzone">
+      <div class="file-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2a8a6e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+          <path d="M13 2v7h7"></path>
+        </svg>
+      </div>
+      <div class="file-name">HSBC_Business_Statement_Jan-Dec2025.pdf</div>
+      <div class="file-size">2.3 MB</div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="upload-status" id="uploadStatus">Uploading file…</div>
+    </div>
+  </div>
+
+  <!-- CATEGORISE -->
+  <div class="panel categorise-panel" data-panel="categorise">
+    <div class="status-row">
+      <span>Reviewing 147 transactions</span>
+      <span><span class="spinner" id="spinner"></span><span class="status-label">Categorising…</span></span>
+    </div>
+    <div id="txnList">
+      <div class="txn" data-pill="pill-income" data-label="Income" data-conf="99%">
+        <div class="txn-left"><div class="txn-date">15 Jan 2025</div><div class="txn-desc">CLIENT PMT REF4421</div></div>
+        <div class="txn-right"><div class="txn-amount positive">+£3,200.00</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+      <div class="txn" data-pill="pill-motor" data-label="Motor expenses" data-conf="97%">
+        <div class="txn-left"><div class="txn-date">18 Jan 2025</div><div class="txn-desc">SHELL OIL LONDON</div></div>
+        <div class="txn-right"><div class="txn-amount negative">-£45.20</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+      <div class="txn" data-pill="pill-office" data-label="Office costs" data-conf="99%">
+        <div class="txn-left"><div class="txn-date">22 Jan 2025</div><div class="txn-desc">BT BUSINESS DEBIT</div></div>
+        <div class="txn-right"><div class="txn-amount negative">-£49.00</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+      <div class="txn" data-pill="pill-office" data-label="Office costs" data-conf="94%">
+        <div class="txn-left"><div class="txn-date">28 Jan 2025</div><div class="txn-desc">AMAZON EU SARL</div></div>
+        <div class="txn-right"><div class="txn-amount negative">-£23.99</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+      <div class="txn" data-pill="pill-repairs" data-label="Repairs" data-conf="96%">
+        <div class="txn-left"><div class="txn-date">03 Feb 2025</div><div class="txn-desc">PIMLICO PLUMBING</div></div>
+        <div class="txn-right"><div class="txn-amount negative">-£320.00</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+      <div class="txn" data-pill="pill-fees" data-label="Professional fees" data-conf="98%">
+        <div class="txn-left"><div class="txn-date">10 Feb 2025</div><div class="txn-desc">SMITH &amp; CO SOLICITORS</div></div>
+        <div class="txn-right"><div class="txn-amount negative">-£450.00</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+      <div class="txn" data-pill="pill-personal" data-label="Personal (excluded)" data-conf="—">
+        <div class="txn-left"><div class="txn-date">14 Feb 2025</div><div class="txn-desc">TESCO STORES</div></div>
+        <div class="txn-right"><div class="txn-amount negative">-£67.40</div><span class="pill-placeholder"></span><span class="pill"></span><div class="txn-conf conf"></div></div>
+      </div>
+    </div>
+    <div class="footer-row" id="footerRow">Categorised 0 of 7 transactions</div>
+  </div>
+
+  <!-- EXPORT -->
+  <div class="panel export-panel" data-panel="export">
+    <div class="export-banner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#1f6e57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+      <div>
+        <div class="export-banner-title">Your records are ready to export</div>
+        <div class="export-banner-meta">147 transactions processed · Tax year 2025/26</div>
+      </div>
+    </div>
+
+    <div class="breakdown-title">Category breakdown</div>
+    <div class="breakdown-row"><span class="breakdown-cat">Income</span><span>23 · £38,400</span></div>
+    <div class="breakdown-row"><span class="breakdown-cat">Motor expenses</span><span>8 · £312.40</span></div>
+    <div class="breakdown-row"><span class="breakdown-cat">Office costs</span><span>14 · £847.23</span></div>
+    <div class="breakdown-row"><span class="breakdown-cat">Repairs</span><span>3 · £950.00</span></div>
+    <div class="breakdown-row"><span class="breakdown-cat">Professional fees</span><span>4 · £1,800.00</span></div>
+    <div class="breakdown-row"><span class="breakdown-cat">Personal (excluded)</span><span>12 · —</span></div>
+    <div class="breakdown-row total"><span>Net profit</span><span>£34,490.37</span></div>
+
+    <div class="export-options">
+      <div class="export-option">
+        <div class="export-option-name">123 Sheets format</div>
+        <div class="export-option-desc">Most popular MTD bridging software</div>
+        <span class="export-btn">Download .xlsx</span>
+      </div>
+      <div class="export-option">
+        <div class="export-option-name">Absolute Excel format</div>
+        <div class="export-option-desc">HMRC-recognised bridging software</div>
+        <span class="export-btn">Download .xlsx</span>
+      </div>
+      <div class="export-option">
+        <div class="export-option-name">VT / VitalTax format</div>
+        <div class="export-option-desc">Compatible with VT Transaction+</div>
+        <span class="export-btn">Download .xlsx</span>
+      </div>
+    </div>
+    <div class="export-note">Your data never leaves your browser session.</div>
+  </div>
 </div>
+
+<script>
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.txn'));
+  var footer = document.getElementById('footerRow');
+  var progressFill = document.getElementById('progressFill');
+  var uploadStatus = document.getElementById('uploadStatus');
+
+  function sleep(ms) {
+    return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  function showTab(name) {
+    tabs.forEach(function (t) { t.classList.toggle('active', t.dataset.tab === name); });
+    panels.forEach(function (p) { p.classList.toggle('active', p.dataset.panel === name); });
+  }
+
+  function resetCategorise() {
+    rows.forEach(function (row) {
+      row.classList.remove('in');
+      var pill = row.querySelector('.pill');
+      var placeholder = row.querySelector('.pill-placeholder');
+      var conf = row.querySelector('.conf');
+      pill.className = 'pill';
+      pill.textContent = '';
+      placeholder.classList.remove('out');
+      conf.textContent = '';
+    });
+    footer.textContent = 'Categorised 0 of ' + rows.length + ' transactions';
+  }
+
+  async function runUpload() {
+    showTab('upload');
+    progressFill.style.width = '0%';
+    uploadStatus.textContent = 'Uploading file…';
+    await sleep(150);
+    progressFill.style.width = '55%';
+    await sleep(700);
+    progressFill.style.width = '100%';
+    uploadStatus.textContent = 'Reading 147 transactions…';
+    await sleep(900);
+  }
+
+  async function runCategorise() {
+    showTab('categorise');
+    resetCategorise();
+    await sleep(300);
+
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].classList.add('in');
+      await sleep(160);
+    }
+    await sleep(250);
+
+    for (var j = 0; j < rows.length; j++) {
+      var row = rows[j];
+      var pill = row.querySelector('.pill');
+      var placeholder = row.querySelector('.pill-placeholder');
+      var conf = row.querySelector('.conf');
+
+      pill.className = 'pill ' + row.dataset.pill;
+      pill.textContent = row.dataset.label;
+      placeholder.classList.add('out');
+      pill.classList.add('in');
+      conf.textContent = row.dataset.conf;
+
+      footer.textContent = 'Categorised ' + (j + 1) + ' of ' + rows.length + ' transactions';
+      await sleep(420);
+    }
+    await sleep(700);
+  }
+
+  async function runExport() {
+    showTab('export');
+    await sleep(3200);
+  }
+
+  async function runCycle() {
+    await runUpload();
+    await runCategorise();
+    await runExport();
+    runCycle();
+  }
+
+  runCycle();
+</script>
 
 </body>
 </html>
