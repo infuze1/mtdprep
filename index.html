@@ -235,8 +235,12 @@
     }
 
     .step-icon {
-      font-size: 1.5rem;
-      margin-bottom: 2px;
+      margin-bottom: 6px;
+    }
+    .step-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--blue);
     }
 
     /* ── EMAIL CAPTURE ── */
@@ -398,7 +402,14 @@
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-body">
-          <div class="step-icon">📄</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+              <path d="M13 2v7h7"></path>
+              <path d="M9 13h6"></path>
+              <path d="M9 17h6"></path>
+            </svg>
+          </div>
           <h3>Upload your bank statement</h3>
           <p>Download your HSBC bank statement as a PDF — no reformatting or conversion needed. MTDPrep reads it directly. Support for Lloyds, Barclays, and NatWest is coming soon.</p>
         </div>
@@ -406,7 +417,12 @@
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-body">
-          <div class="step-icon">🗂️</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <path d="M8 13h5"></path>
+            </svg>
+          </div>
           <h3>Every transaction gets categorised</h3>
           <p>MTDPrep reads each line and maps it to the correct HMRC expense category — office costs, travel, professional fees, and so on. You can review and adjust anything before downloading.</p>
         </div>
@@ -414,7 +430,13 @@
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-body">
-          <div class="step-icon">✅</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12"></path>
+              <path d="M7 10l5 5 5-5"></path>
+              <path d="M4 19h16"></path>
+            </svg>
+          </div>
           <h3>Download, ready for your bridging software</h3>
           <p>You get a clean spreadsheet formatted for 123 Sheets, Absolute Excel, VT / VitalTax, or whichever MTD bridging tool you already use. In fact, 123 Sheets — one of the most popular MTD bridging tools — recommends users find a way to convert their bank statements first. MTDPrep is built exactly for that. No copy-pasting, no reformatting.</p>
         </div>
