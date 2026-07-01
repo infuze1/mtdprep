@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Making Tax Digital for Landlords: What You Need to Know | MTDPrep</title>
+  <meta name="description" content="MTD for Income Tax applies to landlords earning over £50,000 from April 2026. Find out if you're affected, what records you need, and how to stay compliant without accounting software.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mtdprep.co.uk/blog/making-tax-digital-landlords.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Making Tax Digital for Income Tax apply to landlords?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. MTD ITSA applies to landlords earning over £50,000 in combined self-employment and property income from April 2026, over £30,000 from April 2027, and over £20,000 from April 2028."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does MTD for Income Tax apply to landlords with only one property?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if your rental income from that property exceeds the relevant threshold. The number of properties does not affect your MTD obligation — the total income does."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I still use a spreadsheet under Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. MTD does not require accounting software. You can keep records in Excel or Google Sheets and submit via HMRC-recognised bridging software such as 123 Sheets, Absolute Excel, or VT."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the quarterly submission deadlines for landlords under MTD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Q1 (6 Apr–5 Jul) due 5 August; Q2 (6 Jul–5 Oct) due 5 November; Q3 (6 Oct–5 Jan) due 5 February; Q4 (6 Jan–5 Apr) due 5 May."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to register separately for MTD ITSA as a landlord?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When HMRC mandates MTD for your income level, you need to sign up for MTD ITSA and select compatible software. HMRC will write to you ahead of your mandation date."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.94rem;
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table th {
+      background: var(--bg);
+      color: var(--slate);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .data-table td { color: var(--slate-mid); }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+      .data-table { font-size: 0.84rem; }
+      .data-table th, .data-table td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>Making Tax Digital for Landlords: What You Need to Know in 2026</h1>
+    <p class="article-meta">Published 2 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-3/landlord-mtd-hero.svg" alt="Landlord preparing Making Tax Digital records for rental income">
+
+    <p>If you earn rental income in the UK, Making Tax Digital for Income Tax is no longer something you can delay thinking about. For landlords earning above £50,000, the rules are already in force from April 2026 — and the thresholds drop further in 2027 and 2028, bringing hundreds of thousands more landlords into scope.</p>
+    <p>This guide explains exactly what Making Tax Digital means for landlords, what records you need to keep, and how to meet the requirements without paying for full accounting software you don't need.</p>
+
+    <h2>Does Making Tax Digital for Income Tax apply to landlords?</h2>
+    <p><strong>Yes — Making Tax Digital for Income Tax Self Assessment (MTD ITSA) applies to landlords, not just the self-employed.</strong></p>
+    <p>HMRC assesses your eligibility based on your total gross income from both self-employment and property. If your rental income — alone or combined with any self-employment income — exceeds the relevant threshold, MTD applies to you.</p>
+
+    <img src="/images/blog/post-3/mtd-landlord-thresholds.svg" alt="Making Tax Digital income thresholds for landlords 2026 to 2028">
+
+    <table class="data-table">
+      <thead>
+        <tr><th>From</th><th>Combined income threshold</th><th>Landlords affected</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>April 2026</td><td>Over £50,000</td><td>~180,000</td></tr>
+        <tr><td>April 2027</td><td>Over £30,000</td><td>+~200,000</td></tr>
+        <tr><td>April 2028</td><td>Over £20,000</td><td>+~120,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>By 2028, roughly half a million UK landlords will be in scope. If you're not affected yet, you likely will be within two years.</p>
+
+    <h2>What counts as property income under MTD?</h2>
+    <p>HMRC includes the following as property income for MTD ITSA purposes:</p>
+    <ul>
+      <li><strong>Buy-to-let residential properties</strong> — single or multiple properties</li>
+      <li><strong>Commercial property lettings</strong></li>
+      <li><strong>Short-term and holiday lets</strong> — including Airbnb and similar platforms</li>
+      <li><strong>Rent a Room income above the £7,500 allowance</strong></li>
+    </ul>
+
+    <div class="callout">
+      <strong>Important for holiday let owners:</strong> The tax rules around furnished holiday lettings (FHLs) changed in April 2025. If you run short-term holiday lets, confirm your current status with an accountant, as the FHL classification has been abolished and the income now falls under standard property income rules.
+    </div>
+
+    <h2>What digital records do landlords need to keep?</h2>
+    <p>Under MTD ITSA, you must record each income and expense transaction individually — not as monthly totals. HMRC requires a separate digital record for every payment received and every cost incurred.</p>
+    <p><strong>Income records must include:</strong></p>
+    <ul>
+      <li>Each rental payment received, with date and amount</li>
+      <li>The property the payment relates to</li>
+      <li>Any other property income (deposit forfeitures, subletting, etc.)</li>
+    </ul>
+    <p><strong>Expense records must include:</strong></p>
+    <ul>
+      <li>Date and amount of each expense</li>
+      <li>What it was for (description)</li>
+      <li>The correct HMRC expense category</li>
+    </ul>
+    <p>This is where most landlords run into difficulty — not the record-keeping itself, but getting every transaction correctly categorised into HMRC's required expense categories.</p>
+
+    <h2>What are the HMRC expense categories for property income?</h2>
+
+    <img src="/images/blog/post-3/hmrc-landlord-expense-categories.svg" alt="HMRC property expense categories for landlords under Making Tax Digital">
+
+    <p>HMRC requires landlords to map expenses to specific categories. The main ones for property income are:</p>
+    <ul>
+      <li><strong>Rent, rates, insurance, ground rents</strong> — buildings insurance, ground rent, service charges, factoring fees</li>
+      <li><strong>Property repairs and maintenance</strong> — plumbers, electricians, decorating (revenue repairs only — not improvements or extensions)</li>
+      <li><strong>Finance costs</strong> — mortgage interest (note: since April 2020, only basic rate tax relief is available on mortgage interest — full deduction no longer applies)</li>
+      <li><strong>Legal, management, and professional fees</strong> — letting agents, solicitors, accountants, property management companies</li>
+      <li><strong>Costs of services provided to tenants</strong> — utilities, cleaning, gardening where you pay as landlord</li>
+      <li><strong>Travelling expenses</strong> — mileage to inspect properties, meet contractors, etc.</li>
+      <li><strong>Other allowable property expenses</strong> — anything else that is wholly and exclusively for the property business</li>
+    </ul>
+    <p>Getting these categories right is critical. HMRC's quarterly submissions require data in this format — which is exactly what bridging software expects to receive.</p>
+
+    <h2>Do landlords need bridging software?</h2>
+    <p>Bridging software is the term for HMRC-recognised tools that take your digital records and submit quarterly updates to HMRC on your behalf. If you keep your records in Excel or Google Sheets, bridging software reads those records and sends them to HMRC in the correct format.</p>
+    <p>Products like 123 Sheets, Absolute Excel, and VT are widely used, HMRC-recognised, and much cheaper than full accounting platforms. For landlords already comfortable with spreadsheets, they're the natural path to MTD compliance.</p>
+    <p>The challenge bridging software doesn't solve: getting your transactions into the right format in the first place. If your bank records are in a PDF statement, you need a way to extract and categorise those transactions before bridging software can do its job.</p>
+    <p>That's the gap MTDPrep fills.</p>
+
+    <div class="mid-cta">
+      <h3>Landlord preparing for MTD? Join the waitlist.</h3>
+      <p>MTDPrep automatically categorises your rental income and expenses into HMRC's property expense categories. Upload your bank statement, review the categories, export to your bridging software. Founders get 3 months completely free.</p>
+      <div class="form-wrap" style="margin: 0 auto; text-align: left;">
+        <form
+          id="mc-form-mid"
+          action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+          method="post"
+          novalidate
+        >
+          <div class="form-row">
+            <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Get early access</button>
+          </div>
+          <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+          <!-- Mailchimp bot protection — do not remove -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+          </div>
+          <p class="form-note" style="color: var(--slate-light);">No card required. No spam.</p>
+        </form>
+        <div class="thankyou" id="thankyou-mid" role="alert" style="color: var(--slate); background: var(--green-light); border-color: var(--green);">
+          <strong>You're on the list! 🎉</strong>
+          We'll be in touch with your founders discount code before we launch.
+        </div>
+      </div>
+    </div>
+
+    <h2>What are the quarterly submission deadlines for landlords?</h2>
+    <p>Under MTD ITSA, you'll submit four quarterly updates per tax year instead of one annual return. The deadlines are:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Quarter</th><th>Period covered</th><th>Submission deadline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Q1</td><td>6 April – 5 July</td><td>5 August</td></tr>
+        <tr><td>Q2</td><td>6 July – 5 October</td><td>5 November</td></tr>
+        <tr><td>Q3</td><td>6 October – 5 January</td><td>5 February</td></tr>
+        <tr><td>Q4</td><td>6 January – 5 April</td><td>5 May</td></tr>
+      </tbody>
+    </table>
+
+    <p>After the four quarterly updates, you'll submit an End of Period Statement (EOPS) and a Final Declaration — the MTD replacement for the Self Assessment tax return.</p>
+    <p>Penalties for late submission are being phased in alongside mandation. The safest approach is to keep records updated throughout the year, rather than scrambling before each quarter-end deadline.</p>
+
+    <h2>How MTDPrep helps landlords</h2>
+
+    <img src="/images/blog/post-3/mtd-landlord-workflow.svg" alt="How MTDPrep turns a landlord bank statement into MTD-ready records">
+
+    <p>MTDPrep is built for landlords who manage their own records and want to stay compliant without the cost or complexity of full accounting software.</p>
+    <p><strong>Step 1 — Upload your bank statement PDF.</strong> Download your property bank account statement as a PDF and upload it to MTDPrep. No CSV exports, Open Banking connections, or software integrations required.</p>
+    <p><strong>Step 2 — Every transaction gets categorised.</strong> MTDPrep reads every transaction and assigns it to the correct HMRC property expense category. Letting agent fees, repair invoices, insurance payments, mortgage interest — each one is categorised automatically.</p>
+    <p><strong>Step 3 — Review and correct.</strong> Every categorised transaction is shown to you for review. Anything that needs adjusting — for example, confirming whether a payment is a revenue repair or a capital improvement — takes a single click to correct.</p>
+    <p><strong>Step 4 — Export for bridging software.</strong> Download a spreadsheet formatted for direct use with 123 Sheets, Absolute Excel, or VT. Your quarterly records are ready to submit.</p>
+    <p>Each quarter takes minutes, not hours.</p>
+
+    <h2>Frequently asked questions about MTD for landlords</h2>
+
+    <h3>Does MTD for Income Tax apply to landlords with only one property?</h3>
+    <p>Yes, if your rental income from that property exceeds the relevant threshold (£50,000 from April 2026, £30,000 from April 2027, £20,000 from April 2028). The number of properties doesn't affect your MTD obligation — the total income does.</p>
+
+    <h3>Do I need to register separately for MTD ITSA?</h3>
+    <p>Yes. When HMRC mandates MTD for your income level, you need to sign up for MTD ITSA and select compatible software. HMRC will write to you ahead of your mandation date, but you don't have to wait — you can register voluntarily before your mandation date if you want to get ahead.</p>
+
+    <h3>Can I still use a spreadsheet under MTD?</h3>
+    <p>Yes. MTD doesn't require accounting software — it requires digital records in a compatible format. If you use Excel or Google Sheets and submit via bridging software, that meets the requirement. The key is that your records must be in the correct HMRC format and your submissions must go via HMRC-recognised software.</p>
+
+    <h3>What if I have a portfolio with multiple properties?</h3>
+    <p>MTD records should be kept at a property level where possible. If you have multiple properties on the same bank account, you'll need to allocate transactions to the correct property in your records. MTDPrep processes bank statements and allows you to assign transactions — multi-property support is a core part of the product roadmap.</p>
+
+    <h3>Does MTD apply to landlords who use an accountant?</h3>
+    <p>Yes. Even if an accountant files your returns, the MTD requirement is yours — you (or your accountant on your behalf) must keep digital records and submit quarterly updates. Many landlords use MTDPrep to prepare their records and pass the export directly to their accountant.</p>
+
+    <h3>What if my rental income drops below the threshold in a future year?</h3>
+    <p>You're assessed on your actual gross income each tax year. If you drop below the threshold, you may be able to exit MTD — but you'll need to notify HMRC. The exit conditions are still being confirmed by HMRC as the rollout progresses.</p>
+
+    <h3>Is mortgage interest still deductible for landlords under MTD?</h3>
+    <p>MTD changes how you submit records, not what's deductible. The mortgage interest restriction that came into effect from April 2020 still applies — only basic rate (20%) tax relief is available, not full deduction. This is unchanged by MTD.</p>
+
+    <h2>The bottom line</h2>
+    <p>Making Tax Digital for landlords is already in effect for higher earners, and the thresholds are dropping. The record-keeping requirement itself isn't complicated — but getting every transaction correctly categorised in the right digital format, four times a year, is where most landlords need help.</p>
+    <p>The good news is that you don't need to buy expensive accounting software to meet the requirement. You need clean, categorised records and bridging software to submit them. MTDPrep handles the first part automatically.</p>
+
+    <p class="related-links">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC bank statements and MTD</a></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Coming soon</p>
+    <h2>Don't leave it until your first quarterly deadline</h2>
+    <p class="capture-sub">Join the MTDPrep waitlist and get 3 months free when we launch. Built for landlords who manage their own records and want MTD compliance without the software overhead.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with your founders discount code before we launch.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/#">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+    mcAjaxSubmit(document.getElementById('mc-form-mid'), document.getElementById('thankyou-mid'));
+  });
+</script>
+
+</body>
+</html>

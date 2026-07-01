@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'Segoe UI',Arial,sans-serif;background:#F8FAFC;">
+  <title>HMRC Property Expense Categories for Landlords under Making Tax Digital</title>
+  <rect width="800" height="440" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="64" fill="#2A8A6E"/>
+  <text x="400" y="24" text-anchor="middle" fill="white" font-size="12" font-weight="600" letter-spacing="1.5">HMRC APPROVED</text>
+  <text x="400" y="50" text-anchor="middle" fill="white" font-size="20" font-weight="700">Property Expense Categories for MTD</text>
+  <rect x="28" y="88" width="228" height="96" rx="8" fill="white" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="28" y="88" width="10" height="96" rx="5" fill="#2A8A6E"/>
+  <text x="52" y="114" fill="#2A8A6E" font-size="11" font-weight="700">INSURANCE &amp; RATES</text>
+  <text x="52" y="133" fill="#4A5568" font-size="11">Buildings insurance</text>
+  <text x="52" y="149" fill="#4A5568" font-size="11">Ground rent &amp; service charges</text>
+  <text x="52" y="165" fill="#4A5568" font-size="11">Council tax (where you pay)</text>
+  <rect x="286" y="88" width="228" height="96" rx="8" fill="white" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="286" y="88" width="10" height="96" rx="5" fill="#1F6E57"/>
+  <text x="310" y="114" fill="#1F6E57" font-size="11" font-weight="700">REPAIRS &amp; MAINTENANCE</text>
+  <text x="310" y="133" fill="#4A5568" font-size="11">Plumbers, electricians</text>
+  <text x="310" y="149" fill="#4A5568" font-size="11">Decorating (revenue work only)</text>
+  <text x="310" y="165" fill="#E53E3E" font-size="10" font-weight="600">Not capital improvements</text>
+  <rect x="544" y="88" width="228" height="96" rx="8" fill="white" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="544" y="88" width="10" height="96" rx="5" fill="#1A6FA8"/>
+  <text x="568" y="114" fill="#1A6FA8" font-size="11" font-weight="700">FINANCE COSTS</text>
+  <text x="568" y="133" fill="#4A5568" font-size="11">Mortgage interest only</text>
+  <text x="568" y="149" fill="#E53E3E" font-size="10" font-weight="600">Not capital repayments</text>
+  <text x="568" y="165" fill="#4A5568" font-size="10">20% basic rate relief applies</text>
+  <rect x="28" y="204" width="228" height="96" rx="8" fill="white" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="28" y="204" width="10" height="96" rx="5" fill="#6B21A8"/>
+  <text x="52" y="230" fill="#6B21A8" font-size="11" font-weight="700">PROFESSIONAL FEES</text>
+  <text x="52" y="249" fill="#4A5568" font-size="11">Letting agents &amp; management</text>
+  <text x="52" y="265" fill="#4A5568" font-size="11">Solicitors &amp; accountants</text>
+  <text x="52" y="281" fill="#4A5568" font-size="11">Property management companies</text>
+  <rect x="286" y="204" width="228" height="96" rx="8" fill="white" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="286" y="204" width="10" height="96" rx="5" fill="#92400E"/>
+  <text x="310" y="230" fill="#92400E" font-size="11" font-weight="700">SERVICES TO TENANTS</text>
+  <text x="310" y="249" fill="#4A5568" font-size="11">Utilities you pay as landlord</text>
+  <text x="310" y="265" fill="#4A5568" font-size="11">Cleaning &amp; gardening</text>
+  <text x="310" y="281" fill="#4A5568" font-size="11">Appliances in furnished lets</text>
+  <rect x="544" y="204" width="228" height="96" rx="8" fill="white" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="544" y="204" width="10" height="96" rx="5" fill="#2A8A6E"/>
+  <text x="568" y="230" fill="#2A8A6E" font-size="11" font-weight="700">TRAVEL EXPENSES</text>
+  <text x="568" y="249" fill="#4A5568" font-size="11">Mileage to inspect properties</text>
+  <text x="568" y="265" fill="#4A5568" font-size="11">Travel to meet contractors</text>
+  <text x="568" y="281" fill="#4A5568" font-size="11">HMRC approved mileage rates</text>
+  <rect x="28" y="320" width="744" height="72" rx="8" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="28" y="320" width="10" height="72" rx="5" fill="#2A8A6E"/>
+  <text x="52" y="344" fill="#1F6E57" font-size="11" font-weight="700">OTHER ALLOWABLE PROPERTY EXPENSES</text>
+  <text x="52" y="362" fill="#4A5568" font-size="11">Any cost wholly and exclusively for the property business that does not fall into the above categories</text>
+  <text x="52" y="379" fill="#4A5568" font-size="10.5">MTDPrep categorises all of the above automatically from your bank statement PDF.</text>
+  <text x="762" y="432" text-anchor="end" fill="#D1DCE6" font-size="10">mtdprep.co.uk</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" style="font-family:'Segoe UI',Arial,sans-serif;">
+  <title>Landlord preparing Making Tax Digital records for rental income</title>
+  <rect width="800" height="420" fill="#E8F5F1"/>
+  <rect x="0" y="280" width="800" height="140" fill="#2A8A6E" opacity="0.12"/>
+  <rect x="0" y="278" width="800" height="4" fill="#2A8A6E" opacity="0.2"/>
+  <rect x="580" y="160" width="100" height="90" rx="2" fill="#1F6E57" opacity="0.15"/>
+  <polygon points="580,160 680,160 630,110" fill="#2A8A6E" opacity="0.2"/>
+  <rect x="610" y="195" width="22" height="28" rx="2" fill="#2A8A6E" opacity="0.25"/>
+  <rect x="645" y="185" width="18" height="18" rx="2" fill="#2A8A6E" opacity="0.2"/>
+  <rect x="696" y="190" width="72" height="62" rx="2" fill="#1F6E57" opacity="0.12"/>
+  <polygon points="696,190 768,190 732,152" fill="#2A8A6E" opacity="0.16"/>
+  <rect x="722" y="215" width="16" height="22" rx="2" fill="#2A8A6E" opacity="0.2"/>
+  <rect x="56" y="180" width="86" height="78" rx="2" fill="#1F6E57" opacity="0.1"/>
+  <polygon points="56,180 142,180 99,138" fill="#2A8A6E" opacity="0.14"/>
+  <rect x="84" y="210" width="16" height="22" rx="2" fill="#2A8A6E" opacity="0.18"/>
+  <rect x="226" y="232" width="348" height="10" rx="4" fill="#2C3E50" opacity="0.25"/>
+  <rect x="238" y="128" width="324" height="210" rx="8" fill="#2C3E50"/>
+  <rect x="246" y="136" width="308" height="194" rx="4" fill="#1A2535"/>
+  <rect x="254" y="144" width="292" height="178" rx="3" fill="#0F1B2D"/>
+  <rect x="254" y="144" width="292" height="22" rx="3" fill="#2A8A6E"/>
+  <text x="270" y="160" fill="white" font-size="9" font-weight="600">DATE</text>
+  <text x="316" y="160" fill="white" font-size="9" font-weight="600">DESCRIPTION</text>
+  <text x="450" y="160" fill="white" font-size="9" font-weight="600">CATEGORY</text>
+  <text x="520" y="160" fill="white" font-size="9" font-weight="600">AMOUNT</text>
+  <rect x="254" y="166" width="292" height="18" fill="#0F1B2D"/>
+  <text x="270" y="179" fill="#4A5568" font-size="8">03 Jun</text>
+  <text x="316" y="179" fill="#B2DFCF" font-size="8">Rightmove letting</text>
+  <rect x="448" y="168" width="66" height="13" rx="3" fill="#1F3A2D"/>
+  <text x="451" y="179" fill="#2A8A6E" font-size="8">Prof. Fees</text>
+  <text x="522" y="179" fill="#E8F5F1" font-size="8">£120.00</text>
+  <rect x="254" y="184" width="292" height="18" fill="#0A1520"/>
+  <text x="270" y="197" fill="#4A5568" font-size="8">10 Jun</text>
+  <text x="316" y="197" fill="#B2DFCF" font-size="8">Plumber - 14 Oak St</text>
+  <rect x="448" y="186" width="62" height="13" rx="3" fill="#2C1F0A"/>
+  <text x="451" y="197" fill="#F59E0B" font-size="8">Repairs</text>
+  <text x="522" y="197" fill="#E8F5F1" font-size="8">£340.00</text>
+  <rect x="254" y="202" width="292" height="18" fill="#0F1B2D"/>
+  <text x="270" y="215" fill="#4A5568" font-size="8">15 Jun</text>
+  <text x="316" y="215" fill="#B2DFCF" font-size="8">Buildings insurance</text>
+  <rect x="448" y="204" width="64" height="13" rx="3" fill="#0D1F2D"/>
+  <text x="451" y="215" fill="#3B82F6" font-size="8">Insurance</text>
+  <text x="522" y="215" fill="#E8F5F1" font-size="8">£87.50</text>
+  <rect x="254" y="220" width="292" height="18" fill="#0A1520"/>
+  <text x="270" y="233" fill="#4A5568" font-size="8">22 Jun</text>
+  <text x="316" y="233" fill="#B2DFCF" font-size="8">Rental income</text>
+  <rect x="448" y="222" width="52" height="13" rx="3" fill="#0D2E1E"/>
+  <text x="451" y="233" fill="#34D399" font-size="8">Income</text>
+  <text x="522" y="233" fill="#34D399" font-size="8">£1,450.00</text>
+  <rect x="254" y="238" width="292" height="84" fill="#080E18" opacity="0.8"/>
+  <rect x="330" y="296" width="140" height="26" rx="4" fill="#2A8A6E"/>
+  <text x="400" y="313" text-anchor="middle" fill="white" font-size="10" font-weight="700">Export to 123 Sheets</text>
+  <rect x="490" y="186" width="52" height="76" rx="26" fill="#2C3E50"/>
+  <circle cx="516" cy="172" r="26" fill="#F5CBA7"/>
+  <rect x="492" y="154" width="48" height="22" rx="12" fill="#2C3E50"/>
+  <rect x="498" y="216" width="36" height="16" rx="4" fill="#1A6FA8"/>
+  <rect x="445" y="210" width="52" height="12" rx="6" fill="#2C3E50"/>
+  <circle cx="450" cy="216" r="7" fill="#F5CBA7"/>
+  <rect x="540" y="120" width="186" height="56" rx="10" fill="white" stroke="#2A8A6E" stroke-width="1.5"/>
+  <polygon points="542,152 556,152 548,164" fill="white"/>
+  <polygon points="542,150 556,150 548,162" fill="#2A8A6E"/>
+  <text x="556" y="140" fill="#2C3E50" font-size="11" font-weight="600">Q2 records done</text>
+  <text x="556" y="158" fill="#4A5568" font-size="10">Ready to submit to HMRC</text>
+  <rect x="0" y="390" width="800" height="30" fill="#2A8A6E"/>
+  <text x="400" y="409" text-anchor="middle" fill="white" font-size="12" font-weight="700">MTDPrep - MTD compliance for landlords, without the accounting software</text>
+</svg>
