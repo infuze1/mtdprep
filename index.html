@@ -412,9 +412,8 @@
     <div class="form-wrap">
       <form
         id="mc-form"
-        action="https://mtdprep.us17.list-manage.com/subscribe/post?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0"
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
         method="post"
-        target="_blank"
         novalidate
       >
         <div class="form-row">
@@ -448,24 +447,41 @@
 </footer>
 
 <script>
-  document.getElementById('mc-form').addEventListener('submit', function(e) {
-    document.getElementById('thankyou').style.display = 'block';
-    this.style.display = 'none';
-  });
-</script>
+  function mcAjaxSubmit(form, thankyou) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
 
-<script>
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('mc-form');
-    if (form) {
-      form.addEventListener('submit', function() {
-        gtag('event', 'generate_lead', {
-          'event_category': 'email_signup',
-          'event_label': 'waitlist_form'
-        });
-        gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
-      });
-    }
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
   });
 </script>
 
