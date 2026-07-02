@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" style="font-family:'Segoe UI',Arial,sans-serif;">
+  <title>Sole trader using MTD bridging software to submit tax records to HMRC</title>
+  <rect width="800" height="420" fill="#E8F5F1"/>
+  <rect x="226" y="232" width="348" height="10" rx="4" fill="#2C3E50" opacity="0.25"/>
+  <rect x="238" y="128" width="324" height="210" rx="8" fill="#2C3E50"/>
+  <rect x="246" y="136" width="308" height="194" rx="4" fill="#1A2535"/>
+  <rect x="254" y="144" width="292" height="178" rx="3" fill="#0F1B2D"/>
+  <rect x="254" y="144" width="292" height="22" rx="3" fill="#2A8A6E"/>
+  <text x="270" y="160" fill="white" font-size="9" font-weight="600">DATE</text>
+  <text x="316" y="160" fill="white" font-size="9" font-weight="600">DESCRIPTION</text>
+  <text x="450" y="160" fill="white" font-size="9" font-weight="600">CATEGORY</text>
+  <text x="522" y="160" fill="white" font-size="9" font-weight="600">AMOUNT</text>
+  <rect x="254" y="166" width="292" height="18" fill="#0F1B2D"/>
+  <text x="270" y="179" fill="#4A5568" font-size="8">03 Jun</text>
+  <text x="316" y="179" fill="#B2DFCF" font-size="8">Office supplies</text>
+  <rect x="448" y="168" width="56" height="13" rx="3" fill="#1F3A2D"/>
+  <text x="451" y="179" fill="#2A8A6E" font-size="8">Office</text>
+  <text x="522" y="179" fill="#E8F5F1" font-size="8">£42.00</text>
+  <rect x="254" y="184" width="292" height="18" fill="#0A1520"/>
+  <text x="270" y="197" fill="#4A5568" font-size="8">10 Jun</text>
+  <text x="316" y="197" fill="#B2DFCF" font-size="8">Fuel - works van</text>
+  <rect x="448" y="186" width="56" height="13" rx="3" fill="#2C1F0A"/>
+  <text x="451" y="197" fill="#F59E0B" font-size="8">Motor</text>
+  <text x="522" y="197" fill="#E8F5F1" font-size="8">£68.20</text>
+  <rect x="254" y="202" width="292" height="18" fill="#0F1B2D"/>
+  <text x="270" y="215" fill="#4A5568" font-size="8">15 Jun</text>
+  <text x="316" y="215" fill="#B2DFCF" font-size="8">Client invoice paid</text>
+  <rect x="448" y="204" width="56" height="13" rx="3" fill="#0D2E1E"/>
+  <text x="451" y="215" fill="#34D399" font-size="8">Income</text>
+  <text x="522" y="215" fill="#34D399" font-size="8">£860.00</text>
+  <rect x="254" y="220" width="292" height="18" fill="#0A1520"/>
+  <text x="270" y="233" fill="#4A5568" font-size="8">22 Jun</text>
+  <text x="316" y="233" fill="#B2DFCF" font-size="8">Accountant fee</text>
+  <rect x="448" y="222" width="56" height="13" rx="3" fill="#0D1F2D"/>
+  <text x="451" y="233" fill="#3B82F6" font-size="8">Fees</text>
+  <text x="522" y="233" fill="#E8F5F1" font-size="8">£150.00</text>
+  <rect x="254" y="238" width="292" height="84" fill="#080E18" opacity="0.8"/>
+  <rect x="330" y="296" width="140" height="26" rx="4" fill="#2A8A6E"/>
+  <text x="400" y="313" text-anchor="middle" fill="white" font-size="10" font-weight="700">Digitally linked</text>
+  <rect x="490" y="186" width="52" height="76" rx="26" fill="#2C3E50"/>
+  <circle cx="516" cy="172" r="26" fill="#F5CBA7"/>
+  <rect x="492" y="154" width="48" height="22" rx="12" fill="#2C3E50"/>
+  <rect x="498" y="216" width="36" height="16" rx="4" fill="#1A6FA8"/>
+  <rect x="445" y="210" width="52" height="12" rx="6" fill="#2C3E50"/>
+  <circle cx="450" cy="216" r="7" fill="#F5CBA7"/>
+  <g>
+    <rect x="596" y="176" width="34" height="20" rx="10" fill="none" stroke="#2A8A6E" stroke-width="4" transform="rotate(-20 613 186)"/>
+    <rect x="618" y="192" width="34" height="20" rx="10" fill="none" stroke="#1F6E57" stroke-width="4" transform="rotate(-20 635 202)"/>
+    <text x="624" y="230" text-anchor="middle" fill="#2C3E50" font-size="11" font-weight="600">Digital link</text>
+  </g>
+  <rect x="690" y="150" width="78" height="98" rx="4" fill="white" stroke="#2A8A6E" stroke-width="2"/>
+  <line x1="702" y1="170" x2="756" y2="170" stroke="#D1DCE6" stroke-width="2"/>
+  <line x1="702" y1="184" x2="756" y2="184" stroke="#D1DCE6" stroke-width="2"/>
+  <line x1="702" y1="198" x2="740" y2="198" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="729" cy="222" r="16" fill="#2A8A6E"/>
+  <polyline points="722,222 727,228 738,215" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="729" y="265" text-anchor="middle" fill="#2C3E50" font-size="11" font-weight="600">Submitted to HMRC</text>
+  <rect x="540" y="80" width="240" height="56" rx="10" fill="white" stroke="#2A8A6E" stroke-width="1.5"/>
+  <polygon points="542,112 556,112 548,124" fill="white"/>
+  <polygon points="542,110 556,110 548,122" fill="#2A8A6E"/>
+  <text x="556" y="100" fill="#2C3E50" font-size="11" font-weight="600">Ready for bridging software</text>
+  <text x="556" y="118" fill="#4A5568" font-size="10">123 Sheets · Absolute Excel · VT</text>
+  <rect x="0" y="390" width="800" height="30" fill="#2A8A6E"/>
+  <text x="400" y="409" text-anchor="middle" fill="white" font-size="12" font-weight="700">MTDPrep - clean, categorised records ready for your bridging software</text>
+</svg>

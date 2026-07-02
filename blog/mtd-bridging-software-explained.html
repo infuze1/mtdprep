@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTD Bridging Software: 123 Sheets vs Absolute vs VT | MTDPrep</title>
+  <meta name="description" content="What is MTD bridging software, do you need it, and how do 123 Sheets, Absolute Excel and VT compare? A guide for UK sole traders and landlords.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mtdprep.co.uk/blog/mtd-bridging-software-explained.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is bridging software the same as accounting software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Accounting software manages your entire bookkeeping and submits directly. Bridging software takes figures you've already recorded, typically in a spreadsheet, and submits them to HMRC in Making Tax Digital's required format."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I have to use bridging software if my accountant handles my tax return?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your accountant keeps your digital records and submits on your behalf using their own software, you don't need your own bridging software. If you keep your own spreadsheet, one of you still needs bridging software to make the MTD submission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is MTD bridging software free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. 123 Sheets, Absolute Excel and VT are all paid products, though they are substantially cheaper than full accounting platforms because they only handle the submission step."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch bridging software partway through the tax year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, in principle, since bridging software submits per quarter. In practice it is simpler to pick one HMRC-recognised tool for the full tax year to avoid re-entering historical data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does MTD bridging software work for both VAT and Income Tax?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many bridging tools, including 123 Sheets and VT, support both MTD for VAT and MTD for Income Tax, but this varies by product and package, so it should be checked directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a spreadsheet plus bridging software still compliant under MTD ITSA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. HMRC does not require accounting software. It requires digital records and a digitally linked, HMRC-recognised submission method, which a spreadsheet combined with bridging software satisfies."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.94rem;
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table th {
+      background: var(--bg);
+      color: var(--slate);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .data-table td { color: var(--slate-mid); }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+      .data-table { font-size: 0.84rem; }
+      .data-table th, .data-table td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>MTD Bridging Software Explained: What It Is and Whether You Need It</h1>
+    <p class="article-meta">Published 1 July 2026 · 7 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-4/sole-trader-using-mtd-bridging-software-to-submit-tax-records-to-hmrc.svg" alt="Sole trader using MTD bridging software to submit tax records to HMRC" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>If you've started researching Making Tax Digital, you've probably run into the term "bridging software" without a clear explanation of what it actually does. It sounds like another piece of accounting software to buy — but for most sole traders and landlords who already work in a spreadsheet, it's the opposite: it's what lets you keep using that spreadsheet at all.</p>
+    <p>This guide explains what MTD bridging software is, whether you need it, how the three most widely used options — 123 Sheets, Absolute Excel and VT — compare, and what bridging software doesn't do for you.</p>
+
+    <h2>What is MTD bridging software?</h2>
+    <p><strong>Bridging software is HMRC-recognised software that takes the figures from your existing digital records — usually a spreadsheet — and submits them to HMRC in the format Making Tax Digital requires.</strong></p>
+    <p>It doesn't replace your record-keeping. It sits between your records and HMRC, reading the totals your spreadsheet has already calculated and transmitting them through HMRC's Making Tax Digital API. If you keep your income and expenses in Excel or Google Sheets and don't want to migrate to a full accounting platform, bridging software is what makes that spreadsheet MTD-compliant.</p>
+    <p>For MTD ITSA, this matters for both quarterly updates and the End of Period Statement — all of it has to be submitted through software that has passed HMRC's recognition process, not by typing figures into a government portal by hand.</p>
+
+    <h2>Do you need bridging software for Making Tax Digital?</h2>
+    <p><strong>Yes, unless you use an all-in-one accounting platform that submits directly.</strong> If any part of your record-keeping happens in a spreadsheet, you will need bridging software to get those figures to HMRC.</p>
+    <p>Sole traders and landlords fall into two broad groups under MTD ITSA:</p>
+    <p>Those who move their entire record-keeping into a subscription accounting platform, which submits on their behalf as part of the subscription. And those who keep records the way they already do — in a spreadsheet, or in a tool that exports to one — and use bridging software purely for the submission step.</p>
+    <p>The second route is significantly cheaper and requires no change to how you already track income and expenses. It's why bridging software has remained popular even as full accounting suites have pushed hard to convert spreadsheet users.</p>
+
+    <h2>What is the "digital link" requirement — and why does it matter?</h2>
+    <p><strong>HMRC requires an unbroken digital link between where your transaction data originates and where it gets submitted — meaning no retyping figures by hand at any stage.</strong></p>
+
+    <img src="/images/blog/post-4/digital-link-diagram-hmrc.svg" alt="Digital link diagram showing how spreadsheet records flow to HMRC through bridging software" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>This is the rule that trips people up. If you extract data from a bank statement and manually type totals into your bridging software's template, that's a broken digital link — even though the final submission looks identical to HMRC. The data has to move electronically: copy-paste between two applications doesn't count as a digital link, but an electronic transfer, a linked cell, or a direct import does.</p>
+    <p>In practice, this means the messiest part of MTD compliance isn't the submission — it's getting your original transaction data into digital form in the first place, in a way that stays digitally linked all the way through to your bridging software.</p>
+
+    <h2>123 Sheets vs Absolute Excel vs VT: how do they compare?</h2>
+
+    <img src="/images/blog/post-4/comparison-123-sheets-absolute-excel-vt.svg" alt="Comparison of 123 Sheets Absolute Excel and VT bridging software features" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>All three are HMRC-recognised bridging tools built around spreadsheet workflows, but they take different approaches:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Software</th><th>How it works</th><th>Best suited to</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>123 Sheets</strong></td><td>Provides its own pre-built Excel template with submission macros built in — you enter figures into their format rather than linking your own spreadsheet</td><td>Sole traders and landlords happy to adopt a ready-made template rather than keep a custom spreadsheet</td></tr>
+        <tr><td><strong>Absolute Excel</strong></td><td>Works alongside your existing Excel spreadsheet without requiring you to change your layout — submits quarterly updates directly from Excel</td><td>People with an established spreadsheet they don't want to rebuild, and who want to keep everything inside Excel</td></tr>
+        <tr><td><strong>VT</strong></td><td>Desktop software combining a lightweight bookkeeping module with MTD submission — a step up from a pure bridging tool but still far lighter than a full accounting suite</td><td>Sole traders and landlords who want basic structured bookkeeping alongside the MTD submission step</td></tr>
+      </tbody>
+    </table>
+
+    <p>None of the three tell you how to categorise a bank transaction correctly, and none of them read a PDF bank statement — they all assume you're arriving with figures that are already correct and already totalled. That's the gap they leave for you to fill yourself.</p>
+
+    <h2>What bridging software doesn't do</h2>
+    <p>Bridging software solves the last step of MTD compliance: getting correctly formatted figures to HMRC. It does not solve the first and hardest step: turning raw bank transactions into correctly categorised digital records.</p>
+    <p>If your bank statements arrive as a PDF rather than a clean export, you're still left doing the same manual work MTD was meant to reduce — reading each transaction, deciding whether it's Motor, Office, Repairs, Professional Fees or one of HMRC's other expense categories, and typing it into a spreadsheet by hand before any bridging software ever sees it.</p>
+    <p>That's the part MTDPrep is built to handle.</p>
+
+    <div class="mid-cta">
+      <h3>Want your records ready before your bridging software needs them?</h3>
+      <p>MTDPrep reads your HSBC bank statement PDF, categorises every transaction into HMRC-compliant expense categories, and exports a spreadsheet formatted for 123 Sheets, Absolute Excel or VT — with a clean digital link all the way through. Founders get 3 months completely free.</p>
+      <div class="form-wrap" style="margin: 0 auto; text-align: left;">
+        <form
+          id="mc-form-mid"
+          action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+          method="post"
+          novalidate
+        >
+          <div class="form-row">
+            <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Join the waitlist</button>
+          </div>
+          <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+          <!-- Mailchimp bot protection — do not remove -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+          </div>
+          <p class="form-note" style="color: var(--slate-light);">No card required. No spam.</p>
+        </form>
+        <div class="thankyou" id="thankyou-mid" role="alert" style="color: var(--slate); background: var(--green-light); border-color: var(--green);">
+          <strong>You're on the list! 🎉</strong>
+          We'll be in touch before launch.
+        </div>
+      </div>
+    </div>
+
+    <h2>How MTDPrep fits alongside your bridging software</h2>
+
+    <img src="/images/blog/post-4/mtdprep-bridging-software-workflow.svg" alt="How MTDPrep prepares bank statement records for MTD bridging software" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>MTDPrep doesn't replace 123 Sheets, Absolute Excel or VT — it prepares the records they need, so the submission step is a formality rather than an afternoon of data entry.</p>
+    <p><strong>Step 1 — Upload your bank statement PDF.</strong> No CSV export, no Open Banking connection. Just the PDF statement you already download.</p>
+    <p><strong>Step 2 — AI categorises every transaction.</strong> Each transaction is matched to the correct HMRC expense category automatically — Income, Motor, Office, Repairs, Professional Fees, and the rest.</p>
+    <p><strong>Step 3 — Review and correct.</strong> You check the categorisation and fix anything that needs adjusting, in a few clicks rather than a spreadsheet full of manual entry.</p>
+    <p><strong>Step 4 — Export straight into your bridging software.</strong> Download a spreadsheet formatted for direct use with 123 Sheets, Absolute Excel or VT, keeping the digital link intact from bank statement to submission.</p>
+
+    <h2>Frequently asked questions about MTD bridging software</h2>
+    <p><em>This section answers the questions people most commonly ask about bridging software — including the ones AI search tools are asked directly.</em></p>
+
+    <h3>Is bridging software the same as accounting software?</h3>
+    <p>No. Accounting software (full platforms) manages your entire bookkeeping and submits directly. Bridging software does one job — it takes figures you've already recorded, typically in a spreadsheet, and submits them to HMRC in MTD's required format.</p>
+
+    <h3>Do I have to use bridging software if my accountant handles my tax return?</h3>
+    <p>If your accountant keeps your digital records and submits on your behalf using their own software, you don't need your own bridging software. If you keep your own spreadsheet and hand your accountant the figures, one of you still needs bridging software to make the actual MTD submission — check with your accountant which approach they use.</p>
+
+    <h3>Is bridging software free?</h3>
+    <p>No. 123 Sheets, Absolute Excel and VT are all paid products, though they're substantially cheaper than full accounting platforms because they only handle the submission step rather than complete bookkeeping.</p>
+
+    <h3>Can I switch bridging software partway through the tax year?</h3>
+    <p>Yes, in principle — bridging software submits per quarter, so you can change providers between submissions. In practice it's simpler to pick one HMRC-recognised tool for the full tax year to avoid re-entering historical data.</p>
+
+    <h3>Does bridging software work for both VAT and Income Tax?</h3>
+    <p>Many bridging tools, including 123 Sheets and VT, support both MTD for VAT and MTD for Income Tax, but always check the specific product and package — not every tier covers both.</p>
+
+    <h3>Is a spreadsheet plus bridging software still compliant under MTD ITSA?</h3>
+    <p>Yes. HMRC does not require accounting software — it requires digital records and a digitally linked, HMRC-recognised submission method. A spreadsheet with bridging software fully satisfies that requirement.</p>
+
+    <h3>Why can't I just email HMRC my spreadsheet instead of using bridging software?</h3>
+    <p>HMRC only accepts MTD submissions through software that has passed its recognition process and connects via the Making Tax Digital API. Emailing a spreadsheet or entering figures through a general portal doesn't meet the digital link or submission requirements.</p>
+
+    <h2>The bottom line</h2>
+    <p>Bridging software is the cheapest, least disruptive way to meet Making Tax Digital's submission requirement if you already work in a spreadsheet — and 123 Sheets, Absolute Excel and VT are all solid, HMRC-recognised options depending on how you want your spreadsheet to work. What none of them do is turn a messy bank statement into clean, categorised digital records in the first place. That's the step worth solving before your first quarterly deadline, not during it.</p>
+
+    <p class="related-links">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/making-tax-digital-landlords.html">Making Tax Digital for Landlords</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Coming soon</p>
+    <h2>Get your records bridging-software-ready before your first deadline</h2>
+    <p class="capture-sub">Join the MTDPrep waitlist and get 3 months free when we launch. Built for sole traders and landlords who want MTD compliance without the software overhead.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with your founders discount code before we launch.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/#">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</p>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+    mcAjaxSubmit(document.getElementById('mc-form-mid'), document.getElementById('thankyou-mid'));
+  });
+</script>
+
+</body>
+</html>

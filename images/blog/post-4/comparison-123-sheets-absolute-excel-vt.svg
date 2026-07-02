@@ -1,0 +1,53 @@
+<svg viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg" style="font-family:'Segoe UI',Arial,sans-serif;background:#F8FAFC;">
+  <title>Comparison of 123 Sheets Absolute Excel and VT bridging software features</title>
+  <rect width="800" height="430" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2A8A6E"/>
+  <text x="400" y="28" text-anchor="middle" fill="white" font-size="12" font-weight="600" letter-spacing="1.5">MTD BRIDGING SOFTWARE COMPARISON</text>
+  <text x="400" y="54" text-anchor="middle" fill="#B2DFCF" font-size="19" font-weight="700">123 Sheets vs Absolute Excel vs VT</text>
+
+  <rect x="30" y="92" width="220" height="210" rx="10" fill="white" stroke="#2A8A6E" stroke-width="2"/>
+  <rect x="30" y="92" width="220" height="8" rx="4" fill="#2A8A6E"/>
+  <text x="140" y="124" text-anchor="middle" fill="#2A8A6E" font-size="17" font-weight="800">123 Sheets</text>
+  <line x1="46" y1="134" x2="234" y2="134" stroke="#D1DCE6" stroke-width="1"/>
+  <text x="140" y="150" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="700" letter-spacing="1">HOW IT WORKS</text>
+  <text x="140" y="166" text-anchor="middle" fill="#2C3E50" font-size="11">Provides its own pre-built</text>
+  <text x="140" y="180" text-anchor="middle" fill="#2C3E50" font-size="11">Excel template with</text>
+  <text x="140" y="194" text-anchor="middle" fill="#2C3E50" font-size="11">submission macros built in</text>
+  <text x="140" y="212" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="700" letter-spacing="1">BEST FOR</text>
+  <text x="140" y="228" text-anchor="middle" fill="#4A5568" font-size="11">Sole traders who want a</text>
+  <text x="140" y="242" text-anchor="middle" fill="#4A5568" font-size="11">ready-made template rather</text>
+  <text x="140" y="256" text-anchor="middle" fill="#4A5568" font-size="11">than a custom spreadsheet</text>
+
+  <rect x="290" y="92" width="220" height="210" rx="10" fill="white" stroke="#1A6FA8" stroke-width="2"/>
+  <rect x="290" y="92" width="220" height="8" rx="4" fill="#1A6FA8"/>
+  <text x="400" y="124" text-anchor="middle" fill="#1A6FA8" font-size="17" font-weight="800">Absolute Excel</text>
+  <line x1="306" y1="134" x2="494" y2="134" stroke="#D1DCE6" stroke-width="1"/>
+  <text x="400" y="150" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="700" letter-spacing="1">HOW IT WORKS</text>
+  <text x="400" y="166" text-anchor="middle" fill="#2C3E50" font-size="11">Works alongside your</text>
+  <text x="400" y="180" text-anchor="middle" fill="#2C3E50" font-size="11">existing spreadsheet -</text>
+  <text x="400" y="194" text-anchor="middle" fill="#2C3E50" font-size="11">submits directly from Excel</text>
+  <text x="400" y="212" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="700" letter-spacing="1">BEST FOR</text>
+  <text x="400" y="228" text-anchor="middle" fill="#4A5568" font-size="11">Keeps your existing Excel</text>
+  <text x="400" y="242" text-anchor="middle" fill="#4A5568" font-size="11">layout - no rebuilding,</text>
+  <text x="400" y="256" text-anchor="middle" fill="#4A5568" font-size="11">submit straight from it</text>
+
+  <rect x="550" y="92" width="220" height="210" rx="10" fill="white" stroke="#1F6E57" stroke-width="2"/>
+  <rect x="550" y="92" width="220" height="8" rx="4" fill="#1F6E57"/>
+  <text x="660" y="124" text-anchor="middle" fill="#1F6E57" font-size="17" font-weight="800">VT</text>
+  <line x1="566" y1="134" x2="754" y2="134" stroke="#D1DCE6" stroke-width="1"/>
+  <text x="660" y="150" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="700" letter-spacing="1">HOW IT WORKS</text>
+  <text x="660" y="166" text-anchor="middle" fill="#2C3E50" font-size="11">Desktop software combining</text>
+  <text x="660" y="180" text-anchor="middle" fill="#2C3E50" font-size="11">light bookkeeping with</text>
+  <text x="660" y="194" text-anchor="middle" fill="#2C3E50" font-size="11">MTD submission built in</text>
+  <text x="660" y="212" text-anchor="middle" fill="#4A5568" font-size="10" font-weight="700" letter-spacing="1">BEST FOR</text>
+  <text x="660" y="228" text-anchor="middle" fill="#4A5568" font-size="11">Traders who want basic</text>
+  <text x="660" y="242" text-anchor="middle" fill="#4A5568" font-size="11">bookkeeping structure</text>
+  <text x="660" y="256" text-anchor="middle" fill="#4A5568" font-size="11">alongside MTD submission</text>
+
+  <rect x="160" y="320" width="480" height="76" rx="8" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="400" y="344" text-anchor="middle" fill="#1F6E57" font-size="13" font-weight="700">The gap all three share</text>
+  <text x="400" y="364" text-anchor="middle" fill="#4A5568" font-size="11">None of them read a PDF bank statement or</text>
+  <text x="400" y="380" text-anchor="middle" fill="#4A5568" font-size="11">categorise transactions - MTDPrep handles that first</text>
+
+  <text x="768" y="418" text-anchor="end" fill="#D1DCE6" font-size="10">mtdprep.co.uk</text>
+</svg>
