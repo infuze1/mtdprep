@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | MTDPrep</title>
+  <meta name="description" content="How MTDPrep collects, uses, and protects your personal data, including waitlist sign-ups and site analytics.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mtdprep.co.uk/privacy.html">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .page-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .page-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+    .page-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── BODY ── */
+    .page-body { background: var(--white); padding: 48px 24px 56px; }
+    .page-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .page-inner h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 32px 0 12px;
+      letter-spacing: -0.2px;
+    }
+    .page-inner h2:first-child { margin-top: 0; }
+    .page-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .page-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .page-inner li { margin-bottom: 8px; }
+    .page-inner strong { color: var(--slate); }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.94rem;
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .data-table th {
+      background: var(--bg);
+      color: var(--slate);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .data-table td { color: var(--slate-mid); }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+    .footer-badge { margin-top: 20px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .page-header { padding: 40px 20px 40px; }
+      .page-body { padding: 40px 20px 44px; }
+      .data-table { font-size: 0.84rem; }
+      .data-table th, .data-table td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1>Privacy Policy</h1>
+    <p class="page-meta">Last updated 2 July 2026</p>
+  </div>
+</header>
+
+<!-- BODY -->
+<article class="page-body">
+  <div class="page-inner">
+
+    <p>MTDPrep ("we", "us", "our") is a pre-launch product operated from the UK. This policy explains what personal data we collect through mtdprep.co.uk, why we collect it, and what rights you have over it. We built this site to be a simple waitlist page, so the data we collect is deliberately limited.</p>
+
+    <h2>Who we are</h2>
+    <p>MTDPrep is an independent product built for UK sole traders and landlords preparing for Making Tax Digital. We are not a data processor for HMRC and are not affiliated with or endorsed by HMRC. If you have any questions about this policy or how your data is handled, you can contact us at <a href="mailto:hello@mtdprep.co.uk">hello@mtdprep.co.uk</a>.</p>
+
+    <h2>What data we collect</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>What</th><th>When</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Email address</td><td>When you join the waitlist</td><td>To notify you when MTDPrep launches and send your founders discount code</td></tr>
+        <tr><td>Usage data (pages viewed, device/browser type, approximate location)</td><td>Automatically, while browsing the site</td><td>To understand how the site is used, via Google Analytics</td></tr>
+        <tr><td>Advertising identifiers and conversion events</td><td>Automatically, if you arrive via a Google Ads campaign</td><td>To measure whether our ads are effective, via Google Ads</td></tr>
+      </tbody>
+    </table>
+    <p>We do not collect bank statements, financial records, or any HMRC-related data through this website. MTDPrep the product is not yet live — this site is a waitlist only.</p>
+
+    <h2>How we use your email address</h2>
+    <p>When you submit your email through one of our sign-up forms, it is sent directly to our email marketing provider, Mailchimp, and stored on a waitlist. We use it to:</p>
+    <ul>
+      <li>Let you know when MTDPrep launches</li>
+      <li>Send your founders discount code</li>
+      <li>Occasionally share relevant updates about Making Tax Digital or MTDPrep's progress</li>
+    </ul>
+    <p>We do not sell, rent, or share your email address with third parties for their own marketing purposes. Every email we send includes an unsubscribe link, and you can opt out at any time.</p>
+
+    <h2>Cookies and analytics</h2>
+    <p>This site uses Google Analytics (GA4) and Google Ads to understand site traffic and measure the effectiveness of our marketing. These services may set cookies or use similar technologies to distinguish you from other visitors and to track ad conversions. This data is aggregated and used for analytics purposes — we do not use it to individually identify you.</p>
+    <p>You can control or disable cookies through your browser settings. Doing so may affect how the site behaves but will not prevent you from joining the waitlist.</p>
+
+    <h2>Who we share data with</h2>
+    <p>We use a small number of third-party services to run this site and process the data described above:</p>
+    <ul>
+      <li><strong>Mailchimp</strong> — stores and manages waitlist email addresses</li>
+      <li><strong>Google Analytics</strong> — site usage analytics</li>
+      <li><strong>Google Ads</strong> — advertising conversion tracking</li>
+      <li><strong>Vercel</strong> — hosts this website</li>
+    </ul>
+    <p>Each of these providers processes data under their own privacy policies and may store data outside the UK/EEA under appropriate safeguards (such as standard contractual clauses).</p>
+
+    <div class="callout">
+      We keep the list of third parties above deliberately short. If that changes — for example, when the MTDPrep product itself launches and starts processing uploaded bank statements — we will update this policy and, where required, ask for your consent again.
+    </div>
+
+    <h2>How long we keep your data</h2>
+    <p>We keep waitlist email addresses until you unsubscribe or until launch-related communications are complete, whichever is longer. Analytics data is retained according to Google's default retention settings, which you can review in Google's own privacy documentation.</p>
+
+    <h2>Your rights</h2>
+    <p>Under UK GDPR, you have the right to:</p>
+    <ul>
+      <li>Ask what personal data we hold about you</li>
+      <li>Ask us to correct inaccurate data</li>
+      <li>Ask us to delete your data (for example, remove you from the waitlist)</li>
+      <li>Withdraw consent to marketing emails at any time</li>
+      <li>Complain to the UK Information Commissioner's Office (ICO) if you believe your data has been mishandled</li>
+    </ul>
+    <p>To exercise any of these rights, email <a href="mailto:hello@mtdprep.co.uk">hello@mtdprep.co.uk</a> or use the unsubscribe link in any email we send you.</p>
+
+    <h2>Children's privacy</h2>
+    <p>MTDPrep is a product for UK sole traders and landlords and is not directed at children. We do not knowingly collect personal data from anyone under 18.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy as the site and product evolve — particularly once MTDPrep launches and begins processing uploaded documents. Material changes will be reflected on this page with an updated "last updated" date.</p>
+
+    <p style="margin-top:28px;"><a href="/" class="back-link">← Back to MTDPrep</a></p>
+
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="footer-badge">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
