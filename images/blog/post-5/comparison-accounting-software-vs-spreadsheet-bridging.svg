@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="640" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="64" fill="#2A8A6E"/>
+  <text x="30" y="40" font-size="20" fill="#FFFFFF" font-weight="600">Two Paths to Making Tax Digital Compliance</text>
+
+  <!-- Left column: Full accounting platform -->
+  <rect x="40" y="96" width="340" height="500" rx="10" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <rect x="40" y="96" width="340" height="52" rx="10" fill="#1A6FA8"/>
+  <rect x="40" y="122" width="340" height="26" fill="#1A6FA8"/>
+  <text x="210" y="129" font-size="16" fill="#FFFFFF" font-weight="700" text-anchor="middle">Full accounting platform</text>
+
+  <text x="62" y="182" font-size="13" fill="#4A5568" font-weight="700">WHAT IT INVOLVES</text>
+  <text x="62" y="204" font-size="13" fill="#2C3E50">Migrate all record-keeping into</text>
+  <text x="62" y="222" font-size="13" fill="#2C3E50">a subscription platform, which</text>
+  <text x="62" y="240" font-size="13" fill="#2C3E50">submits directly to HMRC</text>
+
+  <text x="62" y="278" font-size="13" fill="#4A5568" font-weight="700">TYPICAL MONTHLY COST</text>
+  <text x="62" y="300" font-size="13" fill="#2C3E50">Higher — scales with invoicing,</text>
+  <text x="62" y="318" font-size="13" fill="#2C3E50">payroll and bank-feed features</text>
+
+  <text x="62" y="356" font-size="13" fill="#4A5568" font-weight="700">SETUP EFFORT</text>
+  <text x="62" y="378" font-size="13" fill="#2C3E50">Significant — historic data</text>
+  <text x="62" y="396" font-size="13" fill="#2C3E50">migration, new interface to learn</text>
+
+  <text x="62" y="434" font-size="13" fill="#4A5568" font-weight="700">BEST SUITED TO</text>
+  <text x="62" y="456" font-size="13" fill="#2C3E50">Businesses that want full</text>
+  <text x="62" y="474" font-size="13" fill="#2C3E50">bookkeeping or have complex,</text>
+  <text x="62" y="492" font-size="13" fill="#2C3E50">multi-user needs</text>
+
+  <!-- Right column: Spreadsheet + bridging software -->
+  <rect x="420" y="96" width="340" height="500" rx="10" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2.5"/>
+  <rect x="420" y="96" width="340" height="52" rx="10" fill="#2A8A6E"/>
+  <rect x="420" y="122" width="340" height="26" fill="#2A8A6E"/>
+  <text x="590" y="129" font-size="16" fill="#FFFFFF" font-weight="700" text-anchor="middle">Spreadsheet + Bridging</text>
+
+  <text x="442" y="182" font-size="13" fill="#4A5568" font-weight="700">WHAT IT INVOLVES</text>
+  <text x="442" y="204" font-size="13" fill="#2C3E50">Keep records in Excel or Google</text>
+  <text x="442" y="222" font-size="13" fill="#2C3E50">Sheets as before, use bridging</text>
+  <text x="442" y="240" font-size="13" fill="#2C3E50">software only for submission</text>
+
+  <text x="442" y="278" font-size="13" fill="#4A5568" font-weight="700">TYPICAL MONTHLY COST</text>
+  <text x="442" y="300" font-size="13" fill="#2C3E50">Lower — pay for the submission</text>
+  <text x="442" y="318" font-size="13" fill="#2C3E50">function alone, e.g. 123 Sheets,</text>
+  <text x="442" y="336" font-size="13" fill="#2C3E50">Absolute Excel, VT</text>
+
+  <text x="442" y="374" font-size="13" fill="#4A5568" font-weight="700">SETUP EFFORT</text>
+  <text x="442" y="396" font-size="13" fill="#2C3E50">Minimal — your existing</text>
+  <text x="442" y="414" font-size="13" fill="#2C3E50">spreadsheet stays as it is</text>
+
+  <text x="442" y="452" font-size="13" fill="#4A5568" font-weight="700">BEST SUITED TO</text>
+  <text x="442" y="474" font-size="13" fill="#2C3E50">Sole traders and landlords</text>
+  <text x="442" y="492" font-size="13" fill="#2C3E50">comfortable in a spreadsheet who</text>
+  <text x="442" y="510" font-size="13" fill="#2C3E50">don't want unused features</text>
+
+  <rect x="442" y="536" width="296" height="40" rx="20" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="590" y="561" font-size="12.5" fill="#1F6E57" font-weight="600" text-anchor="middle">Most common for sole traders</text>
+
+  <text x="770" y="628" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

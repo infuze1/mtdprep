@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="560" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="64" fill="#2A8A6E"/>
+  <text x="30" y="40" font-size="20" fill="#FFFFFF" font-weight="600">What Making Tax Digital Software Must Actually Do</text>
+
+  <!-- Item 1 -->
+  <rect x="40" y="96" width="720" height="98" rx="10" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="90" cy="145" r="24" fill="#2A8A6E"/>
+  <path d="M79 145 l8 8 l16 -18" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="135" y="132" font-size="15.5" fill="#2C3E50" font-weight="700">Keep digital records</text>
+  <text x="135" y="154" font-size="13" fill="#4A5568">Income and expenses recorded digitally from the point</text>
+  <text x="135" y="172" font-size="13" fill="#4A5568">they're first entered — not scribbled on paper first</text>
+
+  <!-- Item 2 -->
+  <rect x="40" y="206" width="720" height="98" rx="10" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="90" cy="255" r="24" fill="#2A8A6E"/>
+  <path d="M79 255 l8 8 l16 -18" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="135" y="242" font-size="15.5" fill="#2C3E50" font-weight="700">Send quarterly updates</text>
+  <text x="135" y="264" font-size="13" fill="#4A5568">Four submissions a year to HMRC through compatible</text>
+  <text x="135" y="282" font-size="13" fill="#4A5568">software, rather than one Self Assessment return</text>
+
+  <!-- Item 3 -->
+  <rect x="40" y="316" width="720" height="98" rx="10" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="90" cy="365" r="24" fill="#2A8A6E"/>
+  <path d="M79 365 l8 8 l16 -18" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="135" y="352" font-size="15.5" fill="#2C3E50" font-weight="700">Maintain a digital link</text>
+  <text x="135" y="374" font-size="13" fill="#4A5568">Figures move electronically from source to submission —</text>
+  <text x="135" y="392" font-size="13" fill="#4A5568">no manually retyping numbers between tools</text>
+
+  <!-- Item 4 -->
+  <rect x="40" y="426" width="720" height="98" rx="10" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="90" cy="475" r="24" fill="#2A8A6E"/>
+  <path d="M79 475 l8 8 l16 -18" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="135" y="462" font-size="15.5" fill="#2C3E50" font-weight="700">Submit via HMRC-recognised software</text>
+  <text x="135" y="484" font-size="13" fill="#4A5568">Only products on HMRC's approved list can make MTD ITSA</text>
+  <text x="135" y="502" font-size="13" fill="#4A5568">submissions — a general spreadsheet alone can't</text>
+
+  <text x="770" y="548" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>
