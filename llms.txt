@@ -1,0 +1,18 @@
+# MTDPrep
+
+> The fastest way to go from HSBC PDF to MTD-ready — without buying accounting software.
+> Making Tax Digital bookkeeping for UK sole traders and landlords who use spreadsheets
+> and don't want a full accounting suite.
+
+## Site
+
+- [Homepage](https://mtdprep.co.uk/): Since April 2026, Making Tax Digital applies to sole traders and landlords earning over £50k. MTDPrep gets you MTD-ready from your HSBC bank statement — no accounting software required.
+
+## Blog
+
+- [Making Tax Digital for the Self-Employed: What Actually Changes](https://mtdprep.co.uk/blog/making-tax-digital-self-employed.html): Who's affected, what changes from April 2026, and exactly what you need to do to stay compliant.
+- [Making Tax Digital Software UK: Do You Need a Full Accounting Suite?](https://mtdprep.co.uk/blog/making-tax-digital-software-uk.html): Most sole traders don't need a full accounting suite — here's what MTD software actually has to do.
+- [Making Tax Digital for Landlords: What You Need to Know](https://mtdprep.co.uk/blog/making-tax-digital-landlords.html): Who's affected, what records you need, and how to stay compliant without accounting software.
+- [MTD Bridging Software Explained: What It Is and Whether You Need It](https://mtdprep.co.uk/blog/mtd-bridging-software-explained.html): What MTD bridging software is, whether you need it, and how 123 Sheets, Absolute Excel and VT compare.
+- [HSBC Removed Easy Bank Statement Downloads — Here's What Sole Traders Can Do](https://mtdprep.co.uk/blog/hsbc-bank-statement-download-sole-traders.html): What changed, why it matters for Making Tax Digital, and what to do instead.
+- [Making Tax Digital for Income Tax: What Sole Traders Need to Know in 2026](https://mtdprep.co.uk/blog/making-tax-digital-sole-traders-2026.html): Who's affected, what records you need, and what bridging software is.
