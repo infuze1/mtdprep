@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="450" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="60" fill="#2A8A6E"/>
+  <text x="30" y="38" font-size="22" fill="#FFFFFF" font-weight="600">Making Tax Digital for the Self-Employed</text>
+
+  <!-- Desk -->
+  <rect x="80" y="330" width="640" height="18" fill="#D1DCE6"/>
+  <rect x="100" y="348" width="20" height="60" fill="#B7C4D1"/>
+  <rect x="680" y="348" width="20" height="60" fill="#B7C4D1"/>
+
+  <!-- Person (simple, friendly) -->
+  <circle cx="230" cy="230" r="34" fill="#F2C9A0"/>
+  <path d="M196 230 a34 34 0 0 1 68 0" fill="#3E4A59"/>
+  <rect x="185" y="262" width="90" height="80" rx="18" fill="#2A8A6E"/>
+  <rect x="200" y="330" width="26" height="40" fill="#2A8A6E"/>
+  <rect x="234" y="330" width="26" height="40" fill="#2A8A6E"/>
+
+  <!-- Laptop -->
+  <rect x="290" y="290" width="150" height="90" rx="6" fill="#2C3E50"/>
+  <rect x="300" y="298" width="130" height="66" rx="3" fill="#FFFFFF"/>
+  <rect x="308" y="306" width="70" height="8" rx="2" fill="#2A8A6E"/>
+  <rect x="308" y="320" width="110" height="6" rx="2" fill="#D1DCE6"/>
+  <rect x="308" y="332" width="110" height="6" rx="2" fill="#D1DCE6"/>
+  <rect x="308" y="344" width="80" height="6" rx="2" fill="#D1DCE6"/>
+  <rect x="278" y="378" width="174" height="10" rx="4" fill="#4A5568"/>
+
+  <!-- Phone with bank app -->
+  <rect x="470" y="270" width="70" height="120" rx="10" fill="#2C3E50"/>
+  <rect x="477" y="282" width="56" height="96" rx="3" fill="#FFFFFF"/>
+  <rect x="483" y="290" width="44" height="10" rx="2" fill="#1A6FA8"/>
+  <rect x="483" y="306" width="44" height="6" rx="2" fill="#D1DCE6"/>
+  <rect x="483" y="316" width="44" height="6" rx="2" fill="#D1DCE6"/>
+  <rect x="483" y="326" width="30" height="6" rx="2" fill="#D1DCE6"/>
+
+  <!-- Receipts stack -->
+  <g>
+    <rect x="580" y="300" width="70" height="90" rx="4" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2" transform="rotate(-6 615 345)"/>
+    <rect x="592" y="292" width="70" height="90" rx="4" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2" transform="rotate(4 627 337)"/>
+    <line x1="605" y1="305" x2="655" y2="305" stroke="#B7C4D1" stroke-width="3" transform="rotate(4 627 337)"/>
+    <line x1="605" y1="318" x2="645" y2="318" stroke="#B7C4D1" stroke-width="3" transform="rotate(4 627 337)"/>
+    <line x1="605" y1="331" x2="650" y2="331" stroke="#B7C4D1" stroke-width="3" transform="rotate(4 627 337)"/>
+  </g>
+
+  <!-- Caption box -->
+  <rect x="80" y="404" width="640" height="34" rx="6" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1"/>
+  <text x="400" y="426" font-size="15" fill="#1F6E57" text-anchor="middle" font-weight="600">Digital records, kept as you go — no new accounting suite required</text>
+
+  <text x="770" y="442" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>
