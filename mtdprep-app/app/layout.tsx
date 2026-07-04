@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en-GB">
       <body className="min-h-screen bg-bg font-sans text-body antialiased">
         <header className="sticky top-0 z-50 border-b border-borderc bg-white">
-          <div className="mx-auto flex h-14 max-w-4xl items-center px-4">
+          <div className="mx-auto flex h-14 max-w-4xl items-center justify-between px-4">
             <a
               href="https://mtdprep.co.uk"
               className="flex items-center gap-2.5"
@@ -42,6 +42,21 @@ export default function RootLayout({
                 MTDPrep
               </span>
             </a>
+
+            <div className="flex items-center gap-6">
+              <a
+                href="https://mtdprep.co.uk/blog/"
+                className="text-sm font-semibold text-slate-500 transition-colors hover:text-brand-dark"
+              >
+                Blog
+              </a>
+              <a
+                href="https://mtdprep.co.uk/#waitlist"
+                className="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+              >
+                Get early access
+              </a>
+            </div>
           </div>
         </header>
         {children}
