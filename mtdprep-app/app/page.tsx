@@ -21,6 +21,11 @@ export default function Home() {
   }, []);
 
   async function handleFileSelected(file: File) {
+    if (hasUsedFreeStatement()) {
+      setShowUpgradeModal(true);
+      return;
+    }
+
     setLoading(true);
     setError(null);
 
@@ -38,6 +43,7 @@ export default function Home() {
 
       setTransactions(data.transactions);
       setBank(data.bank ?? "UK Bank");
+      recordStatementUsed();
     } catch {
       setError("Could not reach the server. Please check your connection and try again.");
     } finally {
@@ -60,7 +66,6 @@ export default function Home() {
   function handleDownload() {
     if (!transactions) return;
     exportXlsx(transactions);
-    recordStatementUsed();
   }
 
   return (
