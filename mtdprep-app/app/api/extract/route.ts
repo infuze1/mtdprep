@@ -7,7 +7,9 @@ export const maxDuration = 60;
 
 const MAX_FILE_BYTES = 10 * 1024 * 1024; // 10MB
 
-const SYSTEM_PROMPT = `You are a UK bookkeeping assistant. The user has uploaded an HSBC bank statement PDF. Extract every transaction and return them as a JSON array.
+const SYSTEM_PROMPT = `You are a UK bookkeeping assistant. The user has uploaded a PDF bank statement from a UK bank. Extract every transaction and return them as a JSON array.
+
+First, identify the bank name from the statement (e.g. "HSBC", "Lloyds", "Barclays", "NatWest", "Santander", "Halifax", "Nationwide", etc.). If you cannot identify it, use "UK Bank".
 
 For each transaction return:
 - date (DD/MM/YYYY)
@@ -30,11 +32,11 @@ HMRC categories to use:
 - "Review needed" — ambiguous, not enough information to categorise
 
 Return ONLY valid JSON, no explanation. Format:
-{"transactions": [...]}`;
+{"bank": "HSBC", "transactions": [...]}`;
 
 const VALID_CATEGORIES = new Set<string>(HMRC_CATEGORIES);
 
-function parseModelJson(text: string): { transactions: unknown[] } {
+function parseModelJson(text: string): { bank?: string; transactions: unknown[] } {
   // Strip markdown code fences if the model wrapped its output
   let cleaned = text.trim();
   const fenceMatch = cleaned.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
@@ -178,14 +180,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           error:
-            "No transactions were found in this PDF. Please check it's an HSBC bank statement and try again.",
+            "No transactions were found in this PDF. Please check it's a bank statement and try again.",
         },
         { status: 422 }
       );
     }
 
-    return NextResponse.json({ transactions });
+    return NextResponse.json({ transactions, bank: parsed.bank ?? "UK Bank" });
   } catch (err) {
+    console.error("extract error:", err);
     if (err instanceof Anthropic.APIError) {
       const detail =
         err.status === 400

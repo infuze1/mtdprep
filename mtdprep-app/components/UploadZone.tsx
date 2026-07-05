@@ -24,7 +24,7 @@ export default function UploadZone({ onFileSelected, loading, disabled }: Upload
     <div
       role="button"
       tabIndex={0}
-      aria-label="Upload your HSBC PDF bank statement"
+      aria-label="Upload your UK bank statement PDF"
       onClick={() => !loading && !disabled && inputRef.current?.click()}
       onKeyDown={(e) => {
         if ((e.key === "Enter" || e.key === " ") && !loading && !disabled) {
@@ -84,7 +84,7 @@ export default function UploadZone({ onFileSelected, loading, disabled }: Upload
             <path d="M9 15l3-3 3 3" />
           </svg>
           <p className="font-semibold text-body">
-            Drop your HSBC PDF statement here, or click to browse
+            Drop your UK bank statement PDF here, or click to browse
           </p>
           <p className="text-sm text-slate-500">PDF only · up to 10MB · never stored on our servers</p>
         </div>

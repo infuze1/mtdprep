@@ -32,6 +32,10 @@ export function recordStatementUsed(): void {
 }
 
 export function hasUsedFreeStatement(): boolean {
+  if (typeof window === "undefined") return false;
+  // Paid users are never gated
+  if (window.localStorage.getItem("mtdprep_paid") === "true") return false;
+
   const usage = getUsage();
   return (usage?.statementsUsed ?? 0) >= 1;
 }

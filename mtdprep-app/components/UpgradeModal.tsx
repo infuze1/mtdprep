@@ -1,10 +1,31 @@
 "use client";
 
+import { useState } from "react";
+
 interface UpgradeModalProps {
   onDismiss: () => void;
 }
 
 export default function UpgradeModal({ onDismiss }: UpgradeModalProps) {
+  const [loading, setLoading] = useState(false);
+
+  async function handleUpgrade() {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/create-checkout-session", { method: "POST" });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Could not start checkout. Please try again.");
+        setLoading(false);
+      }
+    } catch {
+      alert("Could not start checkout. Please try again.");
+      setLoading(false);
+    }
+  }
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-body/50 p-4"
@@ -43,18 +64,30 @@ export default function UpgradeModal({ onDismiss }: UpgradeModalProps) {
           £19/month — unlimited statements
         </p>
 
-        <a
-          href="https://mtdprep.co.uk/#waitlist"
-          className="mt-6 block w-full rounded-lg bg-brand px-5 py-3 font-semibold text-white transition-colors hover:bg-brand-dark"
+        <button
+          onClick={handleUpgrade}
+          disabled={loading}
+          className="mt-6 block w-full rounded-lg bg-brand px-5 py-3 font-semibold text-white transition-colors hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70"
         >
-          Join the waitlist →
-        </a>
+          {loading ? "Opening checkout…" : "Upgrade to MTDPrep Standard →"}
+        </button>
         <button
           onClick={onDismiss}
           className="mt-3 w-full rounded-lg px-5 py-2 text-sm font-semibold text-slate-500 transition-colors hover:text-body"
         >
           Continue anyway
         </button>
+
+        <p className="mt-4 text-xs text-slate-500">
+          Already upgraded?{" "}
+          <button
+            onClick={() => window.location.reload()}
+            className="font-semibold text-brand-dark underline"
+          >
+            Refresh this page
+          </button>{" "}
+          to restore access.
+        </p>
       </div>
     </div>
   );

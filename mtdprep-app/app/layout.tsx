@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MTDPrep — HSBC statement to MTD-ready records",
+  title: "MTDPrep — UK bank statement to MTD-ready records",
   description:
-    "Upload your HSBC PDF bank statement, review HMRC-categorised transactions, and download a spreadsheet ready for your MTD bridging software.",
+    "Upload your UK bank statement PDF, review HMRC-categorised transactions, and download a spreadsheet ready for your MTD bridging software. Works with HSBC, Lloyds, Barclays, NatWest, Santander and more.",
   robots: { index: false },
 };
 

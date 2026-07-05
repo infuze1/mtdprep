@@ -11,6 +11,7 @@ import { Transaction } from "@/lib/types";
 
 export default function Home() {
   const [transactions, setTransactions] = useState<Transaction[] | null>(null);
+  const [bank, setBank] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
@@ -36,6 +37,7 @@ export default function Home() {
       }
 
       setTransactions(data.transactions);
+      setBank(data.bank ?? "UK Bank");
     } catch {
       setError("Could not reach the server. Please check your connection and try again.");
     } finally {
@@ -45,6 +47,7 @@ export default function Home() {
 
   function reset() {
     setTransactions(null);
+    setBank(null);
     setError(null);
   }
 
@@ -68,7 +71,7 @@ export default function Home() {
         <>
           <div className="mb-8 text-center">
             <h1 className="text-2xl font-extrabold text-body sm:text-3xl">
-              Turn your HSBC statement into MTD-ready records
+              Turn your UK bank statement into MTD-ready records
             </h1>
             <p className="mt-2 text-slate-500">
               Upload your PDF, review the HMRC categories, download a spreadsheet ready for
@@ -95,7 +98,9 @@ export default function Home() {
                 Review your transactions
               </h1>
               <p className="mt-1 text-sm text-slate-500">
-                {transactions.length} transactions extracted from your statement.
+                {transactions.length} transactions extracted from your{" "}
+                <strong className="font-bold text-body">{bank ?? "UK Bank"}</strong>{" "}
+                statement.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3">

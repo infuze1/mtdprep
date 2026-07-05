@@ -29,6 +29,7 @@ export interface Transaction {
 
 export interface ExtractResponse {
   transactions: Transaction[];
+  bank: string;
 }
 
 export interface ExtractError {
