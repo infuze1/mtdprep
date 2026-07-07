@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>HMRC allowable expense categories for self-employed sole traders 2026</title>
+  <desc>Table showing the 9 HMRC allowable expense categories with example items for each</desc>
+  <rect width="800" height="520" fill="#F8FAFC"/>
+  <rect width="800" height="56" fill="#2A8A6E"/>
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="white">HMRC Allowable Expense Categories — Sole Traders 2026</text>
+  <rect x="40" y="68" width="720" height="32" fill="#1F6E57"/>
+  <text x="56" y="89" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="white">Category</text>
+  <text x="260" y="89" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="white">Typical Examples</text>
+  <text x="610" y="89" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="white">Common Trap</text>
+  <rect x="40" y="100" width="720" height="38" fill="#E8F5F1"/>
+  <text x="56" y="122" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">1. Office Costs</text>
+  <text x="260" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Stationery, phone bills, broadband</text>
+  <text x="260" y="133" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">(business proportion), software</text>
+  <text x="610" y="122" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Personal calls not allowable</text>
+  <rect x="40" y="138" width="720" height="38" fill="white"/>
+  <text x="56" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">2. Travel Costs</text>
+  <text x="260" y="156" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Fuel, parking, train/bus, overnight</text>
+  <text x="260" y="171" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">stays (45p/mile up to 10,000 miles)</text>
+  <text x="610" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Commuting is not allowable</text>
+  <rect x="40" y="176" width="720" height="38" fill="#E8F5F1"/>
+  <text x="56" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">3. Clothing</text>
+  <text x="260" y="194" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Uniforms, protective gear,</text>
+  <text x="260" y="209" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">branded workwear</text>
+  <text x="610" y="198" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Suits/everyday wear not allowed</text>
+  <rect x="40" y="214" width="720" height="38" fill="white"/>
+  <text x="56" y="236" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">4. Staff Costs</text>
+  <text x="260" y="232" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Wages, NI contributions, pension,</text>
+  <text x="260" y="247" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">subcontractor fees</text>
+  <text x="610" y="236" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Your own drawings are not wages</text>
+  <rect x="40" y="252" width="720" height="38" fill="#E8F5F1"/>
+  <text x="56" y="274" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">5. Goods to Sell On</text>
+  <text x="260" y="270" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Stock, raw materials used</text>
+  <text x="260" y="285" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">in producing what you sell</text>
+  <text x="610" y="274" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">N/A for most service traders</text>
+  <rect x="40" y="290" width="720" height="38" fill="white"/>
+  <text x="56" y="312" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">6. Financial Costs</text>
+  <text x="260" y="308" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Bank charges, insurance premiums,</text>
+  <text x="260" y="323" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">loan interest (not capital repayment)</text>
+  <text x="610" y="312" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Capital repayment not allowable</text>
+  <rect x="40" y="328" width="720" height="38" fill="#E8F5F1"/>
+  <text x="56" y="350" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">7. Business Premises</text>
+  <text x="260" y="346" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Rent, utilities, business rates,</text>
+  <text x="260" y="361" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">repairs, home office proportion</text>
+  <text x="610" y="350" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Personal home costs not allowed</text>
+  <rect x="40" y="366" width="720" height="38" fill="white"/>
+  <text x="56" y="388" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">8. Advertising &amp; Marketing</text>
+  <text x="260" y="384" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Website costs, online ads, print</text>
+  <text x="260" y="399" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">materials, design fees</text>
+  <text x="610" y="388" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Client entertainment is excluded</text>
+  <rect x="40" y="404" width="720" height="38" fill="#E8F5F1"/>
+  <text x="56" y="426" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57">9. Training Courses</text>
+  <text x="260" y="422" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">Refresher/CPD courses for existing</text>
+  <text x="260" y="437" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">skills used in your trade</text>
+  <text x="610" y="426" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">New skills outside your trade: no</text>
+  <rect x="40" y="68" width="720" height="374" fill="none" stroke="#D1DCE6" stroke-width="1.5"/>
+  <line x1="246" y1="68" x2="246" y2="442" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="598" y1="68" x2="598" y2="442" stroke="#D1DCE6" stroke-width="1"/>
+  <rect x="40" y="452" width="720" height="36" rx="6" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1"/>
+  <text x="400" y="474" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1F6E57">Under MTD ITSA, these categories must be used consistently in quarterly digital submissions — not just at year end</text>
+  <text x="790" y="514" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6">mtdprep.co.uk</text>
+</svg>

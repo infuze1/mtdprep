@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMRC Expense Categories for the Self-Employed (2026 Guide)</title>
+  <meta name="description" content="A plain-English guide to every HMRC allowable expense category for sole traders in 2026 — with examples, MTD tips, and how to categorise correctly.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mtdprep.co.uk/blog/hmrc-expense-categories-self-employed-uk.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the HMRC expense categories for self-employed people?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HMRC recognises nine main categories of allowable expenses for sole traders: office costs, travel costs, clothing, staff costs, goods bought to sell on, financial costs, business premises costs, advertising and marketing, and training courses. Each must be used correctly in your digital records under Making Tax Digital."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I claim my home broadband as a self-employed expense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the business proportion of your broadband costs is allowable. If you estimate that 40% of your broadband use is for work, you can claim 40% of the annual bill. Keep a note of how you arrived at that figure in case HMRC asks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the HMRC mileage rate for self-employed people in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HMRC's approved mileage rate for cars is 45p per mile for the first 10,000 business miles in a tax year, then 25p per mile thereafter. Motorcycles are 24p per mile and bicycles 20p per mile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I claim business entertainment as an expense?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. HMRC explicitly excludes business entertainment — meals, drinks, event tickets for clients — from allowable expenses. Staff entertainment for your own employees has a separate annual exemption of £150 per head, but client entertainment is never allowable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I use the wrong HMRC expense category?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using the wrong category doesn't necessarily trigger a penalty on its own, but it can create discrepancies that attract HMRC attention during a compliance check. Under Making Tax Digital, inaccurate records submitted quarterly are harder to correct retrospectively. It is better to categorise correctly from the outset."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need accounting software to use HMRC expense categories under MTD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You need software that can record transactions using the correct categories and submit quarterly updates to HMRC — but that does not have to be a full accounting suite. Bridging software such as 123 Sheets, Absolute Excel, or VT works with structured spreadsheet exports. MTDPrep produces exactly that kind of export from your bank statement, without requiring you to buy an accounting platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the £1,000 trading allowance and does it affect expense claims?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The £1,000 trading allowance lets you earn up to £1,000 from self-employment without paying tax. However, if you use it, you cannot also claim allowable expenses — it's one or the other. Most sole traders earning meaningfully above £1,000 are better off claiming their actual expenses."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.94rem;
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table th {
+      background: var(--bg);
+      color: var(--slate);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .data-table td { color: var(--slate-mid); }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .cta-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 460px;
+      margin: 40px 0 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .cta-divider::before,
+    .cta-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta-waitlist-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+    }
+
+    .cta-waitlist-sub {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+      .data-table { font-size: 0.84rem; }
+      .data-table th, .data-table td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>HMRC Expense Categories for the Self-Employed: A Plain-English Guide (2026)</h1>
+    <p class="article-meta">Published 7 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-10/sole-trader-hmrc-expense-categories-desk.svg" alt="Sole trader reviewing HMRC expense categories at home office desk" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>If Making Tax Digital is coming your way — and for a growing number of sole traders it already has — one of the first things you need to get right is how you record your business expenses. Not just that you spent money, but what category it falls into. HMRC is precise about this. Under MTD for Income Tax (MTD ITSA), quarterly digital submissions require your income and expenses to be recorded in the correct HMRC categories every time, not cleaned up once a year at Self Assessment.</p>
+    <p>This guide covers every main HMRC allowable expense category for self-employed sole traders in 2026 — what counts, what doesn't, and how to apply them correctly so your records are MTD-ready from day one.</p>
+
+    <h2>What Are HMRC Allowable Expenses for Self-Employed People?</h2>
+    <p>Allowable expenses are legitimate business costs you can deduct from your income before calculating the tax you owe. The principle is straightforward: if a cost is wholly and exclusively for business purposes, it's allowable. If it's personal, it isn't. Mixed-use costs — a phone you use for both work and personal calls, for example — can be partially claimed in proportion to business use.</p>
+    <p>The practical effect is significant. If your annual income is £45,000 and you correctly claim £9,000 in allowable expenses, you pay Income Tax only on £36,000. Getting the categories right isn't just a compliance exercise — it's money in your pocket.</p>
+
+    <h2>What Are the Main HMRC Expense Categories for Sole Traders?</h2>
+    <p>HMRC organises allowable expenses into nine broad categories on the self-employment pages of your tax return. Under Making Tax Digital, these are the categories your software or spreadsheet tool must use when recording transactions.</p>
+
+    <img src="/images/blog/post-10/hmrc-expense-categories-sole-traders-2026.svg" alt="HMRC allowable expense categories for self-employed sole traders 2026" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h3>1. Office costs</h3>
+    <p>This covers anything you spend to keep your office running: stationery, printer cartridges, postage, phone and broadband bills (business proportion only), and software subscriptions used for work. If you buy a desk, chair, or computer for your business, that may qualify as a capital allowance rather than a straightforward expense — worth checking if the item is high-value.</p>
+
+    <h3>2. Travel costs</h3>
+    <p>Business travel is allowable: fuel, parking, train tickets, bus fares, taxis, and overnight accommodation for genuine business trips. Crucially, commuting — travel between your home and a fixed workplace — does not count. If you use a car for mixed personal and business use, you can either claim the actual costs in proportion to business mileage, or use HMRC's simplified mileage rate (currently 45p per mile for the first 10,000 miles, 25p thereafter).</p>
+
+    <h3>3. Clothing</h3>
+    <p>Only clothing you couldn't reasonably wear outside of work qualifies — protective gear, a branded uniform, or specialist workwear. A suit you wear to client meetings is not allowable, even if you bought it specifically for work.</p>
+
+    <h3>4. Staff costs</h3>
+    <p>If you employ people or use subcontractors, their wages, salaries, National Insurance contributions, and pension payments are allowable. Agency fees and the cost of hiring freelancers also sit here.</p>
+
+    <h3>5. Things you buy to sell on</h3>
+    <p>For traders selling goods, the cost of stock or raw materials used in producing what you sell is allowable. This category does not apply to most service-based sole traders.</p>
+
+    <h3>6. Financial costs</h3>
+    <p>Bank charges, business credit card fees, and relevant insurance premiums all qualify here. If you take out a loan for business purposes, the interest element (not the repayment of capital) is also allowable. Note that your own drawings from the business — paying yourself — are never an expense.</p>
+
+    <h3>7. Costs of business premises</h3>
+    <p>If you rent premises, those costs are allowable. So are utility bills, business rates, repairs and maintenance, and buildings insurance for a commercial property. Working from home? You can claim a proportion of your home running costs — heating, electricity, broadband — calculated reasonably by time or space used. HMRC's simplified flat-rate option is available as an alternative.</p>
+
+    <h3>8. Advertising and marketing</h3>
+    <p>Website costs, online advertising spend, print marketing materials, and professional design fees all count. Business entertainment — taking a client to lunch, for instance — is explicitly excluded and cannot be claimed.</p>
+
+    <h3>9. Training courses</h3>
+    <p>Courses that update or improve skills you already use in your business are allowable. Learning a brand-new skill unrelated to your current trade is not.</p>
+
+    <h2>Do I Need to Use These Exact Categories Under Making Tax Digital?</h2>
+    <p>Yes — this is precisely where MTD changes things for sole traders who have previously kept informal records. Under MTD ITSA, you must submit quarterly digital reports to HMRC using software that records income and expenses in a structured format. The categories above map directly to the boxes on your self-employment return, and HMRC expects them to be used consistently and correctly throughout the year, not retrospectively adjusted.</p>
+    <p>This is why many sole traders who currently manage their finances in spreadsheets are rethinking their approach. The old method — dump everything into a single "expenses" column and sort it out in January — no longer works when your software is making quarterly submissions.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <h2>How Does MTDPrep Help With Expense Categorisation?</h2>
+    <p>MTDPrep is built specifically for sole traders who live in spreadsheets and don't want to buy full accounting software. You upload your bank statement PDF, and the AI reads each transaction and assigns it to the correct HMRC expense category automatically. You then review the categorisation — correcting any that need it — and export a spreadsheet formatted for use with your preferred bridging software: 123 Sheets, Absolute Excel, or VT.</p>
+    <p>The result is a set of quarterly records that already use HMRC's own categories, ready to submit through your bridging tool without rekeying anything. No accounting suite required.</p>
+
+    <img src="/images/blog/post-10/mtdprep-workflow-upload-categorise-export.svg" alt="MTDPrep workflow: upload bank statement, AI categorises expenses, export for MTD bridging software" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>What Expenses Can I NOT Claim as a Self-Employed Sole Trader?</h2>
+    <p>Certain costs look like they should be allowable but are not. The most common traps are:</p>
+    <p>Your own wages or salary drawn from the business — this is not an expense, it's your profit. Business entertainment (meals with clients, event tickets). Clothing that could pass as everyday wear. The capital repayment element of any business loan. And any proportion of a mixed-use cost that genuinely relates to personal use.</p>
+
+    <h2>When Does Making Tax Digital Apply to Me?</h2>
+    <p>MTD ITSA applies from April 2026 if your gross income from self-employment and property combined exceeds £50,000 per year. From April 2027, the threshold drops to £30,000, and from April 2028 to £20,000 — bringing an estimated 2.25 million sole traders and landlords into scope across those three years.</p>
+
+    <img src="/images/blog/post-10/mtd-itsa-mandate-thresholds-2026-2028.svg" alt="Making Tax Digital Income Tax mandate thresholds 2026 to 2028" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>If you're already above the £50,000 threshold, you're now mandated. Getting your expense categories right from this point forward is not optional — it's a compliance requirement with quarterly deadlines.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What are the HMRC expense categories for self-employed people?</h3>
+    <p>HMRC recognises nine main categories of allowable expenses for sole traders: office costs, travel costs, clothing, staff costs, goods bought to sell on, financial costs, business premises costs, advertising and marketing, and training courses. Each must be used correctly in your digital records under Making Tax Digital.</p>
+
+    <h3>Can I claim my home broadband as a self-employed expense?</h3>
+    <p>Yes, the business proportion of your broadband costs is allowable. If you estimate that 40% of your broadband use is for work, you can claim 40% of the annual bill. Keep a note of how you arrived at that figure in case HMRC asks.</p>
+
+    <h3>What is the HMRC mileage rate for self-employed people in 2026?</h3>
+    <p>HMRC's approved mileage rate for cars is 45p per mile for the first 10,000 business miles in a tax year, then 25p per mile thereafter. Motorcycles are 24p per mile and bicycles 20p per mile.</p>
+
+    <h3>Can I claim business entertainment as an expense?</h3>
+    <p>No. HMRC explicitly excludes business entertainment — meals, drinks, event tickets for clients — from allowable expenses. Staff entertainment for your own employees (a team Christmas meal, for example) has a separate annual exemption of £150 per head, but client entertainment is never allowable.</p>
+
+    <h3>What happens if I use the wrong HMRC expense category?</h3>
+    <p>Using the wrong category doesn't necessarily trigger a penalty on its own, but it can create discrepancies that attract HMRC attention during a compliance check. Under Making Tax Digital, inaccurate records submitted quarterly are harder to correct retrospectively. It is better to categorise correctly from the outset.</p>
+
+    <h3>Do I need accounting software to use HMRC expense categories under MTD?</h3>
+    <p>No. You need software that can record transactions using the correct categories and submit quarterly updates to HMRC — but that does not have to be a full accounting suite. Bridging software such as 123 Sheets, Absolute Excel, or VT works with structured spreadsheet exports. MTDPrep produces exactly that kind of export from your bank statement, without requiring you to buy an accounting platform.</p>
+
+    <h3>What is the £1,000 trading allowance and does it affect expense claims?</h3>
+    <p>The £1,000 trading allowance lets you earn up to £1,000 from self-employment without paying tax. However, if you use it, you cannot also claim allowable expenses — it's one or the other. Most sole traders earning meaningfully above £1,000 are better off claiming their actual expenses.</p>
+
+    <p>Getting your expense categories right is the foundation of compliant MTD bookkeeping. If you're not sure where a cost sits, the GOV.UK expenses guide is the authoritative source — and if you want your bank statement automatically categorised into the correct HMRC boxes, MTDPrep is built to do exactly that.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:2rem;">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/making-tax-digital-landlords.html">Making Tax Digital for Landlords</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:1rem;">
+      Found this useful? <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener">Add MTDPrep as a Google Preferred Source</a> and our MTD guides will show up whenever you search the topics we cover.
+    </p>
+
+    <p><em>MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</em></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Now live</p>
+    <h2>Try MTDPrep free — no card required</h2>
+    <p class="capture-sub">Process your first bank statement free. If MTDPrep saves you time, upgrade to Standard for £19/month and process unlimited statements.</p>
+    <a href="https://app.mtdprep.co.uk" class="btn btn-primary btn-large">Try it free →</a>
+
+    <div class="cta-divider">or</div>
+
+    <p class="cta-waitlist-label">Stay updated</p>
+    <p class="cta-waitlist-sub">Join the mailing list for product updates and MTD guidance.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        toolname="subscribe_to_mtdprep_updates"
+        tooldescription="Join the MTDPrep waitlist with an email address to get notified before launch."
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with product updates and MTD guidance.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="preferred-source-cta" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);">
+    <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;">
+      <img src="/images/preferred-source-badge.png" alt="Add MTDPrep as a Google Preferred Source" style="height:20px;width:auto;">
+    </a>
+  </div>
+  <div style="margin-top:20px;">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+  });
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.mc-ajax-form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var resp=form.querySelector('.mc-response');
+      var url=form.action+'&EMAIL='+encodeURIComponent(form.EMAIL.value);
+      var cb='mc_'+Date.now();
+      window[cb]=function(data){
+        resp.style.display='block';
+        if(data.result==='success'){
+          resp.style.color='#1F6E57';
+          resp.innerHTML='&#10003; You\'re on the list — we\'ll be in touch before launch.';
+          if(typeof gtag!=='undefined')gtag('event','generate_lead');
+        } else {
+          resp.style.color='#E53E3E';
+          resp.innerHTML=data.msg||'Something went wrong — please try again.';
+        }
+        delete window[cb];
+        document.body.removeChild(s);
+      };
+      var s=document.createElement('script');
+      s.src=url.replace('&c=?','&c='+cb);
+      document.body.appendChild(s);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

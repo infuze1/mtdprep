@@ -10,6 +10,7 @@
 
 ## Blog
 
+- [HMRC Expense Categories for the Self-Employed: A Plain-English Guide (2026)](https://mtdprep.co.uk/blog/hmrc-expense-categories-self-employed-uk.html): The nine HMRC allowable expense categories for sole traders, with examples and MTD categorisation tips.
 - [Making Tax Digital April 2026: Who's Already Mandated — and What Happens Now?](https://mtdprep.co.uk/blog/making-tax-digital-april-2026.html): Who's in scope now, the 2026/27 quarterly deadlines, and what happens if you missed the start date.
 - [What Is MTD ITSA? Making Tax Digital Explained](https://mtdprep.co.uk/blog/what-is-mtd-itsa.html): What MTD ITSA stands for, who it affects, when it starts, and what you actually need to do.
 - [Making Tax Digital for the Self-Employed: What Actually Changes](https://mtdprep.co.uk/blog/making-tax-digital-self-employed.html): Who's affected, what changes from April 2026, and exactly what you need to do to stay compliant.

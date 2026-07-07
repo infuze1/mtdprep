@@ -1,0 +1,61 @@
+<svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>MTDPrep workflow: upload bank statement, AI categorises expenses, export for MTD bridging software</title>
+  <desc>Three-step horizontal workflow showing how MTDPrep converts an HSBC PDF bank statement into an MTD-ready export via AI categorisation</desc>
+  <rect width="900" height="360" fill="#F8FAFC"/>
+  <rect width="900" height="56" fill="#2A8A6E"/>
+  <text x="450" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="white">From Bank Statement to MTD-Ready in Three Steps</text>
+  <rect x="50" y="90" width="220" height="220" rx="10" fill="white" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="160" cy="120" r="22" fill="#2A8A6E"/>
+  <text x="160" y="127" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="white">1</text>
+  <rect x="120" y="150" width="80" height="96" rx="6" fill="#F8FAFC" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="120" y="150" width="80" height="28" rx="6" fill="#1A6FA8"/>
+  <text x="160" y="169" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="white">PDF</text>
+  <rect x="130" y="188" width="50" height="5" rx="2" fill="#D1DCE6"/>
+  <rect x="130" y="200" width="40" height="5" rx="2" fill="#D1DCE6"/>
+  <rect x="130" y="212" width="55" height="5" rx="2" fill="#D1DCE6"/>
+  <rect x="130" y="224" width="35" height="5" rx="2" fill="#D1DCE6"/>
+  <text x="160" y="263" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#2C3E50">Upload</text>
+  <text x="160" y="280" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">HSBC PDF bank</text>
+  <text x="160" y="295" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">statement</text>
+  <polygon points="288,195 310,183 310,207" fill="#2A8A6E"/>
+  <line x1="270" y1="195" x2="310" y2="195" stroke="#2A8A6E" stroke-width="2.5"/>
+  <rect x="340" y="90" width="220" height="220" rx="10" fill="white" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="450" cy="120" r="22" fill="#2A8A6E"/>
+  <text x="450" y="127" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="white">2</text>
+  <circle cx="450" cy="190" r="40" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="450" y="185" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#1F6E57">AI reads each</text>
+  <text x="450" y="200" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#1F6E57">transaction</text>
+  <rect x="360" y="238" width="70" height="18" rx="9" fill="#2A8A6E"/>
+  <text x="395" y="251" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="white">Travel</text>
+  <rect x="440" y="238" width="70" height="18" rx="9" fill="#1A6FA8"/>
+  <text x="475" y="251" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="white">Office</text>
+  <rect x="395" y="262" width="110" height="18" rx="9" fill="#1F6E57"/>
+  <text x="450" y="275" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="white">Professional Fees</text>
+  <text x="450" y="298" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#2C3E50">AI Categorises</text>
+  <polygon points="578,195 600,183 600,207" fill="#2A8A6E"/>
+  <line x1="560" y1="195" x2="600" y2="195" stroke="#2A8A6E" stroke-width="2.5"/>
+  <rect x="630" y="90" width="220" height="220" rx="10" fill="white" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="740" cy="120" r="22" fill="#2A8A6E"/>
+  <text x="740" y="127" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="white">3</text>
+  <rect x="695" y="148" width="90" height="100" rx="5" fill="#F8FAFC" stroke="#D1DCE6" stroke-width="1.5"/>
+  <rect x="695" y="148" width="90" height="22" rx="5" fill="#1F6E57"/>
+  <text x="740" y="163" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="white" font-weight="600">MTD-Ready Export</text>
+  <line x1="728" y1="170" x2="728" y2="248" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="695" y1="188" x2="785" y2="188" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="695" y1="206" x2="785" y2="206" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="695" y1="224" x2="785" y2="224" stroke="#D1DCE6" stroke-width="1"/>
+  <rect x="700" y="174" width="24" height="10" rx="2" fill="#D1DCE6"/>
+  <rect x="733" y="174" width="44" height="10" rx="2" fill="#2A8A6E" opacity="0.5"/>
+  <rect x="700" y="192" width="24" height="10" rx="2" fill="#D1DCE6"/>
+  <rect x="733" y="192" width="44" height="10" rx="2" fill="#2A8A6E" opacity="0.3"/>
+  <rect x="700" y="210" width="24" height="10" rx="2" fill="#D1DCE6"/>
+  <rect x="733" y="210" width="44" height="10" rx="2" fill="#1A6FA8" opacity="0.4"/>
+  <rect x="700" y="228" width="24" height="10" rx="2" fill="#D1DCE6"/>
+  <rect x="733" y="228" width="44" height="10" rx="2" fill="#2A8A6E" opacity="0.3"/>
+  <text x="740" y="263" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#2C3E50">Export Ready</text>
+  <text x="740" y="280" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">For 123 Sheets,</text>
+  <text x="740" y="295" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Absolute Excel or VT</text>
+  <rect x="50" y="325" width="800" height="24" rx="5" fill="#E8F5F1"/>
+  <text x="450" y="341" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1F6E57" font-weight="600">No accounting software required — HMRC categories applied automatically</text>
+  <text x="890" y="354" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6">mtdprep.co.uk</text>
+</svg>
