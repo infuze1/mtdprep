@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="480" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="60" fill="#2A8A6E"/>
+  <text x="30" y="38" font-size="20" font-weight="600" fill="#FFFFFF">MTD ITSA Rollout Timeline</text>
+
+  <!-- timeline line -->
+  <line x1="100" y1="230" x2="700" y2="230" stroke="#D1DCE6" stroke-width="4"/>
+
+  <!-- Node 1 -->
+  <circle cx="180" cy="230" r="10" fill="#2A8A6E"/>
+  <rect x="100" y="120" width="160" height="40" rx="20" fill="#2A8A6E"/>
+  <text x="180" y="146" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">April 2026</text>
+  <rect x="90" y="250" width="180" height="60" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="1.5"/>
+  <text x="180" y="272" font-size="13" font-weight="700" fill="#2C3E50" text-anchor="middle">Over £50,000</text>
+  <text x="180" y="292" font-size="12" fill="#4A5568" text-anchor="middle">~780,000 people</text>
+
+  <!-- Node 2 -->
+  <circle cx="400" cy="230" r="10" fill="#2A8A6E"/>
+  <rect x="320" y="120" width="160" height="40" rx="20" fill="#2A8A6E"/>
+  <text x="400" y="146" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">April 2027</text>
+  <rect x="310" y="250" width="180" height="60" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="1.5"/>
+  <text x="400" y="272" font-size="13" font-weight="700" fill="#2C3E50" text-anchor="middle">Over £30,000</text>
+  <text x="400" y="292" font-size="12" fill="#4A5568" text-anchor="middle">+970,000 people</text>
+
+  <!-- Node 3 -->
+  <circle cx="620" cy="230" r="10" fill="#2A8A6E"/>
+  <rect x="540" y="120" width="160" height="40" rx="20" fill="#2A8A6E"/>
+  <text x="620" y="146" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">April 2028</text>
+  <rect x="530" y="250" width="180" height="60" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="1.5"/>
+  <text x="620" y="272" font-size="13" font-weight="700" fill="#2C3E50" text-anchor="middle">Over £20,000</text>
+  <text x="620" y="292" font-size="12" fill="#4A5568" text-anchor="middle">+500,000 people</text>
+
+  <!-- Total banner -->
+  <rect x="140" y="350" width="520" height="70" rx="8" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="400" y="378" font-size="14" font-weight="700" fill="#1F6E57" text-anchor="middle">By 2028: approximately 2.25 million sole traders</text>
+  <text x="400" y="400" font-size="14" font-weight="700" fill="#1F6E57" text-anchor="middle">and landlords in scope for MTD ITSA</text>
+
+  <text x="770" y="465" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

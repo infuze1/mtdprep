@@ -1,0 +1,53 @@
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="420" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="900" height="60" fill="#2A8A6E"/>
+  <text x="30" y="38" font-size="20" font-weight="600" fill="#FFFFFF">From Bank Statement to MTD-Ready Export</text>
+
+  <!-- Step 1 -->
+  <rect x="50" y="140" width="230" height="180" rx="10" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="165" cy="180" r="22" fill="#2A8A6E"/>
+  <text x="165" y="188" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <!-- pdf icon -->
+  <rect x="140" y="215" width="50" height="60" rx="4" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="2"/>
+  <text x="165" y="250" font-size="11" font-weight="700" fill="#1F6E57" text-anchor="middle">PDF</text>
+  <text x="165" y="300" font-size="14" font-weight="700" fill="#2C3E50" text-anchor="middle">Upload bank</text>
+  <text x="165" y="317" font-size="14" font-weight="700" fill="#2C3E50" text-anchor="middle">statement PDF</text>
+
+  <!-- Arrow 1 -->
+  <path d="M285 230 L335 230" stroke="#1A6FA8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="335" y="140" width="230" height="180" rx="10" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="450" cy="180" r="22" fill="#2A8A6E"/>
+  <text x="450" y="188" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <!-- ai icon -->
+  <rect x="420" y="215" width="60" height="45" rx="6" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="2"/>
+  <text x="450" y="243" font-size="13" font-weight="700" fill="#1F6E57" text-anchor="middle">AI</text>
+  <text x="450" y="290" font-size="14" font-weight="700" fill="#2C3E50" text-anchor="middle">AI categorises</text>
+  <text x="450" y="307" font-size="12" fill="#4A5568" text-anchor="middle">into HMRC categories</text>
+
+  <!-- Arrow 2 -->
+  <path d="M570 230 L620 230" stroke="#1A6FA8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="620" y="140" width="230" height="180" rx="10" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="735" cy="180" r="22" fill="#2A8A6E"/>
+  <text x="735" y="188" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <!-- spreadsheet icon -->
+  <rect x="705" y="215" width="60" height="50" rx="4" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="2"/>
+  <line x1="705" y1="230" x2="765" y2="230" stroke="#2A8A6E" stroke-width="1.5"/>
+  <line x1="705" y1="245" x2="765" y2="245" stroke="#2A8A6E" stroke-width="1.5"/>
+  <line x1="725" y1="215" x2="725" y2="265" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="735" y="295" font-size="14" font-weight="700" fill="#2C3E50" text-anchor="middle">Export to</text>
+  <text x="735" y="312" font-size="12" fill="#4A5568" text-anchor="middle">bridging software</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1A6FA8"/>
+    </marker>
+  </defs>
+
+  <text x="450" y="370" font-size="13" fill="#4A5568" text-anchor="middle">Compatible with 123 Sheets, Absolute Excel and VT</text>
+
+  <text x="870" y="405" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

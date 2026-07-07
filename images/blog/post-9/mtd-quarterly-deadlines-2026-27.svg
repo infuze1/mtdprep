@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>MTD quarterly update deadlines for 2026/27 tax year</title>
+  <desc>Table showing the four quarterly periods, their dates, submission deadlines, and penalty status for the 2026/27 MTD ITSA tax year</desc>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8FAFC"/>
+
+  <!-- Header band -->
+  <rect width="800" height="56" fill="#2A8A6E"/>
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="19" font-weight="700" fill="white">MTD Quarterly Deadlines — 2026/27 Tax Year</text>
+
+  <!-- Table header row -->
+  <rect x="30" y="72" width="740" height="36" rx="0" fill="#1F6E57"/>
+  <text x="80" y="95" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">Quarter</text>
+  <text x="270" y="95" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">Period</text>
+  <text x="490" y="95" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">Deadline</text>
+  <text x="680" y="95" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">Penalty Points?</text>
+  <line x1="148" y1="72" x2="148" y2="108" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="390" y1="72" x2="390" y2="108" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="590" y1="72" x2="590" y2="108" stroke="white" stroke-width="1" opacity="0.3"/>
+
+  <!-- Row 1 — Q1 -->
+  <rect x="30" y="108" width="740" height="50" fill="white" stroke="#D1DCE6" stroke-width="1"/>
+  <rect x="30" y="108" width="118" height="50" fill="#E8F5F1"/>
+  <text x="89" y="130" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#1F6E57">Q1</text>
+  <text x="89" y="148" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4A5568">First quarter</text>
+  <text x="270" y="135" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#2C3E50">6 Apr – 5 Jul 2026</text>
+  <rect x="420" y="118" width="140" height="30" rx="5" fill="#FEF3CD" stroke="#F6C90E" stroke-width="1"/>
+  <text x="490" y="138" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#856404">7 August 2026</text>
+  <text x="680" y="135" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#1F6E57">No (soft landing)</text>
+  <line x1="148" y1="108" x2="148" y2="158" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="390" y1="108" x2="390" y2="158" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="590" y1="108" x2="590" y2="158" stroke="#D1DCE6" stroke-width="1"/>
+
+  <!-- Row 2 — Q2 -->
+  <rect x="30" y="158" width="740" height="50" fill="#F8FAFC" stroke="#D1DCE6" stroke-width="1"/>
+  <rect x="30" y="158" width="118" height="50" fill="#E8F5F1"/>
+  <text x="89" y="180" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#1F6E57">Q2</text>
+  <text x="89" y="198" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4A5568">Second quarter</text>
+  <text x="270" y="185" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#2C3E50">6 Jul – 5 Oct 2026</text>
+  <text x="490" y="185" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#2C3E50">7 November 2026</text>
+  <text x="680" y="185" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#1F6E57">No (soft landing)</text>
+  <line x1="148" y1="158" x2="148" y2="208" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="390" y1="158" x2="390" y2="208" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="590" y1="158" x2="590" y2="208" stroke="#D1DCE6" stroke-width="1"/>
+
+  <!-- Row 3 — Q3 -->
+  <rect x="30" y="208" width="740" height="50" fill="white" stroke="#D1DCE6" stroke-width="1"/>
+  <rect x="30" y="208" width="118" height="50" fill="#E8F5F1"/>
+  <text x="89" y="230" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#1F6E57">Q3</text>
+  <text x="89" y="248" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4A5568">Third quarter</text>
+  <text x="270" y="235" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#2C3E50">6 Oct – 5 Jan 2027</text>
+  <text x="490" y="235" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#2C3E50">7 February 2027</text>
+  <text x="680" y="235" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#1F6E57">No (soft landing)</text>
+  <line x1="148" y1="208" x2="148" y2="258" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="390" y1="208" x2="390" y2="258" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="590" y1="208" x2="590" y2="258" stroke="#D1DCE6" stroke-width="1"/>
+
+  <!-- Row 4 — Q4 -->
+  <rect x="30" y="258" width="740" height="50" fill="#F8FAFC" stroke="#D1DCE6" stroke-width="1"/>
+  <rect x="30" y="258" width="118" height="50" fill="#E8F5F1"/>
+  <text x="89" y="280" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#1F6E57">Q4</text>
+  <text x="89" y="298" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4A5568">Fourth quarter</text>
+  <text x="270" y="285" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#2C3E50">6 Jan – 5 Apr 2027</text>
+  <text x="490" y="285" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#2C3E50">7 May 2027</text>
+  <text x="680" y="285" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#1F6E57">No (soft landing)</text>
+  <line x1="148" y1="258" x2="148" y2="308" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="390" y1="258" x2="390" y2="308" stroke="#D1DCE6" stroke-width="1"/>
+  <line x1="590" y1="258" x2="590" y2="308" stroke="#D1DCE6" stroke-width="1"/>
+
+  <!-- EOPS row -->
+  <rect x="30" y="308" width="740" height="50" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="89" y="334" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#1F6E57">EOPS</text>
+  <text x="270" y="329" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#2C3E50">Full year + Final</text>
+  <text x="270" y="347" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4A5568">Declaration</text>
+  <text x="490" y="334" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#1F6E57">31 January 2028</text>
+  <text x="680" y="334" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#E53E3E">Yes — applies</text>
+  <line x1="148" y1="308" x2="148" y2="358" stroke="#2A8A6E" stroke-width="1"/>
+  <line x1="390" y1="308" x2="390" y2="358" stroke="#2A8A6E" stroke-width="1"/>
+  <line x1="590" y1="308" x2="590" y2="358" stroke="#2A8A6E" stroke-width="1"/>
+
+  <!-- Note -->
+  <text x="400" y="384" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4A5568">2026/27 is a soft landing year — no penalty points for late quarterly updates, but all must be submitted before EOPS.</text>
+
+  <!-- Watermark -->
+  <text x="786" y="397" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#D1DCE6">mtdprep.co.uk</text>
+</svg>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Making Tax Digital April 2026: Who's Mandated Now?</title>
+  <meta name="description" content="MTD for Income Tax started April 2026 for sole traders and landlords earning over £50,000. Find out if you're in scope, what the deadlines are, and what to do.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mtdprep.co.uk/blog/making-tax-digital-april-2026.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who has to use Making Tax Digital from April 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sole traders and landlords with qualifying income (gross income from self-employment and property, before expenses) above £50,000. HMRC estimates around 780,000 people are in scope for this first phase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the threshold for MTD ITSA in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "£50,000 in qualifying income. This drops to £30,000 from April 2027 and £20,000 from April 2028. Qualifying income means gross self-employment and property income combined, before any deductions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I missed the April 2026 start date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During 2026/27, HMRC is not issuing penalty points for late quarterly updates — it is treated as a soft landing year. You should still get your quarterly submissions in as soon as possible, because you cannot file your End of Period Statement without them. Penalty points apply from 2027/28 onwards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the MTD quarterly deadlines for 2026/27?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Q1 (6 April to 5 July 2026) is due by 7 August 2026. Q2 (6 July to 5 October) by 7 November. Q3 (6 October to 5 January) by 7 February 2027. Q4 (6 January to 5 April) by 7 May 2027. The End of Period Statement is due 31 January 2028."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need accounting software like Xero to comply with MTD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. MTD requires digital records and MTD-compatible submission software, but that does not have to be a full accounting suite. Bridging software such as 123 Sheets, Absolute Excel, or VT connects a spreadsheet to HMRC and is significantly cheaper than subscription accounting platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the MTD penalty system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From 2027/28, a points-based system applies. Each late quarterly update earns one point. At four points, a £200 penalty is charged. Each subsequent late submission adds a further £200. Points are cleared by meeting all deadlines consistently for a set period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What counts as qualifying income for MTD ITSA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Qualifying income is the total gross income from self-employment and property — before any expenses, allowances, or deductions. If you have both a sole trader business and rental income, both amounts are added together to determine whether you cross the threshold."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 24px;
+      font-size: 0.94rem;
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table th {
+      background: var(--bg);
+      color: var(--slate);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .data-table td { color: var(--slate-mid); }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .cta-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 460px;
+      margin: 40px 0 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .cta-divider::before,
+    .cta-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta-waitlist-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+    }
+
+    .cta-waitlist-sub {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+      .data-table { font-size: 0.84rem; }
+      .data-table th, .data-table td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>Making Tax Digital April 2026: Who's Already Mandated — and What Happens Now?</h1>
+    <p class="article-meta">Published 6 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-9/sole-trader-mtd-obligations-april-2026.svg" alt="Sole trader checking their MTD obligations from April 2026" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>Making Tax Digital for Income Tax (MTD ITSA) is no longer on the horizon — it arrived on 6 April 2026. If you're a sole trader or landlord with gross income above £50,000, the rules are already in force. This post explains exactly who is mandated right now, what the quarterly deadlines look like for the 2026/27 tax year, what the penalty position is if you're late, and how to get compliant without buying full accounting software.</p>
+
+    <h2>Who Has to Use Making Tax Digital from April 2026?</h2>
+    <p>From 6 April 2026, MTD for Income Tax is mandatory for any sole trader or landlord whose <strong>qualifying income</strong> exceeds <strong>£50,000</strong> per tax year. Qualifying income is the gross amount — your total income from self-employment and property combined, before any expenses or allowances are deducted.</p>
+    <p>HMRC estimates around 780,000 people fall into this first wave. If you were filing a Self Assessment tax return with more than £50,000 in business or rental income, you are now in scope.</p>
+    <p>Two further phases follow:</p>
+    <ul>
+      <li><strong>April 2027:</strong> anyone with qualifying income above £30,000 (an estimated additional 970,000 people)</li>
+      <li><strong>April 2028:</strong> anyone with qualifying income above £20,000 (an estimated further 500,000)</li>
+    </ul>
+    <p>By 2028, roughly 2.25 million sole traders and landlords will be using MTD for Income Tax. The trajectory is clear — if you're not in scope now, you will be soon.</p>
+
+    <img src="/images/blog/post-9/mtd-rollout-phases-2026-to-2028.svg" alt="Making Tax Digital rollout phases 2026 to 2028 by income threshold" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>What Does "Mandated" Actually Mean?</h2>
+    <p>Being mandated means three things have legally changed for you:</p>
+    <p><strong>Digital record-keeping is required.</strong> You can no longer keep your business income and expenses in a shoebox or an unapproved spreadsheet. Your records must be held digitally, in software that meets HMRC's requirements.</p>
+    <p><strong>Quarterly updates must be submitted.</strong> Instead of a single annual Self Assessment return, you now send HMRC a summary of your income and expenses four times a year. These are not four mini tax returns — they are periodic updates. Your final tax calculation still happens at the end of the year via an End of Period Statement and Final Declaration.</p>
+    <p><strong>You must use MTD-compatible software.</strong> HMRC will not accept quarterly updates through their old online portal. You need software that connects to their API — either directly, or via a bridging tool like 123 Sheets, Absolute Excel, or VT.</p>
+
+    <h2>What Are the Quarterly Deadlines for 2026/27?</h2>
+    <p>For the first wave of mandated taxpayers (those in scope from April 2026), the four quarterly periods and their submission deadlines are as follows:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Quarter</th><th>Period</th><th>Submission deadline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Q1</td><td>6 April – 5 July 2026</td><td>7 August 2026</td></tr>
+        <tr><td>Q2</td><td>6 July – 5 October 2026</td><td>7 November 2026</td></tr>
+        <tr><td>Q3</td><td>6 October 2026 – 5 January 2027</td><td>7 February 2027</td></tr>
+        <tr><td>Q4</td><td>6 January – 5 April 2027</td><td>7 May 2027</td></tr>
+        <tr><td>End of Period Statement</td><td>Full year</td><td>31 January 2028</td></tr>
+      </tbody>
+    </table>
+
+    <p>The first Q1 deadline — 7 August 2026 — is already approaching for anyone who started from 6 April 2026.</p>
+
+    <img src="/images/blog/post-9/mtd-quarterly-deadlines-2026-27.svg" alt="MTD quarterly update deadlines for 2026/27 tax year" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>What Happens If You Miss the April 2026 Start Date?</h2>
+    <p>The good news is that 2026/27 is being treated as a soft landing year by HMRC. During this first year, HMRC will not issue penalty points for late quarterly updates. You still have to send them — you cannot skip the updates entirely, because HMRC requires all quarterly updates to be submitted before you can file your End of Period Statement. But if you submit a quarterly update late during 2026/27, you will not accumulate penalty points.</p>
+    <p>Late payment of any tax owed is a different matter. From April 2026, you have 30 days from the payment due date before any late payment penalty kicks in. That 30-day window reduces to 15 days from 2027/28.</p>
+    <p>From the 2027/28 tax year onwards, the soft landing ends and a full points-based penalty system applies:</p>
+    <ul>
+      <li>Each missed quarterly update earns one penalty point</li>
+      <li>Reaching four points triggers a £200 financial penalty</li>
+      <li>Every missed submission after that point adds a further £200</li>
+      <li>Points can be cleared by meeting all deadlines for a sustained period</li>
+    </ul>
+    <p>The message is: use 2026/27 to get your process in order, before penalties become real in 2027.</p>
+
+    <h2>Do You Need Accounting Software to Comply?</h2>
+    <p>No — and this is worth saying clearly, because the assumption many people make is that MTD means buying Xero or subscribing to a full accounting platform. It does not.</p>
+    <p>What MTD requires is digital records and a way to submit quarterly updates. A significant number of sole traders and landlords who already use spreadsheets can comply via MTD bridging software — tools like 123 Sheets, Absolute Excel, and VT that connect your spreadsheet data to HMRC's API. These are substantially cheaper than full accounting suites and require no change to how you actually do your bookkeeping.</p>
+    <p>The challenge bridging software tools don't solve is getting your data in the right format in the first place — particularly if your bank doesn't make transaction exports straightforward. That is precisely the problem MTDPrep is built to address: you upload your bank statement PDF, the AI extracts and categorises your transactions into HMRC-compliant expense categories, and you export a spreadsheet that your bridging software can use.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <h2>What HMRC Expense Categories Apply?</h2>
+    <p>When you submit a quarterly update, your expenses must be categorised according to HMRC's approved categories. For self-employed sole traders these include:</p>
+    <ul>
+      <li><strong>Cost of goods / cost of sales</strong> — stock purchased for resale</li>
+      <li><strong>Car, van and travel expenses</strong> — including fuel, insurance, and business mileage</li>
+      <li><strong>Wages, salaries and other staff costs</strong></li>
+      <li><strong>Rent, rates, power and insurance</strong> — for business premises</li>
+      <li><strong>Repairs and maintenance</strong> — of business property and equipment</li>
+      <li><strong>Phone, fax, stationery and other office costs</strong></li>
+      <li><strong>Advertising and business entertainment expenses</strong></li>
+      <li><strong>Interest on bank and other loans</strong></li>
+      <li><strong>Bank, credit card and other financial charges</strong></li>
+      <li><strong>Irrecoverable debts written off</strong></li>
+      <li><strong>Accountancy, legal and other professional fees</strong></li>
+      <li><strong>Depreciation and loss/profit on sale of assets</strong></li>
+      <li><strong>Other business expenses</strong></li>
+    </ul>
+    <p>Landlords use a separate but parallel set of property-specific categories. Getting the categorisation right from the start is important — it is far harder to correct miscategorised transactions at year-end than to do it as you go.</p>
+
+    <img src="/images/blog/post-9/mtdprep-workflow-upload-categorise-export.svg" alt="How MTDPrep works: upload, categorise, export for MTD" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Who has to use Making Tax Digital from April 2026?</h3>
+    <p>Sole traders and landlords with qualifying income (gross income from self-employment and property, before expenses) above £50,000. HMRC estimates around 780,000 people are in scope for this first phase.</p>
+
+    <h3>What is the threshold for MTD ITSA in 2026?</h3>
+    <p>£50,000 in qualifying income. This drops to £30,000 from April 2027 and £20,000 from April 2028. Qualifying income means gross self-employment and property income combined, before any deductions.</p>
+
+    <h3>What happens if I missed the April 2026 start date?</h3>
+    <p>During 2026/27, HMRC is not issuing penalty points for late quarterly updates — it is treated as a soft landing year. You should still get your quarterly submissions in as soon as possible, because you cannot file your End of Period Statement without them. Penalty points apply from 2027/28 onwards.</p>
+
+    <h3>What are the MTD quarterly deadlines for 2026/27?</h3>
+    <p>Q1 (6 Apr–5 Jul 2026) is due by 7 August 2026. Q2 (6 Jul–5 Oct) by 7 November. Q3 (6 Oct–5 Jan) by 7 February 2027. Q4 (6 Jan–5 Apr) by 7 May 2027. The End of Period Statement is due 31 January 2028.</p>
+
+    <h3>Do I need accounting software like Xero to comply with MTD?</h3>
+    <p>No. MTD requires digital records and MTD-compatible submission software, but that does not have to be a full accounting suite. Bridging software (such as 123 Sheets, Absolute Excel, or VT) connects a spreadsheet to HMRC and is significantly cheaper than subscription accounting platforms.</p>
+
+    <h3>What is the MTD penalty system?</h3>
+    <p>From 2027/28, a points-based system applies. Each late quarterly update earns one point. At four points, a £200 penalty is charged. Each subsequent late submission adds a further £200. Points are cleared by meeting all deadlines consistently for a set period.</p>
+
+    <h3>What counts as qualifying income for MTD ITSA?</h3>
+    <p>Qualifying income is the total gross income from self-employment and property — before any expenses, allowances, or deductions. If you have both a sole trader business and rental income, both amounts are added together to determine whether you cross the threshold.</p>
+
+    <p>Making Tax Digital April 2026 is here — and if you're above the £50,000 threshold, the clock is already running. The first quarterly deadline arrives on 7 August 2026, and 2026/27 is your window to get a compliant process in place before penalties follow from 2027/28. You do not need to buy accounting software to comply. MTDPrep is designed for exactly this situation: bank statement PDF in, HMRC-categorised spreadsheet out, ready for bridging software submission.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:2rem;">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/making-tax-digital-landlords.html">Making Tax Digital for Landlords</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:1rem;">
+      Found this useful? <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener">Add MTDPrep as a Google Preferred Source</a> and our MTD guides will show up whenever you search the topics we cover.
+    </p>
+
+    <p><em>MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</em></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Now live</p>
+    <h2>Try MTDPrep free — no card required</h2>
+    <p class="capture-sub">Process your first bank statement free. If MTDPrep saves you time, upgrade to Standard for £19/month and process unlimited statements.</p>
+    <a href="https://app.mtdprep.co.uk" class="btn btn-primary btn-large">Try it free →</a>
+
+    <div class="cta-divider">or</div>
+
+    <p class="cta-waitlist-label">Stay updated</p>
+    <p class="cta-waitlist-sub">Join the mailing list for product updates and MTD guidance.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        toolname="subscribe_to_mtdprep_updates"
+        tooldescription="Join the MTDPrep waitlist with an email address to get notified before launch."
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with product updates and MTD guidance.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="preferred-source-cta" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);">
+    <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;">
+      <img src="/images/preferred-source-badge.png" alt="Add MTDPrep as a Google Preferred Source" style="height:20px;width:auto;">
+    </a>
+  </div>
+  <div style="margin-top:20px;">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+  });
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.mc-ajax-form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var resp=form.querySelector('.mc-response');
+      var url=form.action+'&EMAIL='+encodeURIComponent(form.EMAIL.value);
+      var cb='mc_'+Date.now();
+      window[cb]=function(data){
+        resp.style.display='block';
+        if(data.result==='success'){
+          resp.style.color='#1F6E57';
+          resp.innerHTML='&#10003; You\'re on the list — we\'ll be in touch before launch.';
+          if(typeof gtag!=='undefined')gtag('event','generate_lead');
+        } else {
+          resp.style.color='#E53E3E';
+          resp.innerHTML=data.msg||'Something went wrong — please try again.';
+        }
+        delete window[cb];
+        document.body.removeChild(s);
+      };
+      var s=document.createElement('script');
+      s.src=url.replace('&c=?','&c='+cb);
+      document.body.appendChild(s);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
