@@ -1,0 +1,57 @@
+<svg viewBox="0 0 860 470" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', Arial, sans-serif">
+<title>HMRC self-employment expense categories for Making Tax Digital quarterly updates</title>
+<desc>Grid of the main HMRC self-employment expense categories, each with an everyday example.</desc>
+<rect width="860" height="470" fill="#F8FAFC"/>
+<rect x="0" y="0" width="860" height="56" fill="#2A8A6E"/>
+<text x="24" y="35" font-size="20" font-weight="600" fill="#FFFFFF">HMRC expense categories your quarterly update needs</text>
+
+<rect x="30" y="88" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="46" y="118" font-size="14" font-weight="600" fill="#1F6E57">Cost of goods</text>
+<text x="46" y="144" font-size="12" fill="#4A5568">Stock, materials, parts</text>
+
+<rect x="302" y="88" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="318" y="118" font-size="14" font-weight="600" fill="#1F6E57">Car and van costs</text>
+<text x="318" y="144" font-size="12" fill="#4A5568">Fuel, insurance, servicing</text>
+
+<rect x="574" y="88" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="590" y="118" font-size="14" font-weight="600" fill="#1F6E57">Travel and subsistence</text>
+<text x="590" y="144" font-size="12" fill="#4A5568">Rail fares, parking, hotels</text>
+
+<rect x="30" y="184" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="46" y="214" font-size="14" font-weight="600" fill="#1F6E57">Premises costs</text>
+<text x="46" y="240" font-size="12" fill="#4A5568">Rent, utilities, rates</text>
+
+<rect x="302" y="184" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="318" y="214" font-size="14" font-weight="600" fill="#1F6E57">Repairs and maintenance</text>
+<text x="318" y="240" font-size="12" fill="#4A5568">Property and kit repairs</text>
+
+<rect x="574" y="184" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="590" y="214" font-size="14" font-weight="600" fill="#1F6E57">Office costs</text>
+<text x="590" y="240" font-size="12" fill="#4A5568">Stationery, phone, software</text>
+
+<rect x="30" y="280" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="46" y="310" font-size="14" font-weight="600" fill="#1F6E57">Advertising</text>
+<text x="46" y="336" font-size="12" fill="#4A5568">Ads, website, flyers</text>
+
+<rect x="302" y="280" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="318" y="310" font-size="14" font-weight="600" fill="#1F6E57">Professional fees</text>
+<text x="318" y="336" font-size="12" fill="#4A5568">Bookkeeper, solicitor</text>
+
+<rect x="574" y="280" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="590" y="310" font-size="14" font-weight="600" fill="#1F6E57">Interest and charges</text>
+<text x="590" y="336" font-size="12" fill="#4A5568">Loan interest, bank fees</text>
+
+<rect x="30" y="376" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="46" y="406" font-size="14" font-weight="600" fill="#1F6E57">Staff costs</text>
+<text x="46" y="432" font-size="12" fill="#4A5568">Wages, subcontractors</text>
+
+<rect x="302" y="376" width="256" height="82" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="318" y="406" font-size="14" font-weight="600" fill="#1F6E57">Other expenses</text>
+<text x="318" y="432" font-size="12" fill="#4A5568">Allowable costs not listed</text>
+
+<rect x="574" y="376" width="256" height="82" rx="6" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="2"/>
+<text x="590" y="406" font-size="14" font-weight="600" fill="#1F6E57">Income</text>
+<text x="590" y="432" font-size="12" fill="#4A5568">Sales, rent, other turnover</text>
+
+<text x="836" y="466" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

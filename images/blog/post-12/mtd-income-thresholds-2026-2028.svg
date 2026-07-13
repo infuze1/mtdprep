@@ -1,0 +1,32 @@
+<svg viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="860" height="320" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="860" height="62" fill="#2A8A6E"/>
+  <text x="40" y="40" fill="#FFFFFF" font-size="22" font-weight="700">When MTD for Income Tax applies to you</text>
+
+  <line x1="110" y1="150" x2="750" y2="150" stroke="#D1DCE6" stroke-width="4"/>
+
+  <circle cx="180" cy="150" r="10" fill="#2A8A6E"/>
+  <rect x="118" y="96" width="124" height="34" rx="17" fill="#2A8A6E"/>
+  <text x="180" y="118" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">April 2026</text>
+  <rect x="108" y="180" width="144" height="70" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <text x="180" y="210" fill="#2C3E50" font-size="16" font-weight="700" text-anchor="middle">Over £50,000</text>
+  <text x="180" y="234" fill="#4A5568" font-size="13" text-anchor="middle">qualifying income</text>
+
+  <circle cx="430" cy="150" r="10" fill="#2A8A6E"/>
+  <rect x="368" y="96" width="124" height="34" rx="17" fill="#2A8A6E"/>
+  <text x="430" y="118" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">April 2027</text>
+  <rect x="358" y="180" width="144" height="70" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <text x="430" y="210" fill="#2C3E50" font-size="16" font-weight="700" text-anchor="middle">Over £30,000</text>
+  <text x="430" y="234" fill="#4A5568" font-size="13" text-anchor="middle">qualifying income</text>
+
+  <circle cx="680" cy="150" r="10" fill="#2A8A6E"/>
+  <rect x="618" y="96" width="124" height="34" rx="17" fill="#2A8A6E"/>
+  <text x="680" y="118" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">April 2028</text>
+  <rect x="608" y="180" width="144" height="70" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <text x="680" y="210" fill="#2C3E50" font-size="16" font-weight="700" text-anchor="middle">Over £20,000</text>
+  <text x="680" y="234" fill="#4A5568" font-size="13" text-anchor="middle">qualifying income</text>
+
+  <text x="430" y="290" fill="#4A5568" font-size="13" text-anchor="middle" font-style="italic">Whichever route you choose, the deadline depends on your income.</text>
+
+  <text x="820" y="308" fill="#D1DCE6" font-size="10" text-anchor="end">mtdprep.co.uk</text>
+</svg>

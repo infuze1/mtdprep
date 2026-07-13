@@ -1,0 +1,78 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t1 d1">
+<title id="t1">Sole trader exporting a Barclays bank statement to Excel for Making Tax Digital</title>
+<desc id="d1">Desk scene with a laptop showing a bank transactions export screen, a spreadsheet, a PDF statement and a notebook.</desc>
+<rect width="800" height="420" fill="#F8FAFC"/>
+<rect x="0" y="0" width="800" height="58" fill="#2A8A6E"/>
+<text x="32" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" fill="#FFFFFF">Barclays export to MTD-ready records</text>
+
+<rect x="0" y="352" width="800" height="68" fill="#EDF2F7"/>
+<line x1="0" y1="352" x2="800" y2="352" stroke="#D1DCE6" stroke-width="2"/>
+
+<rect x="60" y="112" width="340" height="212" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="60" y="112" width="340" height="30" rx="8" fill="#2C3E50"/>
+<rect x="60" y="132" width="340" height="10" fill="#2C3E50"/>
+<circle cx="78" cy="127" r="4" fill="#F8FAFC"/>
+<circle cx="92" cy="127" r="4" fill="#F8FAFC"/>
+<circle cx="106" cy="127" r="4" fill="#F8FAFC"/>
+<text x="128" y="132" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF">Online Banking — Transactions</text>
+
+<rect x="80" y="158" width="300" height="20" fill="#EDF2F7"/>
+<text x="90" y="172" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#4A5568">Date</text>
+<text x="164" y="172" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#4A5568">Description</text>
+<text x="322" y="172" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#4A5568">Amount</text>
+
+<line x1="80" y1="196" x2="380" y2="196" stroke="#D1DCE6" stroke-width="1"/>
+<text x="90" y="193" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">02 Apr</text>
+<text x="164" y="193" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">FUEL STATION</text>
+<text x="322" y="193" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">68.40</text>
+
+<line x1="80" y1="218" x2="380" y2="218" stroke="#D1DCE6" stroke-width="1"/>
+<text x="90" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">05 Apr</text>
+<text x="164" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">TRADE SUPPLIES</text>
+<text x="322" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">240.00</text>
+
+<line x1="80" y1="240" x2="380" y2="240" stroke="#D1DCE6" stroke-width="1"/>
+<text x="90" y="237" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">11 Apr</text>
+<text x="164" y="237" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2C3E50">CLIENT PAYMENT</text>
+<text x="322" y="237" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#1F6E57">1,450.00</text>
+
+<rect x="224" y="262" width="156" height="32" rx="6" fill="#1A6FA8"/>
+<text x="302" y="283" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Export All (CSV)</text>
+<text x="80" y="283" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4A5568">Desktop only</text>
+
+<rect x="42" y="324" width="376" height="12" rx="4" fill="#D1DCE6"/>
+
+<rect x="440" y="96" width="250" height="150" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="440" y="96" width="250" height="26" rx="6" fill="#1F6E57"/>
+<rect x="440" y="112" width="250" height="10" fill="#1F6E57"/>
+<text x="454" y="114" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">MTD-ready spreadsheet</text>
+<line x1="440" y1="146" x2="690" y2="146" stroke="#D1DCE6"/>
+<line x1="440" y1="170" x2="690" y2="170" stroke="#D1DCE6"/>
+<line x1="440" y1="194" x2="690" y2="194" stroke="#D1DCE6"/>
+<line x1="440" y1="218" x2="690" y2="218" stroke="#D1DCE6"/>
+<line x1="550" y1="122" x2="550" y2="246" stroke="#D1DCE6"/>
+<text x="452" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#4A5568">Transaction</text>
+<text x="562" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="#4A5568">HMRC category</text>
+<text x="452" y="163" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C3E50">Fuel station</text>
+<text x="562" y="163" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2A8A6E">Motor expenses</text>
+<text x="452" y="187" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C3E50">Trade supplies</text>
+<text x="562" y="187" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2A8A6E">Repairs</text>
+<text x="452" y="211" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C3E50">Client payment</text>
+<text x="562" y="211" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2A8A6E">Income</text>
+<text x="452" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C3E50">Accountant fee</text>
+<text x="562" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2A8A6E">Professional fees</text>
+
+<rect x="452" y="262" width="100" height="74" rx="4" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<text x="502" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#4A5568" text-anchor="middle">PDF</text>
+<line x1="468" y1="304" x2="536" y2="304" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="468" y1="314" x2="536" y2="314" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="468" y1="324" x2="516" y2="324" stroke="#D1DCE6" stroke-width="2"/>
+
+<rect x="572" y="262" width="118" height="74" rx="4" fill="#EDF2F7" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="598" y1="262" x2="598" y2="336" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="610" y1="284" x2="674" y2="284" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="610" y1="300" x2="674" y2="300" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="610" y1="316" x2="652" y2="316" stroke="#D1DCE6" stroke-width="2"/>
+
+<text x="768" y="404" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

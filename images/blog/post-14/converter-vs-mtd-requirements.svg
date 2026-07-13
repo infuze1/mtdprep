@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 470" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', Arial, sans-serif">
+<title>What a bank statement converter does versus what Making Tax Digital requires</title>
+<desc>Two columns comparing a generic converter's output with the digital records MTD requires.</desc>
+<rect width="800" height="470" fill="#F8FAFC"/>
+<rect x="0" y="0" width="800" height="56" fill="#2A8A6E"/>
+<text x="24" y="35" font-size="20" font-weight="600" fill="#FFFFFF">Converter output vs MTD requirement</text>
+
+<rect x="30" y="86" width="350" height="330" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="30" y="86" width="350" height="46" rx="8" fill="#EDF2F7"/>
+<rect x="30" y="118" width="350" height="14" fill="#EDF2F7"/>
+<text x="205" y="115" font-size="16" font-weight="600" fill="#2C3E50" text-anchor="middle">Generic bank statement converter</text>
+
+<text x="56" y="168" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="80" y="168" font-size="14" fill="#2C3E50">Transaction date</text>
+<text x="56" y="200" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="80" y="200" font-size="14" fill="#2C3E50">Raw bank description</text>
+<text x="56" y="232" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="80" y="232" font-size="14" fill="#2C3E50">Amount in and out</text>
+<text x="56" y="264" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="80" y="264" font-size="14" fill="#2C3E50">CSV or XLSX file</text>
+
+<line x1="56" y1="286" x2="354" y2="286" stroke="#D1DCE6" stroke-width="1"/>
+
+<text x="56" y="316" font-size="14" font-weight="600" fill="#E53E3E">&#10007;</text>
+<text x="80" y="316" font-size="14" fill="#4A5568">HMRC expense category</text>
+<text x="56" y="348" font-size="14" font-weight="600" fill="#E53E3E">&#10007;</text>
+<text x="80" y="348" font-size="14" fill="#4A5568">Business vs personal split</text>
+<text x="56" y="380" font-size="14" font-weight="600" fill="#E53E3E">&#10007;</text>
+<text x="80" y="380" font-size="14" fill="#4A5568">Bridging-ready format</text>
+
+<rect x="420" y="86" width="350" height="330" rx="8" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+<rect x="420" y="86" width="350" height="46" rx="8" fill="#E8F5F1"/>
+<rect x="420" y="118" width="350" height="14" fill="#E8F5F1"/>
+<text x="595" y="115" font-size="16" font-weight="600" fill="#1F6E57" text-anchor="middle">What MTD digital records need</text>
+
+<text x="446" y="168" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="168" font-size="14" fill="#2C3E50">Transaction date</text>
+<text x="446" y="200" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="200" font-size="14" fill="#2C3E50">Readable description</text>
+<text x="446" y="232" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="232" font-size="14" fill="#2C3E50">Amount in and out</text>
+<text x="446" y="264" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="264" font-size="14" fill="#2C3E50">CSV or XLSX file</text>
+
+<line x1="446" y1="286" x2="744" y2="286" stroke="#D1DCE6" stroke-width="1"/>
+
+<text x="446" y="316" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="316" font-size="14" fill="#2C3E50">HMRC expense category</text>
+<text x="446" y="348" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="348" font-size="14" fill="#2C3E50">Business vs personal split</text>
+<text x="446" y="380" font-size="14" font-weight="600" fill="#2A8A6E">&#10003;</text>
+<text x="470" y="380" font-size="14" fill="#2C3E50">Quarterly totals per category</text>
+
+<text x="400" y="444" font-size="13" fill="#4A5568" text-anchor="middle">The gap between the two columns is the categorisation work you are still holding.</text>
+<text x="784" y="458" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 920 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t3 d3">
+<title id="t3">Upload bank statement, AI categorises transactions, export MTD-ready spreadsheet</title>
+<desc id="d3">Three step flow: upload your Barclays statement, the AI categorises each transaction into an HMRC expense category, then export a spreadsheet ready for bridging software.</desc>
+<rect width="920" height="380" fill="#F8FAFC"/>
+<rect x="0" y="0" width="920" height="58" fill="#2A8A6E"/>
+<text x="32" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" fill="#FFFFFF">From statement to MTD-ready in three steps</text>
+
+<rect x="36" y="104" width="240" height="180" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="156" cy="146" r="24" fill="#E8F5F1"/>
+<text x="156" y="154" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="600" fill="#1F6E57" text-anchor="middle">1</text>
+<text x="156" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#2C3E50" text-anchor="middle">Upload</text>
+<text x="156" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">Drop in your bank</text>
+<text x="156" y="246" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">statement. No bank feed,</text>
+<text x="156" y="266" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">no login sharing.</text>
+
+<path d="M 288 194 L 328 194" stroke="#2A8A6E" stroke-width="3" fill="none"/>
+<path d="M 328 194 l -10 -6 l 0 12 z" fill="#2A8A6E"/>
+
+<rect x="340" y="104" width="240" height="180" rx="8" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+<circle cx="460" cy="146" r="24" fill="#E8F5F1"/>
+<text x="460" y="154" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="600" fill="#1F6E57" text-anchor="middle">2</text>
+<text x="460" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#2C3E50" text-anchor="middle">AI categorises</text>
+<text x="460" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">Every transaction gets an</text>
+<text x="460" y="246" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">HMRC expense category.</text>
+<text x="460" y="266" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">You review and correct.</text>
+
+<path d="M 592 194 L 632 194" stroke="#2A8A6E" stroke-width="3" fill="none"/>
+<path d="M 632 194 l -10 -6 l 0 12 z" fill="#2A8A6E"/>
+
+<rect x="644" y="104" width="240" height="180" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="764" cy="146" r="24" fill="#E8F5F1"/>
+<text x="764" y="154" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="600" fill="#1F6E57" text-anchor="middle">3</text>
+<text x="764" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#2C3E50" text-anchor="middle">Export</text>
+<text x="764" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">A spreadsheet formatted</text>
+<text x="764" y="246" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">for 123 Sheets, Absolute</text>
+<text x="764" y="266" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">Excel or VT.</text>
+
+<rect x="240" y="312" width="440" height="34" rx="6" fill="#E8F5F1"/>
+<text x="460" y="334" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#1F6E57" text-anchor="middle">No accounting software required at any step</text>
+
+<text x="888" y="364" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

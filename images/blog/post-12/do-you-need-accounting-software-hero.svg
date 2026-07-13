@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="70" fill="#2A8A6E"/>
+  <text x="40" y="44" fill="#FFFFFF" font-size="26" font-weight="700">Do you need accounting software for MTD?</text>
+
+  <rect x="40" y="330" width="720" height="14" fill="#D1DCE6"/>
+
+  <rect x="90" y="180" width="230" height="150" rx="8" fill="#1F6E57"/>
+  <rect x="104" y="194" width="202" height="118" rx="4" fill="#FFFFFF"/>
+  <line x1="104" y1="224" x2="306" y2="224" stroke="#D1DCE6" stroke-width="2"/>
+  <line x1="104" y1="254" x2="306" y2="254" stroke="#D1DCE6" stroke-width="2"/>
+  <line x1="104" y1="284" x2="306" y2="284" stroke="#D1DCE6" stroke-width="2"/>
+  <line x1="171" y1="194" x2="171" y2="312" stroke="#D1DCE6" stroke-width="2"/>
+  <line x1="239" y1="194" x2="239" y2="312" stroke="#D1DCE6" stroke-width="2"/>
+  <rect x="104" y="194" width="202" height="30" fill="#E8F5F1"/>
+  <text x="118" y="214" fill="#1F6E57" font-size="12" font-weight="600">Spreadsheet</text>
+  <rect x="70" y="330" width="270" height="10" fill="#1F6E57"/>
+
+  <rect x="360" y="200" width="120" height="130" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <rect x="360" y="200" width="120" height="26" fill="#1A6FA8"/>
+  <text x="370" y="218" fill="#FFFFFF" font-size="12" font-weight="600">Bank PDF</text>
+  <line x1="374" y1="244" x2="466" y2="244" stroke="#D1DCE6" stroke-width="3"/>
+  <line x1="374" y1="262" x2="466" y2="262" stroke="#D1DCE6" stroke-width="3"/>
+  <line x1="374" y1="280" x2="466" y2="280" stroke="#D1DCE6" stroke-width="3"/>
+  <line x1="374" y1="298" x2="440" y2="298" stroke="#D1DCE6" stroke-width="3"/>
+
+  <rect x="520" y="120" width="240" height="180" rx="14" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <text x="540" y="152" fill="#2C3E50" font-size="15" font-weight="700">Which route?</text>
+  <rect x="540" y="168" width="200" height="52" rx="6" fill="#F8FAFC" stroke="#D1DCE6" stroke-width="1"/>
+  <text x="552" y="190" fill="#4A5568" font-size="13" font-weight="600">Full accounting software</text>
+  <text x="552" y="209" fill="#4A5568" font-size="12">Monthly subscription</text>
+  <rect x="540" y="230" width="200" height="52" rx="6" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1.5"/>
+  <text x="552" y="252" fill="#1F6E57" font-size="13" font-weight="700">Spreadsheet + bridging</text>
+  <text x="552" y="271" fill="#1F6E57" font-size="12">Cheaper, keep your books</text>
+  <circle cx="515" cy="300" r="10" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <circle cx="498" cy="318" r="6" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+
+  <text x="740" y="410" fill="#D1DCE6" font-size="10" text-anchor="end">mtdprep.co.uk</text>
+</svg>

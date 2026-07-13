@@ -1,0 +1,39 @@
+<svg viewBox="0 0 920 340" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="920" height="340" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="920" height="62" fill="#2A8A6E"/>
+  <text x="40" y="40" fill="#FFFFFF" font-size="22" font-weight="700">MTD without accounting software — three steps</text>
+
+  <rect x="40" y="110" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="70" cy="140" r="18" fill="#2A8A6E"/>
+  <text x="70" y="146" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">1</text>
+  <text x="100" y="146" fill="#2C3E50" font-size="17" font-weight="700">Upload</text>
+  <text x="64" y="188" fill="#4A5568" font-size="14">Upload your bank</text>
+  <text x="64" y="210" fill="#4A5568" font-size="14">statement PDF —</text>
+  <text x="64" y="232" fill="#4A5568" font-size="14">no bank feed needed.</text>
+
+  <line x1="288" y1="185" x2="332" y2="185" stroke="#2A8A6E" stroke-width="4"/>
+  <polygon points="332,177 348,185 332,193" fill="#2A8A6E"/>
+
+  <rect x="356" y="110" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <circle cx="386" cy="140" r="18" fill="#2A8A6E"/>
+  <text x="386" y="146" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">2</text>
+  <text x="416" y="146" fill="#2C3E50" font-size="17" font-weight="700">AI categorises</text>
+  <text x="380" y="188" fill="#4A5568" font-size="14">Transactions sorted</text>
+  <text x="380" y="210" fill="#4A5568" font-size="14">into HMRC expense</text>
+  <text x="380" y="232" fill="#4A5568" font-size="14">categories — you review.</text>
+
+  <line x1="604" y1="185" x2="648" y2="185" stroke="#2A8A6E" stroke-width="4"/>
+  <polygon points="648,177 664,185 648,193" fill="#2A8A6E"/>
+
+  <rect x="672" y="110" width="240" height="150" rx="12" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2.5"/>
+  <circle cx="702" cy="140" r="18" fill="#2A8A6E"/>
+  <text x="702" y="146" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">3</text>
+  <text x="732" y="146" fill="#2C3E50" font-size="17" font-weight="700">Export</text>
+  <text x="696" y="188" fill="#4A5568" font-size="14">Download a spreadsheet</text>
+  <text x="696" y="210" fill="#4A5568" font-size="14">ready for your bridging</text>
+  <text x="696" y="232" fill="#4A5568" font-size="14">software.</text>
+
+  <text x="460" y="300" fill="#4A5568" font-size="14" text-anchor="middle" font-style="italic">Your bridging software then files the totals with HMRC.</text>
+
+  <text x="880" y="330" fill="#D1DCE6" font-size="10" text-anchor="end">mtdprep.co.uk</text>
+</svg>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barclays Bank Statement Excel Download: The MTD Guide</title>
+  <meta name="description" content="How to export a Barclays statement to Excel or CSV, why the export is more limited than it looks, and what MTD still requires afterwards.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mtdprep.co.uk/blog/barclays-bank-statement-excel-download.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can you download a Barclays bank statement as an Excel file?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can export Barclays transactions as a CSV file, which opens directly in Excel. The export is available in Online Banking on a desktop browser under 'View all transactions' then 'Export All', and is not available in the Barclays mobile app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far back can you export Barclays transactions to CSV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The CSV export is limited to recent transactions rather than your full history. For older periods, archived statements or closed accounts, Barclays generally offers PDF statements instead, which is why many sole traders end up converting PDFs anyway."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a Barclays CSV export enough for Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A CSV export gives you date, description, amount and balance, but MTD for Income Tax requires each business transaction to be categorised into HMRC expense categories, totalled by quarter and submitted through recognised software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you need accounting software to submit MTD with a Barclays account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. HMRC-recognised bridging software such as 123 Sheets, Absolute Excel and VT allows you to submit quarterly updates from a properly formatted spreadsheet, without moving to a full accounting platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What HMRC expense categories do sole traders use for MTD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The main self-employed categories include motor expenses, office costs, repairs and maintenance, professional fees, travel and subsistence, stock and materials, staff costs, and bank and finance charges. Landlords use a separate set of property income and expense categories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does MTD for Income Tax apply to me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MTD for Income Tax applies from April 2026 to sole traders and landlords with qualifying income above £50,000, from April 2027 above £30,000, and from April 2028 above £20,000."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .cta-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 460px;
+      margin: 40px 0 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .cta-divider::before,
+    .cta-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta-waitlist-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+    }
+
+    .cta-waitlist-sub {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>Barclays Bank Statement Excel Download: What Sole Traders Actually Get</h1>
+    <p class="article-meta">Published 13 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-16/barclays-bank-statement-excel-hero.svg" alt="Sole trader exporting a Barclays bank statement to Excel for Making Tax Digital" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>Barclays is one of the few UK banks that will still hand you a CSV file. That sounds like good news, and up to a point it is. The catch is that the export is narrower than most people expect, it only exists on desktop, and even when it works perfectly, what lands in your spreadsheet is nowhere near what Making Tax Digital asks for.</p>
+    <p>If you bank with Barclays and you are a sole trader or landlord coming into scope for MTD for Income Tax, this post covers how to get the Excel or CSV export, where it runs out, and what has to happen between that file and a quarterly update to HMRC.</p>
+
+    <h2>How Do You Download a Barclays Bank Statement as Excel or CSV?</h2>
+    <p>You export Barclays transactions to CSV from Online Banking on a desktop browser, not from the mobile app.</p>
+    <p>The route is buried a few menus deep. Log in to Barclays Online Banking, select the account you want and click "Show recent transactions". Scroll to the bottom of that list and choose "View all transactions". From there, set a date range, click "Search", and then use the "Export All" option at the foot of the screen — CSV is one of the format choices offered.</p>
+    <p>Open that CSV in Excel and you have a workable spreadsheet: a row per transaction, with date, description, amount and running balance. For a sole trader who has been dreading a stack of PDFs, that is genuinely a better starting point than most UK banks give you.</p>
+
+    <h2>Why Is the Barclays Excel Export More Limited Than It Looks?</h2>
+    <p>The export covers recent transactions only, and it does not exist in the Barclays mobile app.</p>
+    <p>Those two limits catch people out at exactly the wrong moment. The date range you can pull is restricted to relatively recent activity — it is not designed as an archive tool. If you are catching up on a tax year that closed months ago, or reconstructing records for an account you have not touched in a while, the transactions you need may sit outside the export window entirely. What you get offered instead is the PDF statement.</p>
+    <p>The mobile-only problem is quieter but just as real. A large number of sole traders and landlords never open desktop banking at all; the app is their bank. If that is you, the CSV export effectively does not exist, and you are back to downloading PDF statements one month at a time.</p>
+    <p>And there is a third limit that has nothing to do with Barclays. Even a perfect CSV, covering every transaction of the year, is not an MTD digital record. It is a list of payments.</p>
+
+    <img src="/images/blog/post-16/barclays-export-vs-mtd-requirements.svg" alt="What the Barclays CSV export gives you and what Making Tax Digital requires" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>Is a Barclays CSV Export a Valid MTD Digital Record?</h2>
+    <p>No. A raw bank export is a starting point, not a digital record in the sense MTD means.</p>
+    <p>Under MTD for Income Tax you have to keep digital records of your business income and expenses, categorised, and send a quarterly update to HMRC through software that can talk to HMRC's systems. The bank gives you a date, a description and an amount. It does not tell HMRC that the £68.40 to a fuel station was motor expenses, or that the £240 to a tradesperson was repairs and maintenance rather than a capital improvement.</p>
+    <p>That gap — between a list of transactions and a set of categorised, totalled, submittable records — is the entire job. It is also the part nobody warns you about when they tell you Barclays "does CSV".</p>
+
+    <h2>What Does MTD Actually Require From a Barclays Account?</h2>
+    <p>Four things: digital records, HMRC expense categories, quarterly totals, and submission through recognised software.</p>
+    <p>The categorisation step is where the time goes. Every business transaction has to land in one of HMRC's self-employed expense categories — motor expenses, office costs, repairs and maintenance, professional fees, travel and subsistence, stock and materials, staff costs, bank and finance charges, and so on. For a landlord the property categories differ again. Get a category wrong and your quarterly figures are wrong; get enough of them wrong and your year-end position is wrong.</p>
+    <p>For a sole trader with a few hundred transactions a year, doing that by hand in Excel is an evening's work per quarter, every quarter, forever. It is not difficult. It is just relentless.</p>
+
+    <h2>Do You Have to Buy Accounting Software to Handle This?</h2>
+    <p>No. Bridging software lets you keep working in a spreadsheet and still submit to HMRC.</p>
+    <p>This is the piece most people miss. HMRC recognises bridging software — tools such as 123 Sheets, Absolute Excel and VT — which take a properly formatted spreadsheet and submit the figures to HMRC on your behalf. You do not have to migrate your books into a full accounting platform, learn a new interface, or pay a monthly subscription for features built for businesses ten times your size.</p>
+    <p>What bridging software will not do is fill the spreadsheet in for you. 123 Sheets, to its credit, is upfront about this — its guidance for PDF users is essentially to go and find a converter. That is the missing link: something that turns a Barclays statement into a categorised, HMRC-shaped spreadsheet that bridging software can then submit.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <h2>How MTDPrep Closes the Gap</h2>
+
+    <img src="/images/blog/post-16/mtdprep-workflow-upload-categorise-export.svg" alt="Upload bank statement, AI categorises transactions, export MTD-ready spreadsheet" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>MTDPrep takes the bank statement you already have and does the categorisation you would otherwise do by hand.</p>
+    <p>You upload the statement — Barclays included — the AI extracts every transaction and assigns each one to an HMRC expense category, you review and correct anything it has read differently to you, and you export a spreadsheet formatted for 123 Sheets, Absolute Excel or VT. No accounting software. No bank feed. No handing over your online banking credentials to anything.</p>
+
+    <img src="/images/blog/post-16/hmrc-expense-categories-reference.svg" alt="HMRC self-employed expense categories used for Making Tax Digital" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Can you download a Barclays bank statement as an Excel file?</h3>
+    <p>You can export Barclays transactions as a CSV file, which opens directly in Excel. The export is available in Online Banking on a desktop browser under "View all transactions" → "Export All", and is not available in the Barclays mobile app.</p>
+
+    <h3>How far back can you export Barclays transactions to CSV?</h3>
+    <p>The CSV export is limited to recent transactions rather than your full history. For older periods, archived statements or closed accounts, Barclays generally offers PDF statements instead, which is why many sole traders end up converting PDFs anyway.</p>
+
+    <h3>Is a Barclays CSV export enough for Making Tax Digital?</h3>
+    <p>No. A CSV export gives you date, description, amount and balance, but MTD for Income Tax requires each business transaction to be categorised into HMRC expense categories, totalled by quarter and submitted through recognised software.</p>
+
+    <h3>Do you need accounting software to submit MTD with a Barclays account?</h3>
+    <p>No. HMRC-recognised bridging software such as 123 Sheets, Absolute Excel and VT allows you to submit quarterly updates from a properly formatted spreadsheet, without moving to a full accounting platform.</p>
+
+    <h3>What HMRC expense categories do sole traders use for MTD?</h3>
+    <p>The main self-employed categories include motor expenses, office costs, repairs and maintenance, professional fees, travel and subsistence, stock and materials, staff costs, and bank and finance charges. Landlords use a separate set of property income and expense categories.</p>
+
+    <h3>When does MTD for Income Tax apply to me?</h3>
+    <p>MTD for Income Tax applies from April 2026 to sole traders and landlords with qualifying income above £50,000, from April 2027 above £30,000, and from April 2028 above £20,000.</p>
+
+    <p>Barclays gives you more than most UK banks — a real CSV export, if you are on desktop and the transactions are recent enough. But an export is not a record. The work MTD actually asks of you starts after the download: categorising every transaction the way HMRC expects to see it, quarter after quarter. That is the part worth automating, and it is the part MTDPrep exists to do.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:2rem;">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/mtd-bridging-software-explained.html">MTD Bridging Software Explained</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:1rem;">
+      Found this useful? <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener">Add MTDPrep as a Google Preferred Source</a> and our MTD guides will show up whenever you search the topics we cover.
+    </p>
+
+    <p><em>MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</em></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Now live</p>
+    <h2>Try MTDPrep free — no card required</h2>
+    <p class="capture-sub">Process your first bank statement free. If MTDPrep saves you time, upgrade to Standard for £19/month and process unlimited statements.</p>
+    <a href="https://app.mtdprep.co.uk" class="btn btn-primary btn-large">Try it free →</a>
+
+    <div class="cta-divider">or</div>
+
+    <p class="cta-waitlist-label">Stay updated</p>
+    <p class="cta-waitlist-sub">Join the mailing list for product updates and MTD guidance.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        toolname="subscribe_to_mtdprep_updates"
+        tooldescription="Join the MTDPrep waitlist with an email address to get notified before launch."
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with product updates and MTD guidance.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="preferred-source-cta" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);">
+    <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;">
+      <img src="/images/preferred-source-badge.png" alt="Add MTDPrep as a Google Preferred Source" style="height:20px;width:auto;">
+    </a>
+  </div>
+  <div style="margin-top:20px;">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+  });
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.mc-ajax-form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var resp=form.querySelector('.mc-response');
+      var url=form.action+'&EMAIL='+encodeURIComponent(form.EMAIL.value);
+      var cb='mc_'+Date.now();
+      window[cb]=function(data){
+        resp.style.display='block';
+        if(data.result==='success'){
+          resp.style.color='#1F6E57';
+          resp.innerHTML='&#10003; You\'re on the list — we\'ll be in touch before launch.';
+          if(typeof gtag!=='undefined')gtag('event','generate_lead');
+        } else {
+          resp.style.color='#E53E3E';
+          resp.innerHTML=data.msg||'Something went wrong — please try again.';
+        }
+        delete window[cb];
+        document.body.removeChild(s);
+      };
+      var s=document.createElement('script');
+      s.src=url.replace('&c=?','&c='+cb);
+      document.body.appendChild(s);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

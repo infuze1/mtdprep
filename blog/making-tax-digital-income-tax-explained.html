@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Making Tax Digital for Income Tax Explained (2026)</title>
+  <meta name="description" content="A plain-English explainer of Making Tax Digital for Income Tax — what it is, who it affects, and what you actually have to do, with no jargon.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mtdprep.co.uk/blog/making-tax-digital-income-tax-explained.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does Making Tax Digital for Income Tax mean in simple terms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It means self-employed people and landlords must keep digital records and send HMRC a summary of their income and expenses every three months, using compatible software, instead of filing a single Self Assessment return once a year. An annual Final Declaration then replaces the old tax return."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does Making Tax Digital for Income Tax start?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It starts in April 2026 for sole traders and landlords with combined gross income from self-employment and property above £50,000. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the £50,000 threshold based on profit or turnover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is based on gross income — your total business and property takings before expenses — not your profit. Income from self-employment and property is added together to test against the threshold."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I have to submit my tax four times a year now?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You submit four quarterly updates, but these are running summaries of income and expenses, not four separate tax calculations. Your actual tax is worked out once a year in the Final Declaration, which keeps the 31 January deadline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to buy accounting software for Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You need MTD-compatible software to submit, but bridging software such as 123 Sheets, Absolute Excel, or VT lets you keep working in a spreadsheet and simply submits those figures to HMRC. A full accounting suite is not required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I miss a Making Tax Digital deadline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HMRC uses a points-based system: you get one penalty point for each missed submission, and when you reach four points you are charged a £200 penalty. A single late submission won't be fined, but repeated lateness will be."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the Making Tax Digital quarterly deadlines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using the standard tax-year quarters, the deadlines are 7 August, 7 November, 7 February and 7 May, with the annual Final Declaration due by 31 January after the tax year ends."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .cta-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 460px;
+      margin: 40px 0 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .cta-divider::before,
+    .cta-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta-waitlist-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+    }
+
+    .cta-waitlist-sub {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>Making Tax Digital for Income Tax, Explained in Plain English (2026)</h1>
+    <p class="article-meta">Published 8 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-11/mtd-income-tax-explained-hero.svg" alt="Making Tax Digital for Income Tax explained for a UK sole trader at home" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>If you've received a letter from HMRC, or seen the phrase "Making Tax Digital" pop up from your bank or your accountant and thought what on earth does this actually mean for me? — this is the explainer you need. No jargon, no acronym soup. Just what Making Tax Digital for Income Tax is, whether it applies to you, and what you'll actually have to do differently.</p>
+    <p>The short version: Making Tax Digital for Income Tax (often shortened to MTD ITSA) is the biggest change to how self-employed people and landlords report their income to HMRC in a generation. From April 2026 it replaces the once-a-year Self Assessment tax return with quarterly digital updates. If that sounds like more work, this guide explains why it doesn't have to be — and how people who currently keep their books in a spreadsheet can stay compliant without buying full accounting software.</p>
+
+    <h2>What Is Making Tax Digital for Income Tax?</h2>
+    <p>Making Tax Digital for Income Tax is a new HMRC system that requires self-employed people and landlords to keep digital records and send HMRC an update on their income and expenses every three months, instead of filing one Self Assessment return each year.</p>
+    <p>There are two core requirements. First, you must keep your business records digitally — in software or a compatible spreadsheet, not on paper or in your head. Second, you must submit a quarterly update to HMRC using MTD-compatible software four times a year, followed by a single annual Final Declaration that replaces the old Self Assessment return.</p>
+    <p>That's the whole idea. HMRC wants a steadier, digital stream of information rather than one big annual document. The name is literal: your tax records go digital, and they get sent more often.</p>
+
+    <h2>Who Does Making Tax Digital for Income Tax Apply To?</h2>
+    <p>MTD for Income Tax applies to sole traders and landlords whose combined gross income from self-employment and property is above a set threshold. It is being introduced in stages based on that income level.</p>
+    <p>From April 2026, it is mandatory if your gross income from self-employment and property combined is more than £50,000 a year. From April 2027, the threshold drops to £30,000. From April 2028, it falls again to £20,000. Across those three phases, an estimated 2.25 million sole traders and landlords will be brought into the system.</p>
+    <p>Two things trip people up here. First, the threshold is based on gross income — your total takings before expenses — not your profit. Someone with £52,000 of turnover and £15,000 of costs is still in scope, even though their profit is well under £50,000. Second, income from self-employment and property is added together. A landlord earning £30,000 from rent who also does £25,000 of freelance work has £55,000 of combined gross income, and is therefore mandated from April 2026.</p>
+    <p>It does not apply to income from partnership profit shares, dividends, savings, PAYE employment, or pensions.</p>
+
+    <img src="/images/blog/post-11/self-assessment-vs-mtd-comparison.svg" alt="Self Assessment versus Making Tax Digital quarterly updates comparison" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>What Actually Changes Compared to Self Assessment?</h2>
+    <p>The biggest change is frequency: instead of one Self Assessment return each January, you send HMRC four quarterly updates during the year plus one Final Declaration after it ends.</p>
+    <p>Under the old system, most people gathered a year's worth of receipts and bank statements around Christmas, filed one online return by 31 January, and forgot about it until the following year. Under MTD, that annual scramble is replaced by a rhythm of shorter, regular submissions. Each quarterly update is a summary of your income and expenses for that three-month period, categorised into HMRC's expense categories.</p>
+    <p>Importantly, the quarterly updates are cumulative running totals, not final figures — you're not calculating your tax bill four times a year. The actual tax calculation and any final adjustments happen once, in the Final Declaration, which keeps the familiar 31 January deadline. For the 2026/27 tax year, that Final Declaration is due by 31 January 2028.</p>
+
+    <h2>When Are the Making Tax Digital Deadlines?</h2>
+    <p>Using the standard tax-year quarters, the four quarterly update deadlines are 7 August, 7 November, 7 February and 7 May. The Final Declaration is due by 31 January following the end of the tax year.</p>
+    <p>The standard quarters end on 5 July, 5 October, 5 January and 5 April, and each update is due one month and two days later — which is why the dates always land on the 7th. These deadlines are fixed regardless of your own accounting year-end, so everyone in the system works to the same calendar.</p>
+
+    <img src="/images/blog/post-11/mtd-quarterly-deadlines-2026-2027.svg" alt="Making Tax Digital for Income Tax quarterly update deadlines 2026 to 2027" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>Miss a deadline and HMRC applies a points-based penalty system: one point per missed submission, and once you reach four points you're charged a £200 penalty. It's designed to be forgiving of a single slip but to bite if late submission becomes a habit.</p>
+
+    <h2>Do I Need to Buy Accounting Software for Making Tax Digital?</h2>
+    <p>No. This is the single most common misconception about MTD. You need MTD-compatible software to submit your updates, but that does not have to be a full accounting suite with its own monthly subscription.</p>
+    <p>A whole category of tools called bridging software exists precisely for people who want to keep working in a spreadsheet. Bridging software — such as 123 Sheets, Absolute Excel, or VT — takes the figures from your spreadsheet and submits them to HMRC in the MTD format. You keep your familiar spreadsheet workflow; the bridging tool handles the digital link to HMRC. For a sole trader or landlord who resents the cost and complexity of a full accounting platform, this is a genuinely lighter path to compliance.</p>
+    <p>The catch is getting your data into that spreadsheet in the first place, correctly categorised — which is where a lot of the real work sits.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <h2>How Does MTDPrep Fit In?</h2>
+    <p>MTDPrep is built for exactly the person this article is written for: a UK sole trader or landlord who keeps their books in a spreadsheet, doesn't want to buy full accounting software, and now needs MTD-ready records.</p>
+    <p>You upload your bank statement PDF, and the AI reads each transaction and assigns it to the correct HMRC expense category — income, motor, office costs, repairs, professional fees, and so on. You review the categorisation and correct anything that needs it, then export a spreadsheet formatted for your chosen bridging software. From there, 123 Sheets, Absolute Excel, or VT handles the submission to HMRC. No accounting suite, no rekeying, no starting from a blank spreadsheet each quarter.</p>
+
+    <img src="/images/blog/post-11/mtdprep-workflow-upload-categorise-export.svg" alt="MTDPrep workflow: upload bank statement, AI categorises expenses, export for MTD bridging software" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>The point is to make the quarterly rhythm of MTD manageable for people who would otherwise be doing it all by hand.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What does Making Tax Digital for Income Tax mean in simple terms?</h3>
+    <p>It means self-employed people and landlords must keep digital records and send HMRC a summary of their income and expenses every three months, using compatible software, instead of filing a single Self Assessment return once a year. An annual Final Declaration then replaces the old tax return.</p>
+
+    <h3>When does Making Tax Digital for Income Tax start?</h3>
+    <p>It starts in April 2026 for sole traders and landlords with combined gross income from self-employment and property above £50,000. The threshold drops to £30,000 from April 2027 and £20,000 from April 2028.</p>
+
+    <h3>Is the £50,000 threshold based on profit or turnover?</h3>
+    <p>It is based on gross income — your total business and property takings before expenses — not your profit. Income from self-employment and property is added together to test against the threshold.</p>
+
+    <h3>Do I have to submit my tax four times a year now?</h3>
+    <p>You submit four quarterly updates, but these are running summaries of income and expenses, not four separate tax calculations. Your actual tax is worked out once a year in the Final Declaration, which keeps the 31 January deadline.</p>
+
+    <h3>Do I need to buy accounting software for Making Tax Digital?</h3>
+    <p>No. You need MTD-compatible software to submit, but bridging software such as 123 Sheets, Absolute Excel, or VT lets you keep working in a spreadsheet and simply submits those figures to HMRC. A full accounting suite is not required.</p>
+
+    <h3>What happens if I miss a Making Tax Digital deadline?</h3>
+    <p>HMRC uses a points-based system: you get one penalty point for each missed submission, and when you reach four points you are charged a £200 penalty. A single late submission won't be fined, but repeated lateness will be.</p>
+
+    <h3>What are the Making Tax Digital quarterly deadlines?</h3>
+    <p>Using the standard tax-year quarters, the deadlines are 7 August, 7 November, 7 February and 7 May, with the annual Final Declaration due by 31 January after the tax year ends.</p>
+
+    <p>Making Tax Digital sounds more daunting than it is once the jargon is stripped away: keep digital records, send HMRC a quarterly summary, confirm the year's figures once at the end. If you already do your own books in a spreadsheet, you don't need to change to expensive accounting software to comply — you need a reliable way to get your bank statement into MTD-ready, correctly categorised records. That's what MTDPrep is built to do.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:2rem;">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/what-is-mtd-itsa.html">What Is MTD ITSA?</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:1rem;">
+      Found this useful? <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener">Add MTDPrep as a Google Preferred Source</a> and our MTD guides will show up whenever you search the topics we cover.
+    </p>
+
+    <p><em>MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</em></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Now live</p>
+    <h2>Try MTDPrep free — no card required</h2>
+    <p class="capture-sub">Process your first bank statement free. If MTDPrep saves you time, upgrade to Standard for £19/month and process unlimited statements.</p>
+    <a href="https://app.mtdprep.co.uk" class="btn btn-primary btn-large">Try it free →</a>
+
+    <div class="cta-divider">or</div>
+
+    <p class="cta-waitlist-label">Stay updated</p>
+    <p class="cta-waitlist-sub">Join the mailing list for product updates and MTD guidance.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        toolname="subscribe_to_mtdprep_updates"
+        tooldescription="Join the MTDPrep waitlist with an email address to get notified before launch."
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with product updates and MTD guidance.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="preferred-source-cta" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);">
+    <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;">
+      <img src="/images/preferred-source-badge.png" alt="Add MTDPrep as a Google Preferred Source" style="height:20px;width:auto;">
+    </a>
+  </div>
+  <div style="margin-top:20px;">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+  });
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.mc-ajax-form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var resp=form.querySelector('.mc-response');
+      var url=form.action+'&EMAIL='+encodeURIComponent(form.EMAIL.value);
+      var cb='mc_'+Date.now();
+      window[cb]=function(data){
+        resp.style.display='block';
+        if(data.result==='success'){
+          resp.style.color='#1F6E57';
+          resp.innerHTML='&#10003; You\'re on the list — we\'ll be in touch before launch.';
+          if(typeof gtag!=='undefined')gtag('event','generate_lead');
+        } else {
+          resp.style.color='#E53E3E';
+          resp.innerHTML=data.msg||'Something went wrong — please try again.';
+        }
+        delete window[cb];
+        document.body.removeChild(s);
+      };
+      var s=document.createElement('script');
+      s.src=url.replace('&c=?','&c='+cb);
+      document.body.appendChild(s);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

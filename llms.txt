@@ -10,6 +10,12 @@
 
 ## Blog
 
+- [Barclays Bank Statement Excel Download: The MTD Guide](https://mtdprep.co.uk/blog/barclays-bank-statement-excel-download.html): How to export a Barclays statement to Excel or CSV, why it's more limited than it looks, and what MTD still requires afterwards.
+- [Lloyds Bank Statement Download for Sole Traders](https://mtdprep.co.uk/blog/lloyds-bank-statement-download-sole-trader.html): How to download Lloyds bank statements, how far back you can go, and what still has to happen before they count as MTD digital records.
+- [Bank Statement Converter UK: Not Enough for MTD](https://mtdprep.co.uk/blog/bank-statement-converter-uk.html): A bank statement converter turns your PDF into a spreadsheet — but MTD needs HMRC-categorised digital records. Here's the gap, and how to close it.
+- [Making Tax Digital for Partnerships: Do the Rules Apply?](https://mtdprep.co.uk/blog/making-tax-digital-for-partnerships.html): Making Tax Digital does not yet apply to partnerships — no start date is set. But partners with a sole trade or rental income can still be caught.
+- [Do You Need Accounting Software for MTD?](https://mtdprep.co.uk/blog/do-i-need-accounting-software-for-making-tax-digital.html): No — you don't need full accounting software for Making Tax Digital. Here's how a spreadsheet plus bridging software keeps you compliant for less.
+- [Making Tax Digital for Income Tax Explained (2026)](https://mtdprep.co.uk/blog/making-tax-digital-income-tax-explained.html): A plain-English explainer of Making Tax Digital for Income Tax — what it is, who it affects, and what you actually have to do.
 - [HMRC Expense Categories for the Self-Employed: A Plain-English Guide (2026)](https://mtdprep.co.uk/blog/hmrc-expense-categories-self-employed-uk.html): The nine HMRC allowable expense categories for sole traders, with examples and MTD categorisation tips.
 - [Making Tax Digital April 2026: Who's Already Mandated — and What Happens Now?](https://mtdprep.co.uk/blog/making-tax-digital-april-2026.html): Who's in scope now, the 2026/27 quarterly deadlines, and what happens if you missed the start date.
 - [What Is MTD ITSA? Making Tax Digital Explained](https://mtdprep.co.uk/blog/what-is-mtd-itsa.html): What MTD ITSA stands for, who it affects, when it starts, and what you actually need to do.

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t2 d2">
+<title id="t2">What the Barclays CSV export gives you and what Making Tax Digital requires</title>
+<desc id="d2">Two-column comparison: the Barclays export provides date, description, amount and balance for recent transactions on desktop only, while MTD requires categorised digital records, quarterly totals and submission via recognised software.</desc>
+<rect width="900" height="470" fill="#F8FAFC"/>
+<rect x="0" y="0" width="900" height="58" fill="#2A8A6E"/>
+<text x="32" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" fill="#FFFFFF">The export is not the record</text>
+
+<rect x="32" y="86" width="396" height="336" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="32" y="86" width="396" height="44" rx="8" fill="#1A6FA8"/>
+<rect x="32" y="116" width="396" height="14" fill="#1A6FA8"/>
+<text x="230" y="114" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">What the Barclays export gives you</text>
+
+<text x="60" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#1F6E57">&#10003;</text>
+<text x="86" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Transaction date</text>
+<text x="60" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#1F6E57">&#10003;</text>
+<text x="86" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Description as the bank wrote it</text>
+<text x="60" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#1F6E57">&#10003;</text>
+<text x="86" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Amount in or out</text>
+<text x="60" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#1F6E57">&#10003;</text>
+<text x="86" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Running balance</text>
+
+<line x1="60" y1="282" x2="400" y2="282" stroke="#D1DCE6" stroke-width="1"/>
+
+<text x="60" y="312" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#E53E3E">&#10007;</text>
+<text x="86" y="312" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#4A5568">Recent transactions only</text>
+<text x="60" y="344" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#E53E3E">&#10007;</text>
+<text x="86" y="344" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#4A5568">Desktop banking only, not the app</text>
+<text x="60" y="376" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#E53E3E">&#10007;</text>
+<text x="86" y="376" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#4A5568">No expense categories at all</text>
+
+<rect x="472" y="86" width="396" height="336" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="472" y="86" width="396" height="44" rx="8" fill="#2A8A6E"/>
+<rect x="472" y="116" width="396" height="14" fill="#2A8A6E"/>
+<text x="670" y="114" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">What Making Tax Digital requires</text>
+
+<circle cx="506" cy="159" r="11" fill="#E8F5F1"/>
+<text x="506" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57" text-anchor="middle">1</text>
+<text x="530" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Digital records of income</text>
+<text x="530" y="182" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">and expenses</text>
+
+<circle cx="506" cy="217" r="11" fill="#E8F5F1"/>
+<text x="506" y="222" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57" text-anchor="middle">2</text>
+<text x="530" y="222" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">An HMRC expense category</text>
+<text x="530" y="240" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">on every transaction</text>
+
+<circle cx="506" cy="275" r="11" fill="#E8F5F1"/>
+<text x="506" y="280" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57" text-anchor="middle">3</text>
+<text x="530" y="280" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Totals for each of the four</text>
+<text x="530" y="298" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">quarterly updates</text>
+
+<circle cx="506" cy="333" r="11" fill="#E8F5F1"/>
+<text x="506" y="338" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#1F6E57" text-anchor="middle">4</text>
+<text x="530" y="338" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">Submission via recognised</text>
+<text x="530" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#2C3E50">bridging software</text>
+
+<rect x="500" y="376" width="340" height="30" rx="6" fill="#E8F5F1"/>
+<text x="670" y="396" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#1F6E57" text-anchor="middle">123 Sheets · Absolute Excel · VT</text>
+
+<text x="450" y="446" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-style="italic" fill="#4A5568" text-anchor="middle">The gap between the two columns is the work.</text>
+<text x="868" y="454" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

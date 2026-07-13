@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Making Tax Digital for Partnerships: Do the Rules Apply?</title>
+  <meta name="description" content="Making Tax Digital does not yet apply to partnerships — no start date is set. But partners with a sole trade or rental income can still be caught. Here's how.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mtdprep.co.uk/blog/making-tax-digital-for-partnerships.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Making Tax Digital apply to partnerships?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not yet. Partnerships — general, limited, and LLPs — are deferred from Making Tax Digital for Income Tax and HMRC has not set a mandation date. They were originally planned for April 2025 but that was postponed with no replacement date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When will partnerships have to use Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No date has been announced. HMRC is rolling out MTD to individual sole traders and landlords first (April 2026, 2027 and 2028), and is expected to consult on partnerships only after those phases are established — realistically not before the end of the decade."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does my share of partnership profit count towards the MTD threshold?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Partnership profit share is excluded from qualifying income for Making Tax Digital. Only gross income from a sole trade and from UK property held in your own name count towards the £50,000, £30,000, and £20,000 thresholds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I'm a partner but also let a property — am I caught by MTD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Possibly. Your rental income (plus any sole-trade income) is qualifying income. If it exceeds the threshold for the relevant year, you must use MTD for that income, even though your partnership share stays on ordinary Self Assessment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do partnerships still file a Self Assessment return?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Until partnerships are formally brought into Making Tax Digital, they continue to file the partnership return through Self Assessment as they do now, and partners report their share on their personal returns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What software do I need if my own-name income is mandated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You need MTD-compatible software, which can be a spreadsheet paired with bridging software such as 123 Sheets, Absolute Excel, or VT — not necessarily a full accounting package. Tools like MTDPrep prepare your bank statement into a bridging-ready spreadsheet."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .cta-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 460px;
+      margin: 40px 0 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .cta-divider::before,
+    .cta-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta-waitlist-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+    }
+
+    .cta-waitlist-sub {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>Making Tax Digital for Partnerships: Do the Rules Apply?</h1>
+    <p class="article-meta">Published 10 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-13/mtd-partnerships-explained-hero.svg" alt="Making Tax Digital for partnerships explained" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p><strong>Short answer: not yet.</strong> Making Tax Digital for Income Tax does not currently apply to partnerships, and HMRC has not set a date when it will. General partnerships, limited partnerships, and limited liability partnerships (LLPs) are all deferred indefinitely — they were originally pencilled in for April 2025, but that was postponed and no replacement date has been announced. So if your business is run purely as a partnership, you have nothing to file under MTD right now.</p>
+    <p>But there's an important catch that trips people up: the partnership being deferred does not mean every partner is off the hook. If you personally have income from a sole trade or a rental property held in your own name, that income can still bring you into Making Tax Digital, even while the partnership itself waits. This post explains exactly who is caught, who isn't, and what the sensible move is while the partnership timeline stays open.</p>
+
+    <h2>Does Making Tax Digital Apply to Partnerships in 2026?</h2>
+    <p>No. As of the 2026 to 2027 tax year, partnerships are not mandated to use Making Tax Digital for Income Tax. HMRC has confirmed that partnerships — general, limited, and LLPs — are deferred, with no mandation date currently on the books. The MTD rollout that begins in April 2026 applies to individual sole traders and landlords, not to partnerships as entities.</p>
+    <p>The reason is sequencing rather than a change of heart. HMRC is rolling out MTD to individuals in three phases first: qualifying income over £50,000 from April 2026, over £30,000 from April 2027, and over £20,000 from April 2028. Only once those phases are bedded in is HMRC expected to consult on partnerships, draft the specific legislation, and give a reasonable lead-in period. Realistically, mandation for partnerships is unlikely before the end of the decade.</p>
+
+    <h2>Why Were Partnerships Delayed?</h2>
+    <p>Partnerships were delayed because their tax structure is more complicated to bring into a quarterly digital system. A partnership files its own return, then each partner reports their share of the profit on their personal Self Assessment. Layering quarterly updates onto that two-tier structure — especially for partnerships with corporate partners or complex profit-sharing arrangements — needs its own rules, which HMRC hasn't finalised.</p>
+
+    <img src="/images/blog/post-13/who-is-mandated-for-mtd-and-when.svg" alt="Who is mandated for Making Tax Digital and when" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>The original timetable had general partnerships joining from April 2025. When the wider MTD programme was rephased, partnerships were pushed back without a new date. The practical upshot for 2026 is simple: keep filing your partnership return the way you do now, through Self Assessment.</p>
+
+    <h2>Can a Partner Still Be Caught by Making Tax Digital?</h2>
+    <p>Yes — and this is the part that catches people out. While the partnership itself is deferred, an individual partner can be mandated for MTD on their other income. Making Tax Digital looks at your qualifying income, and qualifying income includes gross income from any sole trade you run and from any UK property you let in your own name. If those add up to more than the threshold for the relevant year, you're in — regardless of what happens with the partnership.</p>
+    <p>So picture a partner in a design firm who also lets out a flat in their own name. The partnership share doesn't count towards MTD. But the rental income does. If that rental income (combined with any sole-trade income) crosses £50,000 for April 2026, £30,000 for April 2027, or £20,000 for April 2028, that partner has to keep digital records and file quarterly updates for the property side of their affairs — even though the partnership stays on old-style Self Assessment.</p>
+
+    <h2>Does Partnership Profit Count Towards the MTD Threshold?</h2>
+    <p>No. Your share of partnership profit is specifically excluded from the qualifying income calculation for Making Tax Digital. Only two things count towards the threshold: gross income from self-employment as a sole trader, and gross income from UK property held in your own name.</p>
+
+    <img src="/images/blog/post-13/qualifying-income-for-mtd.svg" alt="What counts as qualifying income for Making Tax Digital" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>This means a partner whose entire income comes from the partnership has zero qualifying income for MTD purposes — they are not mandated at all, on any income, until partnerships are formally brought in. It's only when a partner has separate own-name business or rental income that the question arises. Get this distinction right and you'll know immediately whether MTD touches you before the partnership rules land.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <h2>What Should Partnerships Do While There's No Deadline?</h2>
+    <p>Treat the gap as a preparation window, not a reason to switch off. Two moves make sense right now. First, work out whether any partner has own-name sole-trade or rental income that could pull them into MTD from April 2026, 2027, or 2028 — because that obligation is real and dated, even while the partnership waits. Second, get the partnership's own record-keeping into a clean digital shape now, so that when a date is eventually announced you're adapting a tidy system rather than rebuilding from paper.</p>
+    <p>For any partner who is caught on their own-name income, the mechanics are the same as for any sole trader or landlord. You keep digital records, and you file quarterly updates through MTD-compatible software. That software can be a spreadsheet paired with bridging software — such as 123 Sheets, Absolute Excel, or VT — rather than a full accounting suite. You don't need to buy an expensive monthly platform to file a handful of quarterly totals.</p>
+
+    <h2>How Do You Get a Partner's Own-Name Income MTD-Ready?</h2>
+    <p>The fiddly part isn't the filing — it's turning a bank statement into a clean, correctly categorised record. Bridging software files your finished totals with HMRC, but it does nothing to help you produce them. You still have to take every line off your bank statement and sort it into the right HMRC expense category, such as Motor expenses, Office costs, Repairs and maintenance, or Professional fees.</p>
+
+    <img src="/images/blog/post-13/partner-own-name-income-workflow.svg" alt="How to prepare a partner's own-name income for Making Tax Digital" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>That's exactly the step MTDPrep handles. You upload a bank statement PDF, AI extracts every transaction and sorts it into HMRC-compliant categories, you review and correct anything that needs it, and you export a spreadsheet that's ready to drop into your bridging software. No monthly subscription, and no live bank feed to grant access to. For a partner tidying up the rental or sole-trade side of their affairs, it removes the one genuinely tedious job.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Does Making Tax Digital apply to partnerships?</h3>
+    <p>Not yet. Partnerships — general, limited, and LLPs — are deferred from Making Tax Digital for Income Tax and HMRC has not set a mandation date. They were originally planned for April 2025 but that was postponed with no replacement date.</p>
+
+    <h3>When will partnerships have to use Making Tax Digital?</h3>
+    <p>No date has been announced. HMRC is rolling out MTD to individual sole traders and landlords first (April 2026, 2027 and 2028), and is expected to consult on partnerships only after those phases are established — realistically not before the end of the decade.</p>
+
+    <h3>Does my share of partnership profit count towards the MTD threshold?</h3>
+    <p>No. Partnership profit share is excluded from qualifying income for Making Tax Digital. Only gross income from a sole trade and from UK property held in your own name count towards the £50,000, £30,000, and £20,000 thresholds.</p>
+
+    <h3>I'm a partner but also let a property — am I caught by MTD?</h3>
+    <p>Possibly. Your rental income (plus any sole-trade income) is qualifying income. If it exceeds the threshold for the relevant year, you must use MTD for that income, even though your partnership share stays on ordinary Self Assessment.</p>
+
+    <h3>Do partnerships still file a Self Assessment return?</h3>
+    <p>Yes. Until partnerships are formally brought into Making Tax Digital, they continue to file the partnership return through Self Assessment as they do now, and partners report their share on their personal returns.</p>
+
+    <h3>What software do I need if my own-name income is mandated?</h3>
+    <p>You need MTD-compatible software, which can be a spreadsheet paired with bridging software such as 123 Sheets, Absolute Excel, or VT — not necessarily a full accounting package. Tools like MTDPrep prepare your bank statement into a bridging-ready spreadsheet.</p>
+
+    <p>Making Tax Digital does not apply to partnerships yet, and no start date has been set — so as a partnership entity you keep filing through Self Assessment for now. The trap to watch is your personal position: if you have a sole trade or rental income in your own name, that income can bring you into MTD from April 2026 onwards, quite separately from the partnership. Knowing which of your income streams count is the whole game.</p>
+    <p>If you're a partner squaring away your own-name rental or sole-trade income, MTDPrep turns your bank statement PDF into a bridging-software-ready spreadsheet in minutes.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:2rem;">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/making-tax-digital-landlords.html">Making Tax Digital for Landlords</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:1rem;">
+      Found this useful? <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener">Add MTDPrep as a Google Preferred Source</a> and our MTD guides will show up whenever you search the topics we cover.
+    </p>
+
+    <p><em>MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</em></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Now live</p>
+    <h2>Try MTDPrep free — no card required</h2>
+    <p class="capture-sub">Process your first bank statement free. If MTDPrep saves you time, upgrade to Standard for £19/month and process unlimited statements.</p>
+    <a href="https://app.mtdprep.co.uk" class="btn btn-primary btn-large">Try it free →</a>
+
+    <div class="cta-divider">or</div>
+
+    <p class="cta-waitlist-label">Stay updated</p>
+    <p class="cta-waitlist-sub">Join the mailing list for product updates and MTD guidance.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        toolname="subscribe_to_mtdprep_updates"
+        tooldescription="Join the MTDPrep waitlist with an email address to get notified before launch."
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with product updates and MTD guidance.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="preferred-source-cta" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);">
+    <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;">
+      <img src="/images/preferred-source-badge.png" alt="Add MTDPrep as a Google Preferred Source" style="height:20px;width:auto;">
+    </a>
+  </div>
+  <div style="margin-top:20px;">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+  });
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.mc-ajax-form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var resp=form.querySelector('.mc-response');
+      var url=form.action+'&EMAIL='+encodeURIComponent(form.EMAIL.value);
+      var cb='mc_'+Date.now();
+      window[cb]=function(data){
+        resp.style.display='block';
+        if(data.result==='success'){
+          resp.style.color='#1F6E57';
+          resp.innerHTML='&#10003; You\'re on the list — we\'ll be in touch before launch.';
+          if(typeof gtag!=='undefined')gtag('event','generate_lead');
+        } else {
+          resp.style.color='#E53E3E';
+          resp.innerHTML=data.msg||'Something went wrong — please try again.';
+        }
+        delete window[cb];
+        document.body.removeChild(s);
+      };
+      var s=document.createElement('script');
+      s.src=url.replace('&c=?','&c='+cb);
+      document.body.appendChild(s);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

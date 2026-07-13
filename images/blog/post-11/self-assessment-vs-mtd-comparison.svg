@@ -1,0 +1,36 @@
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="440" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="60" fill="#2A8A6E"/>
+  <text x="400" y="38" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">What changes under Making Tax Digital</text>
+  <rect x="50" y="90" width="320" height="310" rx="10" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <rect x="50" y="90" width="320" height="46" rx="10" fill="#4A5568"/>
+  <rect x="50" y="116" width="320" height="20" fill="#4A5568"/>
+  <text x="210" y="120" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">Before MTD</text>
+  <text x="210" y="180" text-anchor="middle" fill="#2C3E50" font-size="15" font-weight="600">One Self Assessment return</text>
+  <text x="210" y="204" text-anchor="middle" fill="#4A5568" font-size="13">filed once a year</text>
+  <rect x="170" y="230" width="80" height="100" rx="6" fill="#F8FAFC" stroke="#4A5568" stroke-width="2"/>
+  <rect x="184" y="248" width="52" height="7" rx="3" fill="#D1DCE6"/>
+  <rect x="184" y="262" width="52" height="7" rx="3" fill="#D1DCE6"/>
+  <rect x="184" y="276" width="36" height="7" rx="3" fill="#D1DCE6"/>
+  <rect x="150" y="352" width="120" height="30" rx="15" fill="#4A5568"/>
+  <text x="210" y="372" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">31 January</text>
+  <rect x="430" y="90" width="320" height="310" rx="10" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <rect x="430" y="90" width="320" height="46" rx="10" fill="#2A8A6E"/>
+  <rect x="430" y="116" width="320" height="20" fill="#2A8A6E"/>
+  <text x="590" y="120" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">Under MTD</text>
+  <text x="590" y="172" text-anchor="middle" fill="#2C3E50" font-size="15" font-weight="600">Four quarterly updates</text>
+  <text x="590" y="194" text-anchor="middle" fill="#4A5568" font-size="13">plus one Final Declaration</text>
+  <g fill="#E8F5F1" stroke="#2A8A6E" stroke-width="2">
+    <rect x="470" y="214" width="46" height="60" rx="5"/>
+    <rect x="530" y="214" width="46" height="60" rx="5"/>
+    <rect x="590" y="214" width="46" height="60" rx="5"/>
+    <rect x="650" y="214" width="46" height="60" rx="5"/>
+  </g>
+  <text x="493" y="250" text-anchor="middle" fill="#1F6E57" font-size="13" font-weight="700">Q1</text>
+  <text x="553" y="250" text-anchor="middle" fill="#1F6E57" font-size="13" font-weight="700">Q2</text>
+  <text x="613" y="250" text-anchor="middle" fill="#1F6E57" font-size="13" font-weight="700">Q3</text>
+  <text x="673" y="250" text-anchor="middle" fill="#1F6E57" font-size="13" font-weight="700">Q4</text>
+  <rect x="500" y="352" width="180" height="30" rx="15" fill="#2A8A6E"/>
+  <text x="590" y="372" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="600">7 Aug / Nov / Feb / May</text>
+  <text x="788" y="430" text-anchor="end" fill="#D1DCE6" font-size="10">mtdprep.co.uk</text>
+</svg>

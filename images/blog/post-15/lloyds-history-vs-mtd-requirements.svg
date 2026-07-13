@@ -1,0 +1,78 @@
+<svg viewBox="0 0 800 470" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="470" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="800" height="56" fill="#2A8A6E"/>
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#FFFFFF">What your bank gives you vs what MTD requires</text>
+
+  <rect x="30" y="86" width="350" height="344" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+  <rect x="30" y="86" width="350" height="42" rx="8" fill="#EDF2F7"/>
+  <rect x="30" y="116" width="350" height="12" fill="#EDF2F7"/>
+  <text x="205" y="113" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#2C3E50">What Lloyds gives you</text>
+
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#2C3E50">
+    <circle cx="62" cy="158" r="9" fill="#2A8A6E"/>
+    <path d="M 57 158 L 60.5 161.5 L 67 155" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="80" y="163">PDF statement, one per month</text>
+
+    <circle cx="62" cy="196" r="9" fill="#2A8A6E"/>
+    <path d="M 57 196 L 60.5 199.5 L 67 193" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="80" y="201">Up to 7 years online history</text>
+
+    <circle cx="62" cy="234" r="9" fill="#2A8A6E"/>
+    <path d="M 57 234 L 60.5 237.5 L 67 231" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="80" y="239">Date, description, amount</text>
+
+    <circle cx="62" cy="272" r="9" fill="#E53E3E"/>
+    <path d="M 58 268 L 66 276 M 66 268 L 58 276" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="80" y="277" fill="#4A5568">No expense categories</text>
+
+    <circle cx="62" cy="310" r="9" fill="#E53E3E"/>
+    <path d="M 58 306 L 66 314 M 66 306 L 58 314" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="80" y="315" fill="#4A5568">No business/personal split</text>
+
+    <circle cx="62" cy="348" r="9" fill="#E53E3E"/>
+    <path d="M 58 344 L 66 352 M 66 344 L 58 352" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="80" y="353" fill="#4A5568">Not a digital record</text>
+
+    <circle cx="62" cy="386" r="9" fill="#E53E3E"/>
+    <path d="M 58 382 L 66 390 M 66 382 L 58 390" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="80" y="391" fill="#4A5568">Cannot be submitted from</text>
+  </g>
+
+  <rect x="420" y="86" width="350" height="344" rx="8" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+  <rect x="420" y="86" width="350" height="42" rx="8" fill="#E8F5F1"/>
+  <rect x="420" y="116" width="350" height="12" fill="#E8F5F1"/>
+  <text x="595" y="113" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#1F6E57">What MTD requires</text>
+
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#2C3E50">
+    <circle cx="452" cy="158" r="9" fill="#2A8A6E"/>
+    <path d="M 447 158 L 450.5 161.5 L 457 155" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="163">Digital record per transaction</text>
+
+    <circle cx="452" cy="196" r="9" fill="#2A8A6E"/>
+    <path d="M 447 196 L 450.5 199.5 L 457 193" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="201">Business or personal marked</text>
+
+    <circle cx="452" cy="234" r="9" fill="#2A8A6E"/>
+    <path d="M 447 234 L 450.5 237.5 L 457 231" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="239">HMRC expense category</text>
+
+    <circle cx="452" cy="272" r="9" fill="#2A8A6E"/>
+    <path d="M 447 272 L 450.5 275.5 L 457 269" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="277">Totals grouped by quarter</text>
+
+    <circle cx="452" cy="310" r="9" fill="#2A8A6E"/>
+    <path d="M 447 310 L 450.5 313.5 L 457 307" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="315">Held in software or spreadsheet</text>
+
+    <circle cx="452" cy="348" r="9" fill="#2A8A6E"/>
+    <path d="M 447 348 L 450.5 351.5 L 457 345" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="353">Filed via recognised software</text>
+
+    <circle cx="452" cy="386" r="9" fill="#2A8A6E"/>
+    <path d="M 447 386 L 450.5 389.5 L 457 383" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <text x="470" y="391">Submitted four times a year</text>
+  </g>
+
+  <text x="400" y="452" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">The gap between the two columns is the work — extraction and HMRC categorisation.</text>
+  <text x="790" y="462" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6">mtdprep.co.uk</text>
+</svg>

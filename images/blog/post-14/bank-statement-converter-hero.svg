@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', Arial, sans-serif">
+<title>Sole trader converting a bank statement PDF for Making Tax Digital</title>
+<desc>A desk with a laptop showing an HMRC-categorised spreadsheet, a bank statement PDF and a coffee cup.</desc>
+<rect width="800" height="400" fill="#F8FAFC"/>
+<rect x="0" y="0" width="800" height="56" fill="#2A8A6E"/>
+<text x="24" y="35" font-size="20" font-weight="600" fill="#FFFFFF">From PDF to MTD-ready</text>
+
+<rect x="0" y="330" width="800" height="70" fill="#EDF2F7"/>
+<line x1="0" y1="330" x2="800" y2="330" stroke="#D1DCE6" stroke-width="2"/>
+
+<rect x="330" y="120" width="290" height="180" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="330" y="120" width="290" height="26" rx="6" fill="#2C3E50"/>
+<rect x="330" y="140" width="290" height="6" fill="#2C3E50"/>
+<circle cx="345" cy="133" r="4" fill="#4A5568"/>
+<circle cx="359" cy="133" r="4" fill="#4A5568"/>
+<text x="482" y="138" font-size="11" fill="#D1DCE6" text-anchor="middle">MTD-ready spreadsheet</text>
+<rect x="346" y="158" width="258" height="22" fill="#E8F5F1" stroke="#D1DCE6"/>
+<text x="356" y="173" font-size="11" font-weight="600" fill="#1F6E57">Date</text>
+<text x="422" y="173" font-size="11" font-weight="600" fill="#1F6E57">Description</text>
+<text x="516" y="173" font-size="11" font-weight="600" fill="#1F6E57">HMRC category</text>
+<rect x="346" y="180" width="258" height="22" fill="#FFFFFF" stroke="#D1DCE6"/>
+<text x="356" y="195" font-size="11" fill="#4A5568">03/07</text>
+<text x="422" y="195" font-size="11" fill="#4A5568">Fuel</text>
+<text x="516" y="195" font-size="11" fill="#2A8A6E">Car and van</text>
+<rect x="346" y="202" width="258" height="22" fill="#FFFFFF" stroke="#D1DCE6"/>
+<text x="356" y="217" font-size="11" fill="#4A5568">05/07</text>
+<text x="422" y="217" font-size="11" fill="#4A5568">Stationery</text>
+<text x="516" y="217" font-size="11" fill="#2A8A6E">Office costs</text>
+<rect x="346" y="224" width="258" height="22" fill="#FFFFFF" stroke="#D1DCE6"/>
+<text x="356" y="239" font-size="11" fill="#4A5568">09/07</text>
+<text x="422" y="239" font-size="11" fill="#4A5568">Bookkeeper</text>
+<text x="516" y="239" font-size="11" fill="#2A8A6E">Professional</text>
+<rect x="346" y="246" width="258" height="22" fill="#FFFFFF" stroke="#D1DCE6"/>
+<text x="356" y="261" font-size="11" fill="#4A5568">12/07</text>
+<text x="422" y="261" font-size="11" fill="#4A5568">Rail ticket</text>
+<text x="516" y="261" font-size="11" fill="#2A8A6E">Travel</text>
+<rect x="310" y="300" width="330" height="14" rx="4" fill="#CBD5E0"/>
+
+<rect x="86" y="130" width="180" height="196" rx="4" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="86" y="130" width="180" height="34" rx="4" fill="#1A6FA8"/>
+<rect x="86" y="156" width="180" height="8" fill="#1A6FA8"/>
+<text x="100" y="153" font-size="13" font-weight="600" fill="#FFFFFF">Bank statement</text>
+<text x="100" y="188" font-size="11" fill="#4A5568">PDF · 6 pages</text>
+<line x1="100" y1="204" x2="252" y2="204" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="100" y1="222" x2="252" y2="222" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="100" y1="240" x2="230" y2="240" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="100" y1="258" x2="252" y2="258" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="100" y1="276" x2="214" y2="276" stroke="#D1DCE6" stroke-width="2"/>
+<line x1="100" y1="294" x2="252" y2="294" stroke="#D1DCE6" stroke-width="2"/>
+
+<line x1="278" y1="220" x2="316" y2="220" stroke="#2A8A6E" stroke-width="3"/>
+<polygon points="326,220 314,214 314,226" fill="#2A8A6E"/>
+
+<rect x="672" y="262" width="52" height="52" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<path d="M724 274 q18 12 0 26" fill="none" stroke="#D1DCE6" stroke-width="3"/>
+<rect x="680" y="272" width="36" height="10" rx="3" fill="#E8F5F1"/>
+
+<text x="784" y="388" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

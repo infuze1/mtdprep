@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QL2X5V9YNM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QL2X5V9YNM');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Statement Converter UK: Not Enough for MTD</title>
+  <meta name="description" content="A bank statement converter turns your PDF into a spreadsheet — but MTD needs HMRC-categorised digital records. Here's the gap, and how to close it.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mtdprep.co.uk/blog/bank-statement-converter-uk.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is a bank statement converter enough for Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A converter extracts transactions into a spreadsheet but does not assign HMRC expense categories or produce a submission-ready quarterly summary. Making Tax Digital requires categorised digital records, so conversion is only the first of three steps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to convert my bank statements for MTD at all?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily — you can key transactions in by hand. But MTD requires digital records for every transaction, so if your bank only provides PDF statements you need some route from PDF to spreadsheet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use a spreadsheet for Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Spreadsheets are still permitted provided they are linked to HMRC-recognised bridging software such as 123 Sheets, Absolute Excel or VT for the quarterly submission. You do not have to buy a full accounting platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the HMRC expense categories I need to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The main self-employment categories include cost of goods, car and van expenses, travel and subsistence, premises costs, repairs and maintenance, office costs, advertising and marketing, interest and bank charges, professional fees, staff costs, and other allowable business expenses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When do I have to start using Making Tax Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From 6 April 2026 if your qualifying income was over £50,000 in the 2024-25 tax year, from April 2027 if it was over £30,000, and from April 2028 if it was over £20,000. Qualifying income means gross turnover before expenses, not profit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to upload a bank statement to a converter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the provider. Check where the file is stored, how long it is retained, and whether it is used for training. A one-off PDF upload is generally lower-risk than granting a live Open Banking connection, because you control exactly what is shared and when."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1a6fa8;
+      --blue-dark:  #145a8a;
+      --blue-light: #e8f4fd;
+      --green:      #2a8a6e;
+      --green-dark: #1f6e57;
+      --green-light:#e6f5f0;
+      --slate:      #2c3e50;
+      --slate-mid:  #4a5568;
+      --slate-light:#718096;
+      --border:     #d1dce6;
+      --bg:         #f8fafc;
+      --white:      #ffffff;
+      --radius:     8px;
+      --max-w:      720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--slate);
+      background: var(--white);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.3px;
+    }
+    .logo span { color: var(--green); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-mid);
+    }
+    .nav-link:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--green-dark); }
+    .btn-large {
+      padding: 14px 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      background: linear-gradient(160deg, var(--blue-light) 0%, var(--green-light) 100%);
+      padding: 56px 24px 56px;
+      text-align: center;
+    }
+    .article-header-inner { max-width: var(--max-w); margin: 0 auto; }
+    .article-header h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.3rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--slate);
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+    .article-meta {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      font-weight: 600;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body { background: var(--white); padding: 56px 24px; }
+    .article-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .article-inner h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 36px 0 14px;
+      letter-spacing: -0.2px;
+    }
+    .article-inner h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin: 24px 0 8px;
+    }
+    .article-inner p {
+      color: var(--slate-mid);
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+    .article-inner ul {
+      margin: 0 0 16px 22px;
+      color: var(--slate-mid);
+    }
+    .article-inner li { margin-bottom: 8px; }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .callout {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+      color: var(--slate);
+      font-size: 1.02rem;
+    }
+
+    .mid-cta {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.2rem;
+      color: var(--slate);
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .mid-cta p {
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .related-links {
+      font-size: 0.94rem;
+      color: var(--slate-mid);
+      margin: 28px 0 8px;
+    }
+
+    /* ── EMAIL CAPTURE ── */
+    .capture {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .capture h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .capture-sub {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+    }
+
+    .cta-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 460px;
+      margin: 40px 0 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .cta-divider::before,
+    .cta-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .cta-waitlist-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 8px;
+    }
+
+    .cta-waitlist-sub {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .form-wrap {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 460px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1 1 220px;
+      padding: 13px 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: rgba(255,255,255,0.95);
+      color: var(--slate);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-row input[type="email"]:focus {
+      border-color: var(--white);
+    }
+    .form-row input[type="email"]::placeholder {
+      color: var(--slate-light);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .thankyou {
+      display: none;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+    .thankyou strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate);
+      color: rgba(255,255,255,0.65);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+    footer a:hover { color: var(--white); }
+    .footer-links { margin: 8px 0 10px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .footer-disclaimer { font-size: 0.8rem; color: rgba(255,255,255,0.45); margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 540px) {
+      .article-header { padding: 44px 20px 44px; }
+      .article-body { padding: 44px 20px; }
+      .capture { padding: 48px 20px; }
+      .form-wrap { padding: 24px 18px; }
+      .form-row { flex-direction: column; }
+      .form-row input[type="email"] { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">MTD<span>Prep</span></a>
+    <div class="nav-links">
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/#waitlist" class="btn btn-primary">Get early access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="article-header-inner">
+    <p class="section-label" style="text-align:center;">Making Tax Digital</p>
+    <h1>Bank Statement Converter UK: Why Converting Your PDF Isn't Enough for MTD</h1>
+    <p class="article-meta">Published 11 July 2026 · 6 min read</p>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+  <div class="article-inner">
+
+    <img src="/images/blog/post-14/bank-statement-converter-hero.svg" alt="Sole trader converting a bank statement PDF for Making Tax Digital" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>If you have searched for a bank statement converter in the UK, you are almost certainly trying to solve a real and irritating problem: your bank hands you a PDF, and your bookkeeping lives in a spreadsheet. Getting the numbers out of one and into the other by hand is slow, error-prone and completely joyless work.</p>
+    <p>But if the reason you are doing this is Making Tax Digital for Income Tax, there is something you need to know before you pick a tool. <strong>A bank statement converter gets you roughly halfway.</strong> It extracts the transactions. It does not turn them into the digital records HMRC expects you to keep, and it does not put them in a shape your quarterly update can actually use. This post explains exactly where the gap sits, and what has to happen either side of it.</p>
+
+    <h2>What Does a Bank Statement Converter Actually Do?</h2>
+    <p>A bank statement converter reads a PDF bank statement and outputs a spreadsheet — usually CSV or XLSX — with one row per transaction. You typically get three or four columns: date, description, money out, money in, and sometimes a running balance.</p>
+    <p>That is genuinely useful. It saves you from typing several hundred lines by hand. But look closely at what you now have: a list of every payment that left your account, in the bank's own cryptic wording. "SUMUP *ROSE CAFE", "AMZNMktplace", "DD BRITISH GAS". No indication of what is business and what is personal. No indication of which HMRC expense category anything belongs to. It is raw data, and MTD does not accept raw data.</p>
+
+    <h2>What Does Making Tax Digital Actually Require?</h2>
+    <p>Making Tax Digital for Income Tax requires two things a converter does not give you: digital records kept throughout the year, and quarterly updates summarising your income and expenses by category.</p>
+    <p>From 6 April 2026, MTD applies if your qualifying income from self-employment and property was over £50,000 in the 2024–25 tax year. The threshold drops to £30,000 from April 2027, and £20,000 from April 2028. Qualifying income means gross turnover before expenses — not your profit — which catches out a lot of people who assume they are under the line.</p>
+    <p>Under MTD you submit four quarterly updates rather than one annual return, with deadlines of 7 August, 7 November, 7 February and 7 May. Each update is a summary of income and expenses grouped into HMRC's categories. So the categorisation is not an optional nicety you can skip. It is the actual submission.</p>
+
+    <img src="/images/blog/post-14/converter-vs-mtd-requirements.svg" alt="What a bank statement converter does versus what Making Tax Digital requires" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>Why Isn't a Converted Spreadsheet Enough on Its Own?</h2>
+    <p>Because the two things HMRC needs — categorised digital records and a submission-ready summary — both sit downstream of the conversion, and a generic converter does neither.</p>
+    <p>Consider what still has to happen after your converter finishes. You have to go line by line and decide whether each transaction is business or personal. You then have to assign each business transaction to an HMRC expense category: cost of goods, car and van costs, travel, premises, repairs, office costs, advertising, professional fees, interest and bank charges, staff costs, and so on. Then you have to total those categories per quarter. Then you have to get those totals into HMRC-recognised software.</p>
+    <p>For a sole trader with 200 transactions a quarter, that categorisation step is the bulk of the work. The converter removed the typing. It did not remove the thinking.</p>
+
+    <h2>Do You Need Accounting Software to Close the Gap?</h2>
+    <p>No — and this is the part that surprises people. HMRC does not require you to buy a full accounting suite. It requires HMRC-recognised software to make the submission. Bridging software does exactly that job and nothing else: it takes a spreadsheet and files it with HMRC.</p>
+    <p>123 Sheets, Absolute Excel and VT are all established bridging tools that let you keep working in a spreadsheet and submit from it. They are cheap, narrow and stable. What they explicitly do not do is help you get the data into the spreadsheet in the first place — 123 Sheets even points users towards a free PDF converter for that step.</p>
+    <p>So the honest picture of the market is this: converters solve the extraction. Bridging software solves the submission. Almost nobody solves the middle — the categorisation — unless you buy a subscription platform you do not want and did not budget for.</p>
+
+    <h2>How MTDPrep Closes the Middle</h2>
+
+    <img src="/images/blog/post-14/mtdprep-workflow-upload-categorise-export.svg" alt="Upload bank statement, AI categorises transactions, export MTD-ready spreadsheet" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <p>MTDPrep is built specifically for that middle step. You upload your bank statement PDF. The AI extracts the transactions — the bit a converter does — and then goes further: it categorises each one into HMRC-compliant expense categories, learns from your corrections, and exports a spreadsheet already structured for 123 Sheets, Absolute Excel or VT.</p>
+    <p>You review. You correct anything it got wrong. You export. Your quarterly update is then a matter of opening your bridging software and submitting, rather than an evening of sorting rows into columns.</p>
+    <p>No accounting suite. No bank feed. No Open Banking connection — the PDF stays a PDF upload, which for a lot of sole traders is the whole point.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <img src="/images/blog/post-14/hmrc-expense-categories-reference.svg" alt="HMRC self-employment expense categories for Making Tax Digital quarterly updates" style="width:100%;max-width:700px;display:block;margin:2rem auto;">
+
+    <h2>What Should You Look for in a Converter If You Are Doing MTD?</h2>
+    <p>If you are going to use a converter anyway, judge it on three things beyond raw accuracy.</p>
+    <p><strong>Does it output editable data, not an image?</strong> Some tools produce a scanned-looking table you cannot sort or formula over. Useless for MTD.</p>
+    <p><strong>Does it preserve the full description field?</strong> You need the merchant name to categorise later. Truncated descriptions make the next step harder.</p>
+    <p><strong>Does it handle your specific bank's PDF layout?</strong> UK bank statement PDFs are not standardised. A tool that handles US statements well can fall apart on a UK bank's layout with split debit and credit columns.</p>
+    <p>And then ask the honest question: after this tool finishes, how many hours of categorisation am I still holding?</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Is a bank statement converter enough for Making Tax Digital?</h3>
+    <p>No. A converter extracts transactions into a spreadsheet but does not assign HMRC expense categories or produce a submission-ready quarterly summary. MTD requires categorised digital records, so the conversion is only the first of three steps.</p>
+
+    <h3>Do I need to convert my bank statements for MTD at all?</h3>
+    <p>Not necessarily — you can key transactions in by hand, and some people do. But MTD requires digital records for every transaction, so if your bank only gives you PDFs, you need some route from PDF to spreadsheet.</p>
+
+    <h3>Can I use a spreadsheet for Making Tax Digital?</h3>
+    <p>Yes. Spreadsheets are still allowed, provided they are linked to HMRC-recognised bridging software such as 123 Sheets, Absolute Excel or VT for the actual quarterly submission. You do not have to buy a full accounting platform.</p>
+
+    <h3>What are the HMRC expense categories I need to use?</h3>
+    <p>The main self-employment categories include cost of goods, car and van expenses, travel and subsistence, premises costs, repairs and maintenance, office costs, advertising and marketing, interest and bank charges, professional fees, staff costs, and other allowable business expenses.</p>
+
+    <h3>When do I have to start using Making Tax Digital?</h3>
+    <p>From 6 April 2026 if your qualifying income was over £50,000 in 2024–25. From April 2027 if it was over £30,000, and from April 2028 if it was over £20,000. Qualifying income is gross turnover before expenses.</p>
+
+    <h3>Is it safe to upload a bank statement to a converter?</h3>
+    <p>It depends entirely on the provider. Check where the file is stored, how long it is retained, and whether it is used for training. A PDF upload is generally lower-risk than granting a live Open Banking connection to your account, because you control exactly what is shared and when.</p>
+
+    <p>A bank statement converter is a tool for a task. Making Tax Digital is a compliance obligation. They are not the same thing, and treating one as a solution to the other is how people end up in February with a folder of spreadsheets and no idea what goes in which box.</p>
+    <p>If your only problem is getting numbers out of a PDF, use a converter. If your problem is that MTD starts and you do not want to buy accounting software to deal with it, you need something that carries the job all the way to a submission-ready file.</p>
+
+    <div style="margin:2rem 0;padding:1.5rem;background:#E8F5F1;border-radius:8px;border:1px solid #2A8A6E;">
+      <form class="mc-ajax-form" action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?" method="get" novalidate>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+          <input type="email" name="EMAIL" placeholder="Your email address" required style="flex:1;min-width:220px;padding:0.75rem 1rem;border:1px solid #D1DCE6;border-radius:6px;font-size:15px;">
+          <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value=""></div>
+          <button type="submit" style="padding:0.75rem 1.5rem;background:#2A8A6E;color:white;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;">Join the waitlist</button>
+        </div>
+        <div class="mc-response" style="margin-top:0.75rem;font-size:14px;display:none;"></div>
+      </form>
+    </div>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:2rem;">Related: <a href="/blog/making-tax-digital-sole-traders-2026.html">Making Tax Digital for Sole Traders 2026</a> · <a href="/blog/mtd-bridging-software-explained.html">MTD Bridging Software Explained</a> · <a href="/blog/hsbc-bank-statement-download-sole-traders.html">HSBC Bank Statements and MTD</a></p>
+
+    <p style="font-size:14px;color:#4A5568;margin-top:1rem;">
+      Found this useful? <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener">Add MTDPrep as a Google Preferred Source</a> and our MTD guides will show up whenever you search the topics we cover.
+    </p>
+
+    <p><em>MTDPrep is an independent product and is not affiliated with or endorsed by HMRC.</em></p>
+
+  </div>
+</article>
+
+<!-- EMAIL CAPTURE -->
+<section class="capture" id="waitlist">
+  <div class="section-inner">
+    <p class="section-label" style="color:rgba(255,255,255,0.7)">Now live</p>
+    <h2>Try MTDPrep free — no card required</h2>
+    <p class="capture-sub">Process your first bank statement free. If MTDPrep saves you time, upgrade to Standard for £19/month and process unlimited statements.</p>
+    <a href="https://app.mtdprep.co.uk" class="btn btn-primary btn-large">Try it free →</a>
+
+    <div class="cta-divider">or</div>
+
+    <p class="cta-waitlist-label">Stay updated</p>
+    <p class="cta-waitlist-sub">Join the mailing list for product updates and MTD guidance.</p>
+
+    <div class="form-wrap">
+      <form
+        id="mc-form"
+        toolname="subscribe_to_mtdprep_updates"
+        tooldescription="Join the MTDPrep waitlist with an email address to get notified before launch."
+        action="https://mtdprep.us17.list-manage.com/subscribe/post-json?u=08e2cf6fa45b1583cbdb85c66&amp;id=7ec42ddaec&amp;f_id=00894be2f0&amp;c=?"
+        method="post"
+        novalidate
+      >
+        <div class="form-row">
+          <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </div>
+        <div hidden=""><input type="hidden" name="tags" value="8408524"></div>
+        <!-- Mailchimp bot protection — do not remove -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_08e2cf6fa45b1583cbdb85c66_7ec42ddaec" tabindex="-1" value="">
+        </div>
+        <p class="form-note">No card required. No spam. Unsubscribe any time.</p>
+      </form>
+
+      <div class="thankyou" id="thankyou" role="alert">
+        <strong>You're on the list! 🎉</strong>
+        We'll be in touch with product updates and MTD guidance.
+      </div>
+    </div>
+
+    <p style="margin-top:28px;"><a href="/blog/" class="back-link" style="color: rgba(255,255,255,0.9);">← Back to the blog</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 MTDPrep. Built for UK sole traders, self-employed people, and landlords.</div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="/#waitlist">Get early access</a>
+  </div>
+  <p class="footer-disclaimer">MTDPrep is not affiliated with or endorsed by HMRC.</p>
+  <div class="preferred-source-cta" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15);">
+    <a href="https://google.com/preferences/source?q=mtdprep.co.uk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;">
+      <img src="/images/preferred-source-badge.png" alt="Add MTDPrep as a Google Preferred Source" style="height:20px;width:auto;">
+    </a>
+  </div>
+  <div style="margin-top:20px;">
+    <!-- tinystartups · Launched on Tiny Startups -->
+    <a href="https://www.tinystartups.com/startup/mtd-prep" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:14px;padding:14px 22px 14px 18px;border-radius:14px;text-decoration:none;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#3525E6,#D81FE0,#22B8F0) border-box;border:2px solid transparent;color:#0E0B1F">
+      <svg width="56" height="56" viewBox="0 0 100 100">
+        <defs><linearGradient id="tsg" x1=".1" y1="0" x2=".9" y2="1">
+          <stop offset="0%" stop-color="#3525E6"/><stop offset="55%" stop-color="#D81FE0"/><stop offset="100%" stop-color="#22B8F0"/>
+        </linearGradient></defs>
+        <path d="M50 6C52 32 68 48 94 50C68 52 52 68 50 94C48 68 32 52 6 50C32 48 48 32 50 6Z" fill="url(#tsg)"/>
+      </svg>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:monospace;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#6A6585">Launched on</span>
+        <span style="font-size:22px;font-weight:800;letter-spacing:-0.025em">Tiny Startups</span>
+        <span style="font-size:11px;color:#6A6585;margin-top:4px">tinystartups.com</span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<script>
+  function mcAjaxSubmit(form, thankyou) {
+    if (!form || !thankyou) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var action = form.getAttribute('action');
+      var params = new URLSearchParams(new FormData(form)).toString();
+      var callbackName = 'mcCallback_' + Date.now();
+
+      window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+
+        if (data && (data.result === 'success' || data.result === 'error' && /already subscribed/i.test(data.msg))) {
+          thankyou.style.display = 'block';
+          form.style.display = 'none';
+
+          gtag('event', 'generate_lead', {
+            'event_category': 'email_signup',
+            'event_label': 'waitlist_form'
+          });
+          gtag('event', 'conversion', {'send_to': 'AW-18287062915/6bUfCN_YqcgcEIPf-Y9E'});
+        } else {
+          alert((data && data.msg) ? data.msg.replace(/<[^>]+>/g, '') : 'Something went wrong. Please try again.');
+        }
+      };
+
+      var url = action.replace('c=?', 'c=' + callbackName) + '&' + params;
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    mcAjaxSubmit(document.getElementById('mc-form'), document.getElementById('thankyou'));
+  });
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.mc-ajax-form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var resp=form.querySelector('.mc-response');
+      var url=form.action+'&EMAIL='+encodeURIComponent(form.EMAIL.value);
+      var cb='mc_'+Date.now();
+      window[cb]=function(data){
+        resp.style.display='block';
+        if(data.result==='success'){
+          resp.style.color='#1F6E57';
+          resp.innerHTML='&#10003; You\'re on the list — we\'ll be in touch before launch.';
+          if(typeof gtag!=='undefined')gtag('event','generate_lead');
+        } else {
+          resp.style.color='#E53E3E';
+          resp.innerHTML=data.msg||'Something went wrong — please try again.';
+        }
+        delete window[cb];
+        document.body.removeChild(s);
+      };
+      var s=document.createElement('script');
+      s.src=url.replace('&c=?','&c='+cb);
+      document.body.appendChild(s);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

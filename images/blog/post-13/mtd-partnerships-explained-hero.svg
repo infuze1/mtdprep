@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', Arial, sans-serif">
+<title>Making Tax Digital for partnerships explained</title>
+<rect width="800" height="400" fill="#F8FAFC"/>
+<rect x="0" y="0" width="800" height="64" fill="#2A8A6E"/>
+<text x="32" y="41" fill="#FFFFFF" font-size="24" font-weight="700">Making Tax Digital for Partnerships</text>
+<rect x="60" y="300" width="680" height="16" rx="4" fill="#1F6E57"/>
+<rect x="60" y="316" width="680" height="10" fill="#D1DCE6"/>
+<rect x="560" y="108" width="160" height="130" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="560" y="108" width="160" height="30" rx="8" fill="#1A6FA8"/>
+<text x="640" y="129" fill="#FFFFFF" font-size="14" font-weight="600" text-anchor="middle">No date set</text>
+<g fill="#D1DCE6">
+<rect x="574" y="150" width="26" height="18" rx="3"/><rect x="606" y="150" width="26" height="18" rx="3"/><rect x="638" y="150" width="26" height="18" rx="3"/><rect x="670" y="150" width="26" height="18" rx="3"/>
+<rect x="574" y="176" width="26" height="18" rx="3"/><rect x="606" y="176" width="26" height="18" rx="3"/><rect x="638" y="176" width="26" height="18" rx="3"/><rect x="670" y="176" width="26" height="18" rx="3"/>
+<rect x="574" y="202" width="26" height="18" rx="3"/><rect x="606" y="202" width="26" height="18" rx="3"/><rect x="638" y="202" width="26" height="18" rx="3"/><rect x="670" y="202" width="26" height="18" rx="3"/>
+</g>
+<circle cx="170" cy="185" r="34" fill="#2A8A6E"/>
+<rect x="128" y="228" width="84" height="72" rx="20" fill="#2A8A6E"/>
+<circle cx="300" cy="185" r="34" fill="#1A6FA8"/>
+<rect x="258" y="228" width="84" height="72" rx="20" fill="#1A6FA8"/>
+<rect x="380" y="238" width="130" height="80" rx="6" fill="#2C3E50"/>
+<rect x="392" y="250" width="106" height="56" rx="3" fill="#FFFFFF"/>
+<rect x="400" y="258" width="90" height="8" rx="2" fill="#2A8A6E"/>
+<rect x="400" y="272" width="70" height="6" rx="2" fill="#D1DCE6"/>
+<rect x="400" y="284" width="80" height="6" rx="2" fill="#D1DCE6"/>
+<rect x="368" y="318" width="154" height="10" rx="3" fill="#1F2A33"/>
+<rect x="520" y="262" width="34" height="52" rx="4" fill="#4A5568"/>
+<rect x="512" y="270" width="40" height="44" rx="4" fill="#7A8AA0"/>
+<rect x="518" y="280" width="28" height="5" rx="2" fill="#FFFFFF"/>
+<rect x="518" y="290" width="28" height="5" rx="2" fill="#FFFFFF"/>
+<text x="400" y="360" fill="#4A5568" font-size="15" text-anchor="middle">Partnerships are deferred — but individual partners may still be caught</text>
+<text x="788" y="392" fill="#D1DCE6" font-size="10" text-anchor="end">mtdprep.co.uk</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', Arial, sans-serif">
+<title>Upload bank statement, AI categorises transactions, export MTD-ready spreadsheet</title>
+<desc>Three-step workflow: upload the PDF, AI categorises into HMRC categories, export for bridging software.</desc>
+<rect width="900" height="340" fill="#F8FAFC"/>
+<rect x="0" y="0" width="900" height="56" fill="#2A8A6E"/>
+<text x="24" y="35" font-size="20" font-weight="600" fill="#FFFFFF">How MTDPrep closes the gap</text>
+
+<rect x="34" y="102" width="230" height="150" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="149" cy="138" r="20" fill="#E8F5F1"/>
+<text x="149" y="145" font-size="16" font-weight="700" fill="#1F6E57" text-anchor="middle">1</text>
+<text x="149" y="184" font-size="16" font-weight="600" fill="#2C3E50" text-anchor="middle">Upload</text>
+<text x="149" y="208" font-size="13" fill="#4A5568" text-anchor="middle">Your HSBC PDF</text>
+<text x="149" y="228" font-size="13" fill="#4A5568" text-anchor="middle">bank statement</text>
+
+<line x1="272" y1="177" x2="308" y2="177" stroke="#2A8A6E" stroke-width="3"/>
+<polygon points="320,177 306,170 306,184" fill="#2A8A6E"/>
+
+<rect x="330" y="102" width="240" height="150" rx="8" fill="#FFFFFF" stroke="#2A8A6E" stroke-width="2"/>
+<circle cx="450" cy="138" r="20" fill="#E8F5F1"/>
+<text x="450" y="145" font-size="16" font-weight="700" fill="#1F6E57" text-anchor="middle">2</text>
+<text x="450" y="184" font-size="16" font-weight="600" fill="#2C3E50" text-anchor="middle">AI categorises</text>
+<text x="450" y="208" font-size="13" fill="#4A5568" text-anchor="middle">Into HMRC expense</text>
+<text x="450" y="228" font-size="13" fill="#4A5568" text-anchor="middle">categories — you review</text>
+
+<line x1="578" y1="177" x2="614" y2="177" stroke="#2A8A6E" stroke-width="3"/>
+<polygon points="626,177 612,170 612,184" fill="#2A8A6E"/>
+
+<rect x="636" y="102" width="230" height="150" rx="8" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="751" cy="138" r="20" fill="#E8F5F1"/>
+<text x="751" y="145" font-size="16" font-weight="700" fill="#1F6E57" text-anchor="middle">3</text>
+<text x="751" y="184" font-size="16" font-weight="600" fill="#2C3E50" text-anchor="middle">Export</text>
+<text x="751" y="208" font-size="13" fill="#4A5568" text-anchor="middle">Spreadsheet ready for</text>
+<text x="751" y="228" font-size="13" fill="#4A5568" text-anchor="middle">bridging software</text>
+
+<rect x="34" y="278" width="832" height="34" rx="6" fill="#E8F5F1" stroke="#2A8A6E" stroke-width="1"/>
+<text x="450" y="300" font-size="13" fill="#1F6E57" text-anchor="middle">Works with 123 Sheets, Absolute Excel and VT — no accounting suite, no Open Banking</text>
+
+<text x="884" y="330" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>

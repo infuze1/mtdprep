@@ -1,0 +1,30 @@
+<svg viewBox="0 0 920 300" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', Arial, sans-serif">
+<title>How to prepare a partner's own-name income for Making Tax Digital</title>
+<rect width="920" height="300" fill="#F8FAFC"/>
+<rect x="0" y="0" width="920" height="60" fill="#2A8A6E"/>
+<text x="32" y="39" fill="#FFFFFF" font-size="22" font-weight="700">Get own-name income MTD-ready in three steps</text>
+<rect x="40" y="100" width="240" height="130" rx="12" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="70" cy="132" r="18" fill="#2A8A6E"/>
+<text x="70" y="138" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">1</text>
+<text x="100" y="138" fill="#2C3E50" font-size="17" font-weight="700">Upload</text>
+<text x="60" y="176" fill="#4A5568" font-size="14">Upload your bank</text>
+<text x="60" y="196" fill="#4A5568" font-size="14">statement PDF.</text>
+<line x1="292" y1="165" x2="332" y2="165" stroke="#2A8A6E" stroke-width="4"/>
+<polygon points="332,165 320,158 320,172" fill="#2A8A6E"/>
+<rect x="340" y="100" width="240" height="130" rx="12" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="370" cy="132" r="18" fill="#2A8A6E"/>
+<text x="370" y="138" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">2</text>
+<text x="400" y="138" fill="#2C3E50" font-size="17" font-weight="700">AI categorises</text>
+<text x="360" y="176" fill="#4A5568" font-size="14">Transactions sorted into</text>
+<text x="360" y="196" fill="#4A5568" font-size="14">HMRC categories.</text>
+<line x1="592" y1="165" x2="632" y2="165" stroke="#2A8A6E" stroke-width="4"/>
+<polygon points="632,165 620,158 620,172" fill="#2A8A6E"/>
+<rect x="640" y="100" width="240" height="130" rx="12" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<circle cx="670" cy="132" r="18" fill="#2A8A6E"/>
+<text x="670" y="138" fill="#FFFFFF" font-size="18" font-weight="700" text-anchor="middle">3</text>
+<text x="700" y="138" fill="#2C3E50" font-size="17" font-weight="700">Export</text>
+<text x="660" y="176" fill="#4A5568" font-size="14">Spreadsheet ready for</text>
+<text x="660" y="196" fill="#4A5568" font-size="14">bridging software.</text>
+<text x="460" y="268" fill="#4A5568" font-size="14" text-anchor="middle">Works with 123 Sheets, Absolute Excel and VT — no bank feed required</text>
+<text x="908" y="290" fill="#D1DCE6" font-size="10" text-anchor="end">mtdprep.co.uk</text>
+</svg>

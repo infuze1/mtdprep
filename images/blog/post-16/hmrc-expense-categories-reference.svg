@@ -1,0 +1,64 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t4 d4">
+<title id="t4">HMRC self-employed expense categories used for Making Tax Digital</title>
+<desc id="d4">Eight HMRC self-employed expense categories with an example transaction under each: motor expenses, office costs, repairs and maintenance, professional fees, travel and subsistence, stock and materials, staff costs, and bank and finance charges.</desc>
+<rect width="900" height="480" fill="#F8FAFC"/>
+<rect x="0" y="0" width="900" height="58" fill="#2A8A6E"/>
+<text x="32" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" fill="#FFFFFF">Where each transaction has to land</text>
+
+<text x="32" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4A5568">The main HMRC self-employed expense categories. Every business transaction belongs to one of them.</text>
+
+<rect x="32" y="106" width="200" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="32" y="106" width="200" height="5" rx="2" fill="#2A8A6E"/>
+<text x="50" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Motor expenses</text>
+<text x="50" y="166" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Fuel, insurance, van</text>
+<text x="50" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">servicing</text>
+
+<rect x="252" y="106" width="200" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="252" y="106" width="200" height="5" rx="2" fill="#2A8A6E"/>
+<text x="270" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Office costs</text>
+<text x="270" y="166" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Stationery, phone,</text>
+<text x="270" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">software</text>
+
+<rect x="472" y="106" width="200" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="472" y="106" width="200" height="5" rx="2" fill="#2A8A6E"/>
+<text x="490" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Repairs and</text>
+<text x="490" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">maintenance</text>
+<text x="490" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Tools, tradesperson</text>
+
+<rect x="692" y="106" width="176" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="692" y="106" width="176" height="5" rx="2" fill="#2A8A6E"/>
+<text x="710" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Professional</text>
+<text x="710" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">fees</text>
+<text x="710" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Accountant, legal</text>
+
+<rect x="32" y="222" width="200" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="32" y="222" width="200" height="5" rx="2" fill="#1A6FA8"/>
+<text x="50" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Travel and</text>
+<text x="50" y="274" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">subsistence</text>
+<text x="50" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Train fares, hotels</text>
+
+<rect x="252" y="222" width="200" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="252" y="222" width="200" height="5" rx="2" fill="#1A6FA8"/>
+<text x="270" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Stock and</text>
+<text x="270" y="274" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">materials</text>
+<text x="270" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Goods for resale</text>
+
+<rect x="472" y="222" width="200" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="472" y="222" width="200" height="5" rx="2" fill="#1A6FA8"/>
+<text x="490" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Staff costs</text>
+<text x="490" y="282" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Wages,</text>
+<text x="490" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">subcontractors</text>
+
+<rect x="692" y="222" width="176" height="96" rx="6" fill="#FFFFFF" stroke="#D1DCE6" stroke-width="2"/>
+<rect x="692" y="222" width="176" height="5" rx="2" fill="#1A6FA8"/>
+<text x="710" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">Bank and</text>
+<text x="710" y="274" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#2C3E50">finance charges</text>
+<text x="710" y="300" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568">Fees, interest</text>
+
+<rect x="32" y="344" width="836" height="72" rx="6" fill="#E8F5F1"/>
+<text x="56" y="374" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#1F6E57">Your bank does none of this.</text>
+<text x="56" y="398" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#1F6E57">A CSV export gives you a description. MTD needs a category. That step is the whole job.</text>
+
+<text x="450" y="452" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#4A5568" text-anchor="middle">Landlords use a separate set of property income and expense categories.</text>
+<text x="868" y="466" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#D1DCE6" text-anchor="end">mtdprep.co.uk</text>
+</svg>
